@@ -9,10 +9,10 @@
     "Your follower count and your reach for the last 30 days",
     "What you earned from Instagram last month, even if it's $0"
   ],
-  "forTech": "The calculator turns audience size and reach into a monthly revenue estimate. The gap between that estimate and your real income is almost always a conversion path problem, not a reach problem.",
+  "forTech": "The calculator turns audience size and reach into a monthly revenue estimate. The gap between that estimate and your real income is usually a conversion path problem, not a reach problem.",
   "intro": [
     "You post. People like it. Your follower count goes up. Then you look at your bank account and it doesn't match.",
-    "That's the most common thing I hear from creators and coaches: I have followers but little income. It feels personal. It isn't. It's a math problem and a path problem.",
+    "That's the problem this calculator is for: I have followers but little income. It feels personal. It isn't. It's a math problem and a path problem.",
     "I've run Meta ads for 14 years and I run my own Instagram with a DM agent every day. A following only turns into income when there's a path from the post to the sale. This calculator shows you the size of what's missing."
   ],
   "sections": [
@@ -53,7 +53,7 @@
     {
       "h": "Find where the gap comes from",
       "body": [
-        "A gap almost never means you need more followers. It means people who are interested have nowhere to go.",
+        "A gap usually doesn't mean you need more followers. It means people who are interested have nowhere to go.",
         "Here's the path I run: a reel, a comment keyword, a DM, a page, a checkout, then short follow-up emails. Each step hands the person to the next one. If one step is missing, people fall out there."
       ],
       "steps": [

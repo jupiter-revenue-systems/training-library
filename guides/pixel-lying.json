@@ -11,7 +11,7 @@
   ],
   "forTech": "This compares your order export (the source of truth) with the Purchase event your Meta pixel reports, on count, attribution and value. It's a check only. It doesn't touch your pixel, your site or any server-side setup.",
   "intro": [
-    "It's the end of the month. Ads Manager says you made 40 sales. Your checkout says 26. You stare at both screens and wonder which one to believe, and which ad to turn off.",
+    "It's the end of the month. Say Ads Manager shows 40 sales and your checkout shows 26. You stare at both screens and wonder which one to believe, and which ad to turn off.",
     "Here's the plain answer. Your checkout took the money, so it's the truth. Your pixel, the small piece of code that tells Meta when someone buys, is only a witness. Sometimes it sees a sale twice. Sometimes it misses one. Sometimes it writes down the wrong amount.",
     "I've run Meta ads for 14 years. Before I trust any ad report, I check the witness against the truth with 3 questions. Was each purchase counted once? Was it matched to an ad? Does it carry the right value? This guide is that check, and the pack lets Claude do the math and write your report."
   ],

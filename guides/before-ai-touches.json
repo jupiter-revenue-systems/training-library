@@ -94,7 +94,7 @@
           "title": "Turn the scare into a rule",
           "text": "After you're back to safe, add one line to the bottom of your change log, under Rules We Added.",
           "copy": "We just had a problem and went back to the restore point. Write one new rule, in plain words, so this exact thing can't happen again. Keep it to one sentence. I'll add it to my change log under Rules We Added.",
-          "why": "This is how my 6 rules got written. Each one is there because of a real day."
+          "why": "This is how a rule list grows. Each rule answers one real risk, in plain words."
         }
       ]
     }

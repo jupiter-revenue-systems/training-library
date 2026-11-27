@@ -21,7 +21,7 @@
       "body": [
         "Think about handing a job to a smart contractor who has never met you. One line gets you their best guess. A clear brief gets you the job you wanted.",
         "AI works the same way. Everything you leave out, it fills in with the most average answer it knows. That's why short prompts get generic work. The gaps get filled with average.",
-        "The company that makes Claude studied how people use it for real work. The skilled users weren't the ones who knew the most tech. They gave exact directions. They said what to check. They handed over more of the doing. And when things went wrong they steered, where beginners were more likely to quit. Knowing your own field mattered more than knowing code.",
+        "Here's what I see from running agents every day. Skill with AI isn't knowing the most tech. It's giving exact directions. Saying what to check. Handing over more of the doing. And steering when things go wrong, where a beginner is more likely to quit. Knowing your own field matters more than knowing code.",
         "That's what I mean by a top 1% user. It isn't a secret trick. It's someone who briefs AI the way a good owner briefs a good team.",
         "Long doesn't mean stuffed, though. Every line has to earn its place. A prompt packed with things the AI doesn't need is as bad as one line.",
         "For the technical: the model can only work from what's in its context window. A structured brief with clear acceptance criteria removes the guessing."
@@ -57,9 +57,9 @@
       ],
       "steps": [
         {
-          "title": "The prompt that planned my exit",
-          "text": "I wanted a plan to sell the business one day, and I had no idea what a buyer looks for. I started as a long voice note. This is the core of it. Notice that I admit what I don't know, name the one question to answer, and set a hard limit.",
-          "copy": "I want a plan to build this business for the next 1 to 3 years, then sell it one day.\n\nI didn't go to business school. I don't know what I don't know. So expand on my notes and tell me what I've missed.\n\nRead first: everything in this folder about what the business sells and how it runs. Then research companies doing similar work.\n\nThe question to answer above all: what would a buyer be buying?\n\nWrite it the way a professional business plan writer would. Mark every claim as verified, researched or assumption.\n\nLimits: you're not building anything tonight. Read only. Don't touch the website.\n\nDon't check in with me on small choices. Make the call and note what you chose.",
+          "title": "The prompt that planned my next 3 years",
+          "text": "I wanted a long-range plan for the business, in territory that was new to me. It started as a long voice note. This is the core of it. Notice that I admit what I don't know, name the one question to answer, and set a hard limit.",
+          "copy": "I want a plan to build this business over the next 1 to 3 years.\n\nThis is new territory for me. I don't know what I don't know. So expand on my notes and tell me what I've missed.\n\nRead first: everything in this folder about what the business sells and how it runs. Then research companies doing similar work.\n\nThe question to answer above all: what makes this business worth more in 3 years?\n\nWrite it the way a professional business plan writer would. Mark every claim as verified, researched or assumption.\n\nLimits: you're not building anything tonight. Read only. Don't touch the website.\n\nDon't check in with me on small choices. Make the call and note what you chose.",
           "why": "Telling the AI what you don't know gives it permission to fill the real gaps, not the ones you guessed at."
         },
         {
@@ -80,7 +80,7 @@
       "h": "Let one AI interview you, then hand the prompt to another",
       "body": [
         "Here's the part most people miss. You don't have to write the long prompt yourself.",
-        "In the evening I talk a job through in ChatGPT. It asks me questions, pushes on the weak spots, and writes the master prompt. I paste that prompt into Claude, which does the work. A second agent that didn't do the work checks it. In the morning I read a report.",
+        "In the evening I talk a job through in one chat. It asks me questions, pushes on the weak spots, and writes the master prompt. I paste that prompt into Claude Code, which does the work. A second agent that didn't do the work checks it. In the morning I read a report.",
         "Why 2? The first AI has one job, getting the brief right. It isn't in a hurry to start. And when the second AI reads the prompt cold, any gap shows up fast.",
         "You can use Claude for both, or ChatGPT for both. Just use 2 separate chats.",
         "For the technical: one model compiles the brief, and a fresh context with no chat history runs it."
@@ -113,7 +113,7 @@
         },
         {
           "title": "Template 2: the research and plan prompt",
-          "text": "Use this when you're in new territory and need a plan you can trust. It's the shape of my exit plan prompt.",
+          "text": "Use this when you're in new territory and need a plan you can trust. It's the shape of my long-range plan prompt.",
           "copy": "Read this whole message before you start.\n\nWHERE I AM\nI'm [who you are]. I want to [the big goal]. I don't know what I don't know about this, so part of your job is to tell me what I've missed.\n\nREAD FIRST\n[Paste or attach what you have: notes, numbers, pages.] Treat these as the facts about my business.\n\nTHE QUESTION\nAnswer this above all: [the one question the plan must answer].\n\nRESEARCH\nLook at how others handle this. Tell me what you opened and read, and what you only know from memory.\n\nWHAT IT SHOULD LOOK LIKE\nA plan a professional in this field would sign. Start with a 1-page summary in plain words. Mark every claim as verified, researched or assumption.\n\nLIMITS\nDon't build or change anything. This is a plan only. Don't invent numbers. If a number is missing, tell me which one you need.\n\nDECISIONS\nMake the small calls yourself and note each one. Stop and ask only if a choice changes the whole plan.\n\nDONE MEANS\nI can read the summary in 5 minutes and know my next step. End with: what you checked, what you didn't, and the 3 things I should decide next."
         },
         {

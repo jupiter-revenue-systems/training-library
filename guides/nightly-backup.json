@@ -1,0 +1,111 @@
+{
+  "slug": "nightly-backup",
+  "n": 8,
+  "promise": "A backup of your site code and automations that saves to a private GitHub account every night, plus a one-page restore guide you can follow on a bad day.",
+  "time": "30 minutes",
+  "need": [
+    "The zip from this page",
+    "Claude Code or Claude Cowork is best, because it can do the setup for you. Claude Chat or ChatGPT can walk you through it by hand",
+    "A free GitHub account",
+    "A computer that's on, or wakes up, at the same time each day"
+  ],
+  "forTech": "A local git repo pushed to a private GitHub remote by a small shell script on a schedule (launchd or cron on Mac and Linux, Task Scheduler on Windows), with a .gitignore that keeps secrets out. A restore is a file pulled from commit history and saved next to the current one.",
+  "intro": [
+    "Picture the morning it happens. A page is blank. An automation that ran for months is gone, or changed, and nobody knows how. You open your laptop and the only copy you have is the broken one.",
+    "A lot of owners have no backup of their site code or their automations at all. Not because they don't care. Because a backup you have to remember never gets made.",
+    "Mine runs every night without me. A guardian agent saves my automations and site code to GitHub while I sleep. This pack sets up a starter version of that for you. You do it once, tonight."
+  ],
+  "sections": [
+    {
+      "h": "What you're building",
+      "body": [
+        "3 parts. A backup folder on your computer. A private GitHub account that keeps a dated copy of that folder. And a small timer that sends the folder to GitHub every night.",
+        "GitHub is a free website that keeps every saved version of your files, with a date on each one. Think of a filing cabinet that never throws out yesterday. Private means only you can see it."
+      ],
+      "steps": [
+        {
+          "title": "Pick what goes in",
+          "text": "Write down the 3 things you'd hate to lose. For most owners it's custom site code, your automation files, and the prompts and rules your AI works from. The pack has a checklist for this.",
+          "why": "A backup of everything never gets finished. A backup of 3 things gets finished tonight."
+        }
+      ]
+    },
+    {
+      "h": "Let Claude set it up",
+      "body": [
+        "Unzip the pack and open that folder in Claude. Then let it lead. It asks one question at a time and does the typing."
+      ],
+      "steps": [
+        {
+          "title": "Start the interview",
+          "text": "Paste this as your first message.",
+          "copy": "Read START_HERE.md in this folder and follow it. Interview me one question at a time. Don't run any command until you've told me in plain words what it does and I've said OK.",
+          "why": "START_HERE.md is written to the AI. It holds the whole plan, so you don't have to."
+        },
+        {
+          "title": "Make your private GitHub home",
+          "text": "Claude walks you through making one private repo. A repo is one folder on GitHub. You sign in to GitHub yourself, in your browser. Never paste a password or a key into a chat.",
+          "why": "Private matters. Your business files shouldn't be readable by anyone but you."
+        },
+        {
+          "title": "Run the first backup by hand",
+          "text": "Claude puts your first files in the backup folder and sends them up. Then you open GitHub and look. You should see your files with today's date.",
+          "copy": "Run the first backup now. Then tell me exactly where to click on GitHub to see my files and today's date, so I can check it with my own eyes.",
+          "why": "Seeing it once on the real site is what makes it true."
+        },
+        {
+          "title": "Set the nightly timer",
+          "text": "Pick a time your computer is on. Claude sets a timer that runs the backup at that time every day.",
+          "copy": "Set the backup to run every night at [time]. Use the right kind of timer for my computer. Then show me how to see when it last ran.",
+          "why": "This is the part that makes it a backup you never think about."
+        }
+      ]
+    },
+    {
+      "h": "Prove it before you need it",
+      "body": [
+        "A backup isn't real until you've pulled something back out of it. Do this once, while nothing is wrong."
+      ],
+      "steps": [
+        {
+          "title": "Check it tomorrow morning",
+          "text": "Open GitHub. Look for a line with last night's date. If it's there, the timer works. If it's not, tell Claude and it'll read the backup log with you."
+        },
+        {
+          "title": "Practice one restore",
+          "text": "Pick any file. Get yesterday's copy back as a new file, saved next to the current one. Nothing gets replaced.",
+          "copy": "Use my RESTORE_GUIDE.md. Help me get yesterday's copy of [file name] back. Save it as a new file next to the current one. Don't replace or delete the current one.",
+          "why": "On a bad day you'll be stressed. You want to have done this once on a calm day."
+        }
+      ]
+    }
+  ],
+  "eureka": "A backup you have to remember isn't a backup. This one runs every night, and you've already restored from it once.",
+  "check": [
+    "Your backup folder has your site code, your automation files and your prompts in it",
+    "You can see those files in a private GitHub repo with a date on them",
+    "A new dated line shows up on GitHub the morning after a change",
+    "You've restored one file as a new copy, without replacing anything",
+    "Your RESTORE_GUIDE.md is filled in and you know where it is"
+  ],
+  "limits": [
+    "It backs up what's in the backup folder. Tools that live online, like your site builder or automation tool, need an export into that folder. The pack sets that up for one tool, not all of them.",
+    "It doesn't back up your CRM contacts, your payment records or a database.",
+    "Your computer has to be on. Mine runs on an always-on Mac mini.",
+    "It doesn't tell you when a night gets missed. You check the log. In my setup a guardian agent does that checking, and that's part of the bigger builds."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:site-copied",
+      "line": "Do it yourself: your site is safe from loss, so protect it from copycats next with Someone Copied Your Site. Now What?"
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "With me: on a $750 Strategy Call we use 60 minutes to plan what in your business needs a backup, and which jobs are ready for agents."
+    },
+    "dfy": {
+      "offer": "portal",
+      "line": "Done for you: a Jupiter Portal System is a client portal built for your business, with backups set up from day one. It starts with the $150 Discovery Call."
+    }
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "slug": "every-revision",
+  "n": 14,
+  "promise": "One list with a line for every client request, from every place the feedback came in, and a way to check each line off on the live work.",
+  "time": "20 minutes",
+  "need": [
+    "Claude (free or paid). The prompts also work in ChatGPT without the skill",
+    "One round of real client feedback: the emails, PDFs, screenshots, notes or a video transcript",
+    "A link to the live work the feedback is about"
+  ],
+  "forTech": "This is a requirements traceability list. Every ask becomes one atomic row with a source reference and a status, and a row closes only on evidence from the live result at each size it applies to. It ships as a SKILL.md you can add to Claude.ai, Cowork or Claude Code.",
+  "intro": [
+    "The client sends feedback. Some of it is in an email. Some is in a PDF with notes in the margin. There are 4 screenshots with red circles, a voice note, and a text that says 'oh, and one more thing.'",
+    "You fix what you remember. You send it back. They reply, 'You missed the thing about the button.' It was in screenshot 3, in small red letters. Now you look careless, and you weren't. You just never had one list.",
+    "I do client revisions with a rule I don't break: one row per ask, and a row is done only when I've seen it on the live result. On a full site revision that list gets long, and it's the only reason nothing gets lost.",
+    "This skill builds that list for you. You hand it the pile. It hands you every request, one per line."
+  ],
+  "sections": [
+    {
+      "h": "Why things get missed",
+      "body": [
+        "Things get missed for 3 reasons. Feedback arrives in more than one place. One sentence hides 2 or 3 requests. And pictures carry requests that no one typed.",
+        "So the list has 3 rules. Read every source, including every picture. Split every sentence until each row is one change. And keep the client's own words on the row, so you can always check what they meant."
+      ],
+      "steps": [
+        {
+          "title": "Add the skill",
+          "text": "Download the zip. Follow INSTALL.md for Claude.ai, Cowork or Claude Code. It takes a couple of minutes. No Claude? Open SKILL.md and paste its text at the start of a ChatGPT chat.",
+          "why": "A skill is a saved set of instructions. Claude follows it the same way every time, so you don't retype the rules."
+        },
+        {
+          "title": "Gather the whole pile",
+          "text": "Put everything from this round in one folder: emails saved as text or PDF, the marked-up PDFs, every screenshot, call notes, and the transcript of any video or voice note.",
+          "why": "The list can only be complete if the pile is."
+        }
+      ]
+    },
+    {
+      "h": "Build the list",
+      "body": [
+        "Now hand over the pile. The skill reads everything, then shows you its count before it writes a single row."
+      ],
+      "steps": [
+        {
+          "title": "Run it",
+          "text": "Start a new chat, attach the whole folder, and paste this.",
+          "copy": "Use the every-revision skill. Attached is all the feedback from my client for this round. Read every file, including every picture and every note written on a picture. First tell me how many sources you found and name them, so I can confirm nothing is missing. Then build the list: one row per request, in the client's own words, with the source it came from. If one sentence holds 2 requests, make 2 rows. If something is unclear, don't guess. Put it in a Questions list for the client.",
+          "why": "Confirming the sources first catches the screenshot that didn't upload."
+        },
+        {
+          "title": "Read the list against the pile",
+          "text": "Open the 2 longest sources and check 5 requests from each against the list. If one is missing, tell the skill which one and ask it to read that source again, line by line.",
+          "why": "You're checking the checker. It takes a few minutes and it's where trust in the list comes from."
+        },
+        {
+          "title": "Send the questions",
+          "text": "Ask for the Questions list as one short message to the client, and send it before you start. One round of questions now saves a round of rework later.",
+          "copy": "Turn the Questions list into one short, friendly message to my client. Number the questions. For each, quote the part that was unclear and offer 2 likely meanings they can pick from. Under 150 words."
+        }
+      ]
+    },
+    {
+      "h": "Do the work, then check it live",
+      "body": [
+        "The list isn't a to-do list you tick as you go. Ticking when you make the change is how 'done' ends up meaning 'I think I did that.'",
+        "A row closes when you've looked at the live result and seen the change. If the work shows on a phone and a computer, you look at both."
+      ],
+      "steps": [
+        {
+          "title": "Work in batches",
+          "text": "Ask the skill to group rows by page or by file, then do one group at a time. Mark rows Changed as you go, not Done.",
+          "copy": "Group the open rows by page or file so I can work through one place at a time. Keep the row numbers the same. Show me the first group only."
+        },
+        {
+          "title": "Check each row on the live work",
+          "text": "Open the live result. For each Changed row, look for the change at phone size and desktop size. Paste a screenshot or the live text back to the skill and ask it to judge the row.",
+          "copy": "Here's the live result for rows [numbers]. Check each row against what you see. Mark it Done only if the change is visible here, at the size shown. If it's not there, or you can't tell from this, mark it Open or Not checked and say why. Don't take my word that I made the change.",
+          "why": "The last sentence matters. You're asking it to trust the screen, not you."
+        },
+        {
+          "title": "Send the report",
+          "text": "Ask for the closing report and send it with the work.",
+          "copy": "Write my report to the client. 3 parts: X of Y requests done, what's still open and why, and what I did not check. Plain words. Then list the done rows grouped by page, each in 1 line.",
+          "why": "A client who sees the count and the open items trusts you more than one who hears 'all done.'"
+        }
+      ]
+    }
+  ],
+  "eureka": "One row per ask, and a row is done only when you've seen it on the live work.",
+  "check": [
+    "Every source from this round is named in the list, including each picture.",
+    "Every row is one change, in the client's words, with where it came from.",
+    "Unclear requests went to the client as questions before you started.",
+    "Each Done row was checked on the live result at phone and desktop size.",
+    "Your report says X of Y done, what's open, and what wasn't checked."
+  ],
+  "limits": [
+    "It builds and tracks the list. It doesn't make the changes for you.",
+    "It can't watch a video or hear a voice note. You give it the transcript.",
+    "It can't open your live site unless your Claude setup can browse. Otherwise you paste in what's live.",
+    "You're still the one doing every delivery. The list makes you accurate, not free."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "hops",
+      "line": "The HOPS Team is 6 agents, already built, that do the work, so you stop being the only pair of hands on every delivery."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Spend 60 minutes with me on where you're the bottleneck in delivery and what AI should take off your plate first."
+    },
+    "dfy": {
+      "offer": "seven",
+      "line": "A Seven Star Build merges your whole revenue system and has agents run it, built by my own hands. Builds start with the Discovery Call."
+    }
+  }
+}

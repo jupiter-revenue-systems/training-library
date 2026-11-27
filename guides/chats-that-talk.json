@@ -1,0 +1,132 @@
+{
+  "slug": "chats-that-talk",
+  "n": 30,
+  "promise": "3 or 4 named chats, each with one job, that hand work to each other so you stop repeating yourself.",
+  "time": "25 minutes",
+  "need": [
+    "Claude (a paid plan helps, because Projects keep your chats and files together). ChatGPT works for the notes method too.",
+    "A shared brain folder (the free Shared Brain pack sets this up)",
+    "The Handoff skill (the download on this page)"
+  ],
+  "forTech": "This is a multi-session setup: one session per lane, each with a scoped instruction block, and a shared append-only HANDOFFS.md file as the message bus. Where your Claude app supports session-to-session messages, the @-mention sends the note directly as well.",
+  "intro": [
+    "You settle a new price in one chat. Then you open your content chat and explain the new price. Then the chat that edits your site. Then the one that helps with ads. Same news, 4 times, typed by you.",
+    "You've become the messenger between your own assistants.",
+    "Here's how I run it. I keep separate named chats: Site Edits, Content, Ads and Brain. Each one has one job. When a chat finishes something another chat needs, it writes a short handoff note and tags the other chat by name with an @-mention. I don't carry the message. The note does.",
+    "This guide sets up the same thing for you, small enough to finish today."
+  ],
+  "sections": [
+    {
+      "h": "Why one giant chat stops working",
+      "body": [
+        "Most people start with one long chat that does everything. It works for a week. Then it gets slow, it mixes up your site copy with your ad copy, and it forgets what you agreed on last Tuesday.",
+        "A chat is like a person at a desk. Give one person every job in the business and things get dropped. Give each person one lane and a way to pass notes, and work moves."
+      ],
+      "steps": [
+        {
+          "title": "Find your lanes",
+          "text": "Open the chat you use most and paste this. You're looking for 3 or 4 lanes, not 10.",
+          "copy": "Look at the kinds of work I ask AI for. Group them into 3 or 4 lanes, each one a single clear job, like Content, Site Edits or Ads. For each lane give me: a short name, the one job it does, and what it should never touch. Ask me up to 3 questions first if you need to.",
+          "why": "Fewer lanes means fewer handoffs. You can always split a lane later."
+        }
+      ]
+    },
+    {
+      "h": "Name your chats and give each one a lane",
+      "body": [
+        "A name does more than you'd think. When a chat knows it's Content, it stops trying to fix your website."
+      ],
+      "steps": [
+        {
+          "title": "Create one chat per lane, plus Brain",
+          "text": "Make a new chat for each lane and rename it to the lane name. Add one more called Brain. Brain's only job is keeping your business facts right. Keep all of them in the same Project or the same folder, so they share the same brain files."
+        },
+        {
+          "title": "Give each chat its lane card",
+          "text": "Paste this as the first message in each chat. Fill in the 3 blanks for that lane.",
+          "copy": "You are the [LANE NAME] chat for my business.\nYour one job: [the job].\nYou never touch: [what's outside this lane].\n\nThe other chats are: @Content, @SiteEdits, @Ads, @Brain. Change this list to match mine.\n\nRules:\n1. At the start of every session, read the brain files, then read HANDOFFS.md and act on any open note addressed to you.\n2. If I ask for work outside your lane, don't do it. Write a handoff note to the right chat.\n3. When you finish something another chat needs to know, write a handoff note to that chat.\n4. If a business fact changes (a price, an offer, a rule), write a handoff note to @Brain.\n5. Never invent a fact. If you don't know, ask me.",
+          "why": "The lane card is the job description. Rule 2 is the one that stops chats from stepping on each other."
+        }
+      ]
+    },
+    {
+      "h": "The handoff note",
+      "body": [
+        "This is the piece that does the talking. It's one file, HANDOFFS.md, that lives in your shared brain folder. Every chat can read it and add to it. Think of it as the note board in the office kitchen.",
+        "A good note has 5 short parts: who it's from, who it's for, what's done, what you need from them, and where the work is."
+      ],
+      "steps": [
+        {
+          "title": "Add the note board to your brain",
+          "text": "Copy HANDOFFS.md from the templates folder in the download into your shared brain folder. In Claude.ai or ChatGPT, add it to your Project files.",
+          "why": "One board in one place. If notes live in 4 chats, nobody reads them."
+        },
+        {
+          "title": "Send your first handoff",
+          "text": "In the chat that just finished something, paste this with your own details.",
+          "copy": "Hand off to @Content. I just did this: [what you finished]. They need to: [what you need from them]. Write the note in this shape and add it to the top of HANDOFFS.md:\n\n## [today's date] FROM @[this chat] TO @Content | OPEN\n- Done: \n- Need from you: \n- Where the work is: \n- Not checked: ",
+          "why": "The line that says Not checked is the honest one. It tells the next chat what it can't assume."
+        },
+        {
+          "title": "Pick it up on the other side",
+          "text": "Open the chat the note is for and paste this.",
+          "copy": "Check handoffs. Read HANDOFFS.md, find every OPEN note addressed to you, and tell me what each one asks for. Do the work one note at a time. When a note is finished, change OPEN to DONE and add one line saying what you did. Don't delete any notes.",
+          "why": "The note carried the news. You didn't retype anything."
+        }
+      ]
+    },
+    {
+      "h": "The @-mention and the skill",
+      "body": [
+        "The @ is a name tag. @Content means this note is for the Content chat. In Claude apps where chats can message each other, the mention sends the note straight over. Where they can't, the note waits on the board and the chat picks it up the next time it starts. Either way, the news gets there without you.",
+        "The Handoff skill in the download teaches Claude all of this, so you don't paste the prompts each time. A skill is a small instruction file Claude loads when it hears the right words."
+      ],
+      "steps": [
+        {
+          "title": "Install the Handoff skill",
+          "text": "Follow INSTALL.md in the download. It takes a couple of minutes. After that, 3 short phrases do the work: hand off to @Name, check handoffs, and close out."
+        },
+        {
+          "title": "Run the relay test",
+          "text": "Change one small real thing in one chat, like the wording of your offer. Then say this. Open the other 2 chats and say check handoffs. If both know the change, your chats talk.",
+          "copy": "Hand off to @Brain and @Content. The change: [say the change]. Brain updates the facts. Content uses the new wording from now on.",
+          "why": "This is the moment it lands. One finished job updated the others."
+        },
+        {
+          "title": "End every session with close out",
+          "text": "Before you close a chat where real work happened, say close out. The chat writes notes for anyone who needs to know and tells you what's still open.",
+          "copy": "Close out. Write a handoff note to every chat that needs to know what changed here. Then tell me: what's done, what's open, and what you didn't check.",
+          "why": "This is the habit that keeps the whole thing alive. I do it every day."
+        }
+      ]
+    }
+  ],
+  "eureka": "I stopped carrying messages between my chats. The handoff note carries them.",
+  "check": [
+    "You have 3 or 4 named chats plus Brain, and each one has its lane card",
+    "HANDOFFS.md sits in your shared brain folder where every chat can read it",
+    "You sent one handoff and a different chat picked it up without you explaining it",
+    "A chat turned down work outside its lane and wrote a note to the right chat",
+    "You said close out and got back what's done, what's open and what wasn't checked"
+  ],
+  "limits": [
+    "You still open each chat and say check handoffs. Nothing here runs on its own while you sleep.",
+    "It covers 3 or 4 chats, not every part of your business.",
+    "The chats pass notes. They don't check each other's work.",
+    "It only stays true if you close out. Skip that and the board goes stale."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "hops",
+      "line": "The HOPS Team is 6 AI agents, already built, for content, blog, site, support, ads and memory, so you skip building each lane by hand."
+    },
+    "dwy": {
+      "offer": "sc25",
+      "line": "If you want this across your whole business, the Strategy Call + Action Plan is 90 minutes with me plus a detailed step by step plan you can follow."
+    },
+    "dfy": {
+      "offer": "seven",
+      "line": "The Seven Star Build is your whole revenue system merged and run by agents, built by my own hands, and it starts with the $150 Discovery Call."
+    }
+  }
+}

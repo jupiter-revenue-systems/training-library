@@ -1,0 +1,107 @@
+{
+  "slug": "one-person-sales-team",
+  "n": 3,
+  "promise": "A complete sales plan for one offer: the page copy, an order bump and an upsell, ready to build.",
+  "time": "30 minutes",
+  "need": ["Claude or ChatGPT (free works)", "The zip pack from this page", "One offer you sell, or want to sell"],
+  "forTech": "For the technical: the pack is a set of markdown files. START_HERE.md is a system-style brief that runs a one question at a time interview, then fills 3 templates: a long-form page, a checkout order bump and a post-purchase upsell.",
+  "intro": [
+    "You have an offer. People who hear you explain it say yes. But there's no page that explains it for you, so every sale needs you in the room.",
+    "A good page is a sales team of 1. It says what you'd say, in the order you'd say it, at any hour. I've owned businesses for 17 years and I still don't write mine from a blank page. I get interviewed, and the page gets written from my answers.",
+    "That's what this pack does. You drop it into Claude, it interviews you about one offer, and you walk away with the 3 pieces every offer needs."
+  ],
+  "sections": [
+    {
+      "h": "What's in the zip",
+      "body": [
+        "One file called START_HERE.md, written to the AI. It tells Claude who it's helping, how to interview you, and what to write. Plus 5 templates it fills in: the interview, the sales page, the order bump, the upsell, and the finished sales plan.",
+        "You don't need to read the templates. Claude does."
+      ],
+      "steps": [
+        {
+          "title": "Download and open the pack",
+          "text": "Download the zip and open it. You'll see START_HERE.md and a templates folder. Keep them together."
+        }
+      ]
+    },
+    {
+      "h": "Run the interview",
+      "body": [
+        "This is the part that matters. The page is only as good as your answers, and your answers are better than you think. You already know why people buy. You just haven't been asked in the right order."
+      ],
+      "steps": [
+        {
+          "title": "Start a new chat and add the files",
+          "text": "Open a new chat in Claude or ChatGPT. Upload the whole zip, or the files inside it. Then paste this. If you can't upload files, open START_HERE.md, copy all of it, and paste it in as your first message.",
+          "copy": "Read START_HERE.md first and follow it exactly. I'm ready for the interview."
+        },
+        {
+          "title": "Answer like you're talking to a friend",
+          "text": "It'll ask one question at a time. Use the words your customers use, not the words on your website. If you don't know an answer, say so. It'll work around it.",
+          "why": "Pages that sound like a real person come from answers that sound like a real person."
+        },
+        {
+          "title": "Give it only real proof",
+          "text": "When it asks for proof, give it what's true: your own numbers, real customer words, your years doing this. If you have none yet, say that. It's told never to make any up."
+        }
+      ]
+    },
+    {
+      "h": "The 3 pieces you get",
+      "body": [
+        "The page copy: headline, the problem, the offer, what's inside, who it's for, the price, and the questions people ask before they buy.",
+        "The order bump: a small add-on offered right at checkout. A good one makes the main result come faster. For the technical: it's the checkbox offer on the checkout form.",
+        "The upsell: one offer shown right after they buy. A good one solves the problem that shows up next, once they have the main result."
+      ],
+      "steps": [
+        {
+          "title": "Test the bump",
+          "text": "When the plan is written, paste this.",
+          "copy": "Look at the order bump you wrote. Does it make the main result come faster or easier? Would a buyer feel it should have been included in the main offer? If it fails either test, give me 3 better options and say why each one fits.",
+          "why": "A bump that feels like a missing piece makes buyers trust you less."
+        },
+        {
+          "title": "Test the upsell",
+          "text": "Then paste this.",
+          "copy": "After someone gets the result of my main offer, what's the very next problem they hit? Does the upsell solve exactly that problem? If it solves a different one, rewrite it."
+        }
+      ]
+    },
+    {
+      "h": "Make it sound like you, then save it",
+      "body": [
+        "Read the page copy out loud. Every line you wouldn't say to a customer across a table gets changed."
+      ],
+      "steps": [
+        {
+          "title": "Fix the lines that aren't you",
+          "text": "Paste this, with the lines that sounded off.",
+          "copy": "These lines don't sound like me: [paste them]. Rewrite them using my own words from the interview. Short sentences. No hype. Then check the rest of the page for the same problem and show me what you changed."
+        },
+        {
+          "title": "Save your sales plan",
+          "text": "Ask for the finished plan as one file and save it where you'll find it. That file is what you, or whoever builds your page, works from.",
+          "copy": "Put the final page copy, order bump and upsell into one document using the sales plan template. Name it sales-plan-[my offer name]. Give it to me as a file I can download, or as one block I can copy."
+        }
+      ]
+    }
+  ],
+  "eureka": "The bump makes this result faster, and the upsell solves the next problem. Neither one is a random extra.",
+  "check": [
+    "You have page copy you can read out loud without wincing.",
+    "Your order bump makes the main result faster, and doesn't feel like a missing piece.",
+    "Your upsell solves the problem that comes right after the main result.",
+    "All 3 are saved in one sales plan file."
+  ],
+  "limits": [
+    "It writes the words. It doesn't build the page or the checkout.",
+    "It covers one offer per run.",
+    "It doesn't tell you who's buying or what ads to run. That's Jupiter Launchpad.",
+    "It only uses the proof you give it. It can't prove the offer for you."
+  ],
+  "paths": {
+    "diy": { "offer": "launch", "line": "Jupiter Launchpad, $97, is your plan before you spend on ads: who's buying, what to say and your first ads, 7 tools from one intake." },
+    "dwy": { "offer": "sc", "line": "A Strategy Call is $750 for 60 minutes with me, and we can use it to get your offers clear before you build the page." },
+    "dfy": { "offer": "web", "line": "The Low-Ticket Product Build, from $4,999, is your offer, page, checkout and portal built for you. It starts with the $150 Discovery Call." }
+  }
+}

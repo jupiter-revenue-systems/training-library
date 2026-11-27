@@ -1,0 +1,113 @@
+{
+  "slug": "overnight-build",
+  "n": 6,
+  "promise": "Your first overnight build: one big task planned before bed, finished while you sleep, with a report waiting in the morning.",
+  "time": "30 minutes to plan, then it runs overnight",
+  "need": ["Claude on a paid plan that includes Claude Code", "A computer that can stay on overnight", "The zip pack from this page", "One big task made of files, like a set of pages, emails or documents"],
+  "forTech": "For the technical: the master prompt is a spec with a task list, acceptance checks and stop rules. It runs in Claude Code inside a copy of the project folder, writes a log as it goes, and a fresh session with no memory of the run verifies the result.",
+  "intro": [
+    "It's 10 PM. The list is longer than it was at 8 AM. The big task, the one that would really move things, has been at the bottom for weeks because it needs a whole clear day, and you don't have one.",
+    "You do have a night. 9 hours when nothing is happening.",
+    "This is how I run overnight builds. I plan the task in a chat in the evening. Claude Code runs it overnight. A second agent checks the work. I wake up to a morning report and review finished work, not a blank page. This pack gives you the planner."
+  ],
+  "sections": [
+    {
+      "h": "Pick the right first task",
+      "body": [
+        "A good first night is a task made of files, where a wrong draft costs you nothing. The copy for 5 pages. A set of emails. A full document set for a new offer. A tidy-up of a messy folder of notes.",
+        "A bad first night is anything live. Nothing that sends, publishes, spends or deletes. The night shift builds drafts in a copy. You decide what goes live in the morning."
+      ],
+      "steps": [
+        {
+          "title": "Choose one task",
+          "text": "Write the task in one sentence. Then write what finished looks like, as a list you could tick off. If you can't list it, the task isn't ready, and the planner will help you get it there."
+        }
+      ]
+    },
+    {
+      "h": "Plan it at 10 PM",
+      "body": [
+        "The plan is the whole trick. An agent working alone for hours can't ask you what you meant. So every question gets answered before you go to bed."
+      ],
+      "steps": [
+        {
+          "title": "Open the planner",
+          "text": "Open a new chat in Claude. Upload the zip, or the files inside it. Then paste this.",
+          "copy": "Read START_HERE.md and follow it exactly. I want to plan an overnight build."
+        },
+        {
+          "title": "Answer the planner",
+          "text": "It asks one question at a time: the task, what finished looks like, which files it may touch, what it must never do, and when it should stop and wait for you. Then it writes 3 things: a master prompt, a run checklist, and an empty morning report.",
+          "why": "10 minutes of your answers saves the agent hours of guessing."
+        }
+      ]
+    },
+    {
+      "h": "Hand it to the night shift",
+      "body": [
+        "Claude Code is Claude working directly in a folder on your computer. It reads files, writes files and keeps going without you typing each step. It runs in Terminal, the plain text window on your computer. The run checklist walks you through it."
+      ],
+      "steps": [
+        {
+          "title": "Make a working copy",
+          "text": "Never run overnight work on your only copy. Open Terminal, go to the folder that holds your project, and run this with your own folder name. Your original stays untouched.",
+          "copy": "cp -R my-project my-project-overnight\ncd my-project-overnight",
+          "why": "This is your restore point. If the night goes badly, you still have last night's version."
+        },
+        {
+          "title": "Start Claude Code and paste the master prompt",
+          "text": "In the copy folder, start Claude Code. When it opens, paste the whole master prompt from the planner.",
+          "copy": "claude"
+        },
+        {
+          "title": "Watch the first 10 minutes",
+          "text": "Claude Code asks permission before it does certain things. Say yes to reading and editing files inside this folder. Say no to anything that reaches outside it. Once it's working steadily, set your computer to stay awake tonight, plug it in, and go to bed. On a Mac, running the command below in a second Terminal window keeps it awake.",
+          "copy": "caffeinate -i",
+          "why": "If it stops to ask a question at 1 AM, it waits for you. The first 10 minutes is where you catch that."
+        }
+      ]
+    },
+    {
+      "h": "Read the morning report at 7 AM",
+      "body": [
+        "Don't open the work first. Open MORNING_REPORT.md. It says how many tasks are done out of how many, what's still open, and what wasn't checked.",
+        "Then don't believe it yet. An agent that did the work is the worst one to grade it."
+      ],
+      "steps": [
+        {
+          "title": "Run the second check",
+          "text": "Open a fresh Claude Code session in the same folder, or a new chat with the files uploaded. Paste this.",
+          "copy": "You didn't do this work. Read MASTER_PROMPT.md for the task list, then check each task against the actual files in this folder.\n\nFor each task say DONE, NOT DONE or CAN'T TELL, with the evidence you saw.\n\nDon't trust MORNING_REPORT.md. Check the files yourself.\n\nEnd with: X of Y done, what's open, and what you didn't check.",
+          "why": "A fresh agent has no stake in the answer."
+        },
+        {
+          "title": "Review, then you decide",
+          "text": "Read the tasks marked DONE. Fix or rerun the ones that aren't. Nothing leaves the copy folder until you've looked at it. Publishing is your click, not the agent's."
+        },
+        {
+          "title": "Write down what you'd change",
+          "text": "Add 2 lines to the bottom of the report: what the agent got wrong, and which rule would have prevented it. Tomorrow night's plan starts with those 2 lines."
+        }
+      ]
+    }
+  ],
+  "eureka": "Plan the work before bed, and you wake up to check finished work, not to start it.",
+  "check": [
+    "You have a master prompt with a task list you could tick off.",
+    "The run happened in a copy, and your original is untouched.",
+    "You have a morning report that says X of Y done, what's open and what wasn't checked.",
+    "A fresh agent checked the work against the real files.",
+    "You reviewed it and decided what goes live."
+  ],
+  "limits": [
+    "It only builds drafts in a copy folder. It doesn't touch anything live, on purpose.",
+    "If Claude Code stops to ask a question overnight, it waits. You'll find it waiting in the morning.",
+    "Nothing here tells you if something breaks at 2 AM. There are no alerts and no nightly backup. That's the next guide.",
+    "It doesn't pick the right task for your business. That part is still yours."
+  ],
+  "paths": {
+    "diy": { "offer": "next:before-ai-touches", "line": "Read Before You Let AI Touch Your Business next. It's free, and it gives you the safety rules for the nights when something breaks." },
+    "dwy": { "offer": "sc", "line": "A Strategy Call is $750 for 60 minutes with me, and you can use it for training on advanced AI like running overnight builds in your own business." },
+    "dfy": { "offer": "seven", "line": "The Seven Star Build, from $15,000, is your whole revenue system merged and run by agents, by my own hands. It starts with the $150 Discovery Call." }
+  }
+}

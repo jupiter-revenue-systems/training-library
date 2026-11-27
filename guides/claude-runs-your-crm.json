@@ -1,0 +1,114 @@
+{
+  "slug": "claude-runs-your-crm",
+  "n": 5,
+  "promise": "Claude doing 5 safe jobs in your CRM, so leads stop slipping through and you see your pipeline every Monday.",
+  "time": "30 minutes",
+  "need": ["Claude (paid plans have connectors. Free works with a file export)", "Your CRM login", "The list of tags you use, or want to use", "2 follow-up messages you've sent before"],
+  "forTech": "For the technical: the connection is an MCP connector with scoped access. Start read-only, then allow tag writes, and keep delete, merge and send switched off. Where no connector exists, a CSV export gives Claude the same view with no write access at all.",
+  "intro": [
+    "You open your CRM and close it again. Hundreds of names. Half have no tag. Somewhere in there are people who asked about your price last week, and nobody wrote back.",
+    "A CRM is your list of leads and customers and where each one stands. It only works if someone keeps it up, and that someone is usually nobody.",
+    "In my business, every lead gets tagged at each step, and I never do it by hand. You don't need my whole setup to get that. You need Claude, 6 rules, and 5 safe first jobs."
+  ],
+  "sections": [
+    {
+      "h": "Connect it, safely",
+      "body": [
+        "Safe means 3 things here. Claude reads before it writes. Claude never deletes, merges or sends. And you have a copy of everything before it touches anything.",
+        "I don't let any agent near a live tool without a restore point first. Same rule for you."
+      ],
+      "steps": [
+        {
+          "title": "Make a restore point",
+          "text": "In your CRM, export all your contacts to a file and save it with today's date in the name. Every CRM has an export button, usually on the contacts page. Don't skip this.",
+          "why": "If anything ever goes wrong, you can put it all back."
+        },
+        {
+          "title": "Connect Claude to your CRM",
+          "text": "In Claude, open Settings, then Connectors, and look for your CRM. If it's listed, connect it and sign in. If it's not listed, or you're on the free plan, upload the export file from step 1 into a new chat. Both ways work for all 5 jobs. With the file, Claude tells you what to change and you make the change yourself."
+        },
+        {
+          "title": "Give Claude the rules",
+          "text": "Paste this as the first message, before any job.",
+          "copy": "You're my CRM assistant. These are rules you never break:\n\n1. Read first. Before any change, show me what you plan to change and wait for my yes.\n2. Never delete, archive or merge anything. You list. I decide.\n3. Never send a message. You draft. I send.\n4. Change one contact at a time, never in bulk, until I tell you a job is trusted.\n5. Keep a change log: date, contact, what changed, old value, new value.\n6. If you're unsure, stop and ask me.\n\nConfirm you understand each rule. Then tell me what you can see in my CRM and what you can't.",
+          "why": "An assistant with clear limits is one you can leave alone with your leads."
+        }
+      ]
+    },
+    {
+      "h": "Jobs 1 and 2: tag new leads, flag the hot ones",
+      "body": [
+        "A tag is a label on a contact, like where they came from or what they asked about. Tags are how you find the right people later. Start with a short list. A handful of clear tags beats 50 nobody uses."
+      ],
+      "steps": [
+        {
+          "title": "Job 1: tag new leads",
+          "text": "Paste this with your own list of tags.",
+          "copy": "Look at every contact added in the last 7 days.\n\nFor each one, suggest one tag for where they came from and one tag for what they asked about. Use only tags from this list: [paste your tags].\n\nShow me a table first: name, suggested tags, and your reason. Don't change anything until I say yes."
+        },
+        {
+          "title": "Job 2: flag the hot ones",
+          "text": "Hot means ready to talk. You decide what that looks like in your business. Edit the list in the brackets.",
+          "copy": "List the contacts most likely ready to buy. Hot means any of these: [replied in the last 7 days, asked about price, asked about a call, started to check out].\n\nFor each one, give the reason in one line and the last thing they said. Sort by most recent. If I approve, add the tag HOT to each.",
+          "why": "You stop scrolling the whole list and start with the few people who matter today."
+        }
+      ]
+    },
+    {
+      "h": "Jobs 3 and 4: draft follow-ups, find duplicates",
+      "body": [
+        "These 2 jobs are where owners worry most, so the limits are tight. Claude writes drafts and you send them. Claude lists duplicates and you merge them."
+      ],
+      "steps": [
+        {
+          "title": "Job 3: draft follow-ups",
+          "text": "Paste this with 2 messages you've really sent, so it can match how you write.",
+          "copy": "For each contact tagged HOT, draft a short follow-up in my voice. Under 60 words. Mention the last thing they said. Give one clear next step.\n\nHere are 2 messages I've sent, so you can match my voice:\n[paste them]\n\nDrafts only. Don't send anything."
+        },
+        {
+          "title": "Job 4: list duplicates",
+          "text": "The same person saved twice splits their history in 2, and then your follow-up misses half the story.",
+          "copy": "Find contacts that look like the same person: same email, same phone, or same name with a similar email.\n\nShow them in pairs, with what's different between the 2 and which one has the newer activity.\n\nDon't merge anything. I'll merge by hand.",
+          "why": "Merging can put an older copy over newer work. That decision stays with a human."
+        }
+      ]
+    },
+    {
+      "h": "Job 5: the Monday pipeline report",
+      "body": [
+        "Your pipeline is everyone between first hello and paid. This report puts it on one screen, once a week, so nothing sits forgotten."
+      ],
+      "steps": [
+        {
+          "title": "Run the report",
+          "text": "Paste this on Monday morning.",
+          "copy": "Give me my Monday pipeline report:\n\n1. New leads this week, by where they came from\n2. Hot leads who haven't heard from me in 3 days\n3. Who moved forward this week\n4. Who hasn't moved in 14 days\n5. The 3 people I should contact today, and why\n\nOne screen. Plain words. End with what you couldn't check."
+        },
+        {
+          "title": "Put it on a schedule",
+          "text": "If your Claude has scheduled tasks, set this prompt to run every Monday at 7 AM. If it doesn't, save the prompt in your notes and paste it each Monday with your coffee. Either way, it takes less time than opening the CRM and closing it again.",
+          "why": "A report you see every week is the difference between a CRM you own and one you avoid."
+        }
+      ]
+    }
+  ],
+  "eureka": "Claude reads, tags, drafts and reports. You approve, send and merge.",
+  "check": [
+    "You have an export of your contacts saved with today's date.",
+    "Claude has confirmed the 6 rules back to you.",
+    "Last week's new leads are tagged, and the hot ones are flagged.",
+    "You have follow-up drafts waiting for your yes.",
+    "You've read your first Monday pipeline report."
+  ],
+  "limits": [
+    "Claude drafts and you send. This guide doesn't set up automatic sending, on purpose.",
+    "It works on what's already in your CRM. It doesn't bring in new leads.",
+    "It doesn't answer your Instagram comments or DMs. When follow-up works, you'll have more conversations than you can answer, and that's the next guide.",
+    "It doesn't include a call application or after-call follow-up. That's the Booked Call System."
+  ],
+  "paths": {
+    "diy": { "offer": "next:dm-ready-to-buy", "line": "Read The One DM Ready to Buy next. It's free, and it shows you which conversation to answer first when there are too many." },
+    "dwy": { "offer": "sc", "line": "A Strategy Call is $750 for 60 minutes with me, and we can use it to plan how AI runs your follow-up from first hello to paid." },
+    "dfy": { "offer": "igsa", "line": "The Instagram Sales Agent, from $1,499, is an agent that answers comments and DMs in your voice, qualifies, and books." }
+  }
+}

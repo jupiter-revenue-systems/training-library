@@ -1,0 +1,123 @@
+{
+  "slug": "dm-ready-to-buy",
+  "n": 16,
+  "promise": "A 1-page job sheet that says exactly what a DM agent must do for your business, plus 10 test messages to run on any agent before you trust it with a buyer.",
+  "time": "30 minutes",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "Your last 20 or so real DM conversations to look through",
+    "Your offers and prices in front of you"
+  ],
+  "forTech": "This is a requirements spec and an acceptance test for a conversational sales agent on Instagram DMs: intent handling, qualification, calendar booking, payment handoff, CRM write-back and human escalation. It defines what to require and how to test it. It isn't an agent prompt and doesn't include one.",
+  "intro": [
+    "Somewhere in your inbox right now, there's one DM from a person who's ready to buy. It's sitting between a 'love this' and a spam message about followers. They asked a real question 2 days ago. You haven't seen it.",
+    "That's the cost of a busy inbox. It's not the hours. It's the one buyer who asked, waited, and went somewhere else.",
+    "I run an Instagram DM sales agent called ARIA. It answers my comments and DMs in my voice, sorts out who's a fit, and gets people booked. I'm not going to hand you its brain here. That's the paid part, and it's built around my offers anyway, so it wouldn't fit yours.",
+    "What I'll give you is more useful before you spend anything: the 6 jobs a DM agent has to do, and how to tell if one really does them. Read this before you buy or build one."
+  ],
+  "sections": [
+    {
+      "h": "A bot follows a script. An agent holds a conversation.",
+      "body": [
+        "A keyword bot does one thing. Someone comments a word, it sends a message. That's useful, and it's where most people should start.",
+        "But the moment someone types a real question, a bot is stuck. An agent reads what they wrote, knows your offers, and answers. That's the difference, and it's why the bar is higher. An agent is talking to your buyers as you."
+      ],
+      "steps": [
+        {
+          "title": "Look at your real DMs",
+          "text": "Scroll back through your last 20 or so DM conversations. Tally them in 4 groups: just saying hi, asking a question, asking about buying, and anything that needed you personally. Write down your own numbers.",
+          "why": "Your job sheet should fit the DMs you really get, not the ones you imagine."
+        }
+      ]
+    },
+    {
+      "h": "The 6 jobs",
+      "body": [
+        "Any DM agent worth paying for does these 6 jobs. If one is missing, you have a leak.",
+        "Job 1, answer. Fast, in your voice, with true facts about your offers. If it doesn't know, it says so. It never makes up a price or a promise.",
+        "Job 2, qualify. It finds out, in a friendly way, if this person is a fit and which offer fits them. A few questions, asked one at a time, like a person would.",
+        "Job 3, book. If your next step is a call, it gets them onto your calendar, not just 'here's a link, good luck.'",
+        "Job 4, take payment. For offers people can buy without a call, it sends them to the right checkout at the right moment. It never asks for card details in the chat.",
+        "Job 5, hand off to your CRM. Every conversation leaves a record: who they are, what they wanted, what was said, what happens next. If it isn't in your CRM, it didn't happen.",
+        "Job 6, bring you in. It knows when to stop and get you. Someone upset. A question it can't answer. A big buyer. And you need a way to pause it on any one conversation the second you step in."
+      ],
+      "steps": [
+        {
+          "title": "Write your job sheet",
+          "text": "Paste this. It interviews you and writes the sheet. The download has the blank template too.",
+          "copy": "Help me write a 1-page job sheet for an Instagram DM sales agent. This is a list of requirements I'll hand to a builder or use to judge a product. It is not a prompt for the agent, so don't write one. Interview me one question at a time, covering these 6 jobs: 1. Answer: what it must know, and what it must never say or promise. 2. Qualify: what makes someone a fit, and which offer fits which person. 3. Book: what gets booked, where, and what the buyer must know first. 4. Take payment: which offers can be bought without a call, and where checkout happens. 5. Hand off to the CRM: what gets saved and what tags get added. 6. Bring me in: the exact situations where it stops and alerts me, and how I pause it. When we're finished, write the job sheet with one section per job, each as short yes-or-no requirements.",
+          "why": "Yes-or-no requirements can be tested. 'Sounds natural' can't."
+        },
+        {
+          "title": "Write the never list",
+          "text": "Add a short list of things the agent must never do. Start with these and add your own: never invent a price, never promise a result, never offer a discount you didn't approve, never say it's you personally typing, never ask for card details in chat, never argue.",
+          "why": "Most of the damage an agent can do is on this list. Decide it before anyone builds anything."
+        }
+      ]
+    },
+    {
+      "h": "Test any agent with 10 messages",
+      "body": [
+        "Whether you're buying a product, hiring a builder or building one yourself, test it the same way. Send it the 10 kinds of message a real inbox gets, and score what comes back."
+      ],
+      "steps": [
+        {
+          "title": "Build your 10 test messages",
+          "text": "Paste this in the same chat. It uses your real DMs and your job sheet.",
+          "copy": "Using my job sheet, write 10 test DMs I can send to any DM agent to see if it does the job. Write them the way real people type, short and a bit messy. Cover: 1. a simple hello, 2. a price question, 3. a 'does this work for my kind of business' question, 4. a clear fit who's ready to buy, 5. someone who isn't a fit, 6. someone who wants to book a call, 7. a question the agent can't know the answer to, 8. someone upset or asking for a refund, 9. someone asking for a discount, 10. someone asking 'is this a bot?'. Under each, write what a good reply does and what a failing reply does, based on my job sheet.",
+          "why": "Messages 7 to 10 are where weak agents fall over. A demo will never show you those."
+        },
+        {
+          "title": "Run the test and score it",
+          "text": "Send all 10 from a second account. Use templates/agent-scorecard.md to mark each of the 6 jobs pass or fail. Then check your CRM: is each test conversation there, with the right tag?",
+          "why": "Don't take 'yes, it does that' from anyone. Watch it happen."
+        },
+        {
+          "title": "Ask the 5 questions",
+          "text": "Before you pay anyone, ask: Who owns the accounts it runs on? Where does it get the facts about my offers, and how do I change them? What does it do when it doesn't know? How do I pause it on one conversation? Where do I see every conversation it had?",
+          "why": "Clear answers mean a real system. Vague answers mean a demo."
+        }
+      ]
+    },
+    {
+      "h": "Decide: buy, build or wait",
+      "body": [
+        "Now you can make a calm choice. If most of your DMs are hellos and keyword requests, a keyword flow is enough for now. If you're missing real buying questions every week, an agent is worth it."
+      ],
+      "steps": [
+        {
+          "title": "Count what you're missing",
+          "text": "From your tally, write down how many DMs in the last 30 days asked about buying, and how many you answered within an hour. Then write what one sale of your main offer is worth. That's your own math, and it tells you how much this matters."
+        }
+      ]
+    }
+  ],
+  "eureka": "A DM agent has 6 jobs: answer, qualify, book, take payment, hand off to your CRM, and know when to bring you in. Miss one and buyers leak out.",
+  "check": [
+    "You tallied your last 20 or so real DMs in 4 groups.",
+    "You have a 1-page job sheet with yes-or-no requirements for all 6 jobs.",
+    "You have a never list.",
+    "You have 10 test messages with what a good reply looks like for each.",
+    "You know if you need an agent now, or a keyword flow is enough."
+  ],
+  "limits": [
+    "This is the job sheet and the test. It isn't an agent, and it doesn't include the prompts or brain behind mine.",
+    "It doesn't connect your calendar, checkout or CRM. Those connections are most of a real build.",
+    "A job sheet doesn't make an agent sound like you. That takes your real conversations and tuning over time.",
+    "I can't tell you what an agent will earn. Your own DM count and offer price tell you that."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:dms-not-a-bot",
+      "line": "Not ready for an agent yet? Use the free skill to write your scripted DMs in your own voice first."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Spend 60 minutes with me on your job sheet, your offers and what your DM agent should say yes and no to."
+    },
+    "dfy": {
+      "offer": "igsa",
+      "line": "The Instagram Sales Agent is set up for your offers: it answers comments and DMs in your voice, qualifies and books."
+    }
+  }
+}

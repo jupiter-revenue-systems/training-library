@@ -1,0 +1,130 @@
+{
+  "slug": "dms-not-a-bot",
+  "n": 17,
+  "promise": "A ready DM script for your next reel, in your voice: the opener, the follow ask, the link message, the public replies and buttons that fit.",
+  "time": "20 minutes",
+  "need": [
+    "Claude (free or paid). The prompts also work in ChatGPT without the skill",
+    "5 to 10 real messages you've typed to friends or clients",
+    "The thing you're giving away or selling in your next reel",
+    "A DM tool such as ManyChat to load the script into"
+  ],
+  "forTech": "This is a style-transfer skill. It builds a small voice profile from your own messages (length, openers, punctuation, words you use and avoid), then writes a comment-to-DM sequence against hard limits: under 25 words per message and 20 characters per button. It ships as a SKILL.md for Claude.ai, Cowork or Claude Code.",
+  "intro": [
+    "You comment a word on someone's reel. 2 seconds later a DM arrives: 'Hey there. Thanks so much for your interest. Click the button below to access your exclusive free resource.'",
+    "You know right away that nobody wrote that to you. It feels like a form. You might still tap the button, but the warm feeling you had from the reel is gone.",
+    "Now look at your own automated DMs. Do they sound like that?",
+    "Mine don't, because I write them the way I text. Short. One thought. No cheerleading. And every button says what you get. This skill does the same for you. It reads how you really type, then writes your DMs that way."
+  ],
+  "sections": [
+    {
+      "h": "Why automated DMs sound like a robot",
+      "body": [
+        "3 things give a bot away. The message is too long. It talks about the process ('click below to access') and not about you. And the button says something empty like 'Click here' or 'Get access'.",
+        "A person texting a friend does the opposite. Few words. One thing at a time. And they say what you're getting. So the script has 3 hard rules: every message under 25 words, every message sells the result, and every button names the reward in 20 characters or less."
+      ],
+      "steps": [
+        {
+          "title": "Add the skill",
+          "text": "Download the zip and follow INSTALL.md for Claude.ai, Cowork or Claude Code. No Claude? Open SKILL.md and paste its text at the start of a ChatGPT chat.",
+          "why": "A skill is a saved set of instructions. You'll use it again for every reel, so save it once."
+        },
+        {
+          "title": "Collect how you really type",
+          "text": "Copy 5 to 10 real messages you've sent. Texts to a friend, replies to clients, voice notes you've typed out. Not posts. Not emails. The casual stuff.",
+          "why": "Your captions are you performing. Your texts are you talking. DMs should sound like the second one."
+        }
+      ]
+    },
+    {
+      "h": "Build your script",
+      "body": [
+        "Hand over your messages and tell it what the reel is about. It asks a few questions, one at a time, then writes the full script."
+      ],
+      "steps": [
+        {
+          "title": "Run it",
+          "text": "Start a new chat and paste this with your messages under it.",
+          "copy": "Use the dm-voice-script skill. I want a comment-to-DM script for my next reel, in my voice. Below are real messages I've typed, so you can hear how I talk. Read them first and tell me in 5 short lines what you notice about my voice. Then ask me your questions one at a time. Here are my messages:",
+          "why": "Asking it to describe your voice first lets you correct it before it writes anything."
+        },
+        {
+          "title": "Correct the voice",
+          "text": "Read the 5 lines. If something's off, say so plainly. 'I never say hey there.' 'I don't use emojis.' 'I'm drier than that.' Give it 1 or 2 words you'd never use.",
+          "why": "2 minutes here saves you from rewriting every message later."
+        },
+        {
+          "title": "Read every message out loud",
+          "text": "When the script arrives, read each DM out loud as if you're saying it to one person. If you trip on a word or wouldn't say it, tell the skill which line and why.",
+          "copy": "Line [number] doesn't sound like me. I'd never say '[the words]'. Rewrite just that line 3 ways, each under 25 words, closer to how I talked in my sample messages.",
+          "why": "Your ear catches what your eye lets through."
+        }
+      ]
+    },
+    {
+      "h": "Fix the buttons",
+      "body": [
+        "Buttons do more work than the messages. A button is the thing they tap, so it has to be a promise. 'Send me the guide' tells me what happens. 'Click here' tells me nothing.",
+        "There's also a hard limit. Buttons in Instagram DMs get cut off past 20 characters. A button that gets cut looks broken."
+      ],
+      "steps": [
+        {
+          "title": "Count the characters",
+          "text": "The skill counts for you and shows the number next to each button. Check 2 or 3 yourself, spaces included.",
+          "copy": "List every button in the script with its character count, spaces included. Flag any over 20. For each button, give me 2 other options that are first person and name the reward.",
+          "why": "AI can miscount. A quick check by hand keeps a cut-off button out of your flow."
+        }
+      ]
+    },
+    {
+      "h": "Load it and test it",
+      "body": [
+        "A script in a chat window sells nothing. Put it where it runs."
+      ],
+      "steps": [
+        {
+          "title": "Load it into your DM tool",
+          "text": "In ManyChat or your DM tool, make an automation that starts when someone comments your keyword. Paste in the public replies, the opener, the follow ask and the link message, in that order."
+        },
+        {
+          "title": "Trigger it yourself",
+          "text": "From another account, comment the keyword on your post. Read every message on a phone, the way your followers will. Tap every button. Open the link.",
+          "why": "It reads differently on a phone. And a broken link is worse than a robotic message."
+        },
+        {
+          "title": "Test 3 openers",
+          "text": "The script gives you openers A, B and C. Run all 3 if your tool can split them, and keep a note of which one gets tapped most. Bring the winner back to the skill next time.",
+          "copy": "Opener [A, B or C] got the most taps on my last reel. Here it is. Use it as the model for my voice and write the script for my next reel, which is about [topic] and gives away [reward]."
+        }
+      ]
+    }
+  ],
+  "eureka": "A DM sounds human when it's short, says one thing, and the button names what they get.",
+  "check": [
+    "The skill described your voice in 5 lines and you corrected it.",
+    "You have 3 openers, a follow ask, a link message and 3 public replies.",
+    "Every message is under 25 words and you've read each one out loud.",
+    "Every button is 20 characters or less and names the reward.",
+    "You triggered the flow from another account and tapped every button."
+  ],
+  "limits": [
+    "It writes a fixed script. It doesn't answer when someone replies with a real question.",
+    "It doesn't build the automation in your DM tool. You paste the script in.",
+    "It writes the DMs, not the thing you're sending. If you have nothing to give away yet, that's the next step.",
+    "It learns your voice from a handful of messages. It's close, not perfect, so you still read it out loud."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:build-your-freebie",
+      "line": "A script needs something to send, so make that next with the free Build Your Own Freebie pack."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Spend 60 minutes with me on your reel, your DMs and what they should lead to."
+    },
+    "dfy": {
+      "offer": "igsa",
+      "line": "The Instagram Sales Agent goes past a script: it answers comments and DMs in your voice, qualifies and books."
+    }
+  }
+}

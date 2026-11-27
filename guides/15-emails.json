@@ -1,0 +1,102 @@
+{
+  "slug": "15-emails",
+  "n": 4,
+  "promise": "15 short daily emails for one offer, written in your voice and ready to load into any email tool.",
+  "time": "30 minutes",
+  "need": ["Claude (free or paid). ChatGPT works with the paste method", "The skill download from this page", "One offer and the link you want people to click", "3 to 5 emails, posts or messages you wrote yourself"],
+  "forTech": "For the technical: this is a Claude skill, a folder with a SKILL.md file that Claude loads on its own when the task matches the description. It runs a short intake, builds a voice profile from your samples, then writes to a fixed 15 email arc.",
+  "intro": [
+    "Someone joined your list 4 months ago. They liked what you said. Since then they've heard nothing, so when they were finally ready to buy, they bought from whoever was in their inbox that week.",
+    "It's not that you have nothing to say. It's that 15 emails from a blank page feels like a month of work, so it never gets done.",
+    "My follow-up emails are short. One idea, one button. They go out Monday to Friday at 7:30 AM the reader's time. 15 of them is 3 weeks of weekdays. This skill writes all 15 in an evening, in your voice."
+  ],
+  "sections": [
+    {
+      "h": "Gather 3 things first",
+      "body": [
+        "The skill is only as good as what you feed it. Spend 5 minutes here and the rest goes fast."
+      ],
+      "steps": [
+        {
+          "title": "Collect your offer, your link and your samples",
+          "text": "Write one line on the offer: the name, the price, and what the buyer has at the end. Copy the link the button should go to. Then find 3 to 5 things you wrote yourself. Past emails are best. Captions or long text messages to a client work too.",
+          "why": "Your samples are how it learns your voice. With none, you get a stranger's voice."
+        }
+      ]
+    },
+    {
+      "h": "Add the skill",
+      "body": [
+        "A skill is a set of instructions Claude keeps on hand and uses when the job comes up. You add it once."
+      ],
+      "steps": [
+        {
+          "title": "Install it in Claude",
+          "text": "Open INSTALL.md in the download and follow the steps for the Claude you use: Claude.ai, Claude Cowork or Claude Code. It's a few clicks."
+        },
+        {
+          "title": "No skills on your plan? Paste it",
+          "text": "Open the file called SKILL.md, copy everything in it, and paste it as the first message in a new chat. This works in Claude and in ChatGPT. You get the same emails."
+        }
+      ]
+    },
+    {
+      "h": "Run it",
+      "body": [
+        "Every email follows the same rules: 60 to 90 words, one idea, one button, a subject line under 45 characters. The 15 follow an arc. They start with one quick step, move through the problem, your story and the usual doubts, and end with a clear ask."
+      ],
+      "steps": [
+        {
+          "title": "Start the run",
+          "text": "Open a new chat, paste this, and fill in the brackets.",
+          "copy": "Use the fifteen-emails skill.\n\nMy offer: [name, price, and what the buyer has at the end]\nThe button goes to: [link]\nWho's on my list: [one line]\n\nHere are things I wrote myself, so you can match my voice:\n[paste 3 to 5 samples]"
+        },
+        {
+          "title": "Answer its questions",
+          "text": "It'll ask a few short questions, one at a time: the doubts people have before buying, a true story of yours, and any real proof. Give it only what's true. It's told never to make up a number or a customer quote."
+        },
+        {
+          "title": "Read the first 3 before it writes all 15",
+          "text": "The skill stops after 3 emails and asks if they sound like you. Be picky here.",
+          "copy": "These lines don't sound like me: [paste them]. Here's how I'd say it: [your version]. Fix emails 1 to 3, tell me what you learned about my voice, then write the other 12.",
+          "why": "Fixing the voice on 3 emails is fast. Fixing it on 15 is the job you were avoiding."
+        }
+      ]
+    },
+    {
+      "h": "Load them and let them run",
+      "body": [
+        "You'll get all 15 in one document, each with a subject line, a preview line, the body and the button text."
+      ],
+      "steps": [
+        {
+          "title": "Load them into your email tool",
+          "text": "Create one automated sequence that starts when someone joins your list. Add the 15 emails in order, one per weekday, at the same time each morning. Swap {{first_name}} for your tool's own name tag."
+        },
+        {
+          "title": "Send the whole set to yourself first",
+          "text": "Add your own email to the sequence and read each one on your phone as it arrives. Check that the button goes where it should. Then turn it on for everyone.",
+          "why": "You catch a broken link once, on your own phone, and not in front of your whole list."
+        }
+      ]
+    }
+  ],
+  "eureka": "A list that hears from you every weekday, one idea and one button at a time, remembers you when it's ready to buy.",
+  "check": [
+    "You have 15 emails saved in one document.",
+    "You've read them out loud and they sound like you.",
+    "Every email has one idea and one button.",
+    "They're loaded in your email tool, and you've received the test set yourself."
+  ],
+  "limits": [
+    "It writes the emails. It doesn't send them or set up your email tool.",
+    "It covers one offer per run.",
+    "It only uses the proof you give it. No proof in, no proof out.",
+    "It gets people to click. It doesn't handle what happens when they want to talk: the call application, the confirm or cancel, and the follow-up after the call. That's the Booked Call System."
+  ],
+  "paths": {
+    "diy": { "offer": "bcs", "line": "The Booked Call System, $67, adds the call application, confirm-or-cancel and after-call follow-up, so emails turn into booked calls." },
+    "dwy": { "offer": "sc", "line": "A Strategy Call is $750 for 60 minutes with me, and we can use it to get clear on the offer these emails are selling." },
+    "dfy": { "offer": "web", "line": "The Low-Ticket Product Build, from $4,999, is your offer, page, checkout and portal built for you. It starts with the $150 Discovery Call." }
+  }
+}

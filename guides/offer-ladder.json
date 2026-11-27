@@ -1,0 +1,126 @@
+{
+  "slug": "offer-ladder",
+  "n": 24,
+  "promise": "A one-page map of your offers, low, mid and high, with the missing step marked and a price that fits it.",
+  "time": "20 minutes",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "The free zip pack from this page",
+    "A list of everything you sell, with prices",
+    "A calculator, or let Claude do the math"
+  ],
+  "forTech": "This maps your product line by price tier and delivery type (DIY, done with you, done for you), finds the largest price gap by ratio, and proposes a price at the geometric mean of the 2 offers around the gap.",
+  "intro": [
+    "Someone finishes your $40 guide and writes, 'Loved it. What's next?' The only other thing you sell is $3,000. You send the link anyway. They go quiet.",
+    "They didn't say no to you. They said no to the jump. There was no step in between, so they had nowhere to go.",
+    "An offer ladder is your offers lined up by price, from the first small yes to the biggest one. My own runs from $37 to $15,000, and at each level there's a way to do it yourself, do it with me, or have it done for you. I look at that map before I decide what to make next.",
+    "In 20 minutes, Claude will draw yours, show you the missing step and work out a price that fits it."
+  ],
+  "sections": [
+    {
+      "h": "List what you sell",
+      "body": [
+        "Start with the truth of what's for sale today. Not what you plan to make. What someone could pay for this afternoon."
+      ],
+      "steps": [
+        {
+          "title": "Write every offer and its price",
+          "text": "Open templates/offer-list.md from the pack. List each thing you sell and what it costs. Include the ones you only mention on calls. If a price changes per client, write the usual range.",
+          "why": "Most owners have never seen all their offers on one page. The gap is often clear the moment you do."
+        },
+        {
+          "title": "Mark how each one is delivered",
+          "text": "Next to each offer, write one of 3: they do it themselves, you do it with them, or you do it for them. Then write how people buy it: from a page with no call, or after talking to you.",
+          "why": "Price is one side of the map. How much of you is in it is the other."
+        }
+      ]
+    },
+    {
+      "h": "Let Claude draw the map",
+      "body": [
+        "Unzip the pack and add the folder to a new chat. Claude asks about your offers one at a time, then sorts them into 3 levels.",
+        "Low is something a stranger buys from a page without talking to you. Mid is a bigger yes, and people often want to know you first. High needs a conversation before anyone pays."
+      ],
+      "steps": [
+        {
+          "title": "Start with the pack",
+          "text": "Paste this with the pack attached.",
+          "copy": "Read START_HERE.md in this pack and follow it. I want to map my offers and find the missing step. Ask me one question at a time.",
+          "why": "The pack gives Claude the map layout and the price math, so you get the same clear page every time you run it."
+        },
+        {
+          "title": "No pack handy? Use this",
+          "text": "Fill in your offers and paste it into any chat.",
+          "copy": "Act as a calm offer strategist. Plain words.\n\nHere's everything I sell today:\n[offer name], [price], [they do it / I do it with them / I do it for them], [bought from a page / bought after talking to me]\n[add a line for each offer]\n\nDo 4 things:\n1. Sort my offers into low, mid and high. Low is bought from a page by a stranger. Mid is a bigger yes from someone who knows me. High needs a conversation first.\n2. Line them up by price. For each pair of neighbors, divide the higher price by the lower one. Show me the biggest jump.\n3. Name the missing step: the empty level, or the biggest jump. Say in one sentence what kind of offer belongs there for my buyers.\n4. Work out a price that fits: multiply the 2 prices around the gap, take the square root, then round it to a price that looks like my other prices. Show the math.\n\nDon't invent offers I didn't list, and don't quote market prices. Use only my numbers. Ask me if anything is unclear."
+        }
+      ]
+    },
+    {
+      "h": "Find the missing step",
+      "body": [
+        "There are 2 kinds of gap. Your map will show which one you have."
+      ],
+      "steps": [
+        {
+          "title": "Look for an empty level",
+          "text": "If low, mid or high has nothing in it, that's your gap. No low offer means strangers have no small way to say yes. No mid offer means happy buyers have nowhere to go. No high offer means your best buyers can't give you more.",
+          "why": "An empty low level is a common one, and it's the one that keeps a list from growing."
+        },
+        {
+          "title": "Look for the biggest jump",
+          "text": "If every level has something, look at the jumps between neighbors. A step from $50 to $100 is 2 times. A step from $100 to $3,000 is 30 times. The biggest jump is where buyers fall off."
+        }
+      ]
+    },
+    {
+      "h": "Price the missing step",
+      "body": [
+        "You don't need to guess the price. The 2 offers around the gap tell you where it sits."
+      ],
+      "steps": [
+        {
+          "title": "Find the middle price",
+          "text": "Multiply the price below the gap by the price above it, then take the square root. Say the gap is between $40 and $1,000. 40 times 1,000 is 40,000. The square root is 200. So the missing step sits near $200. Round it to a price that looks like your others.",
+          "why": "This lands on a price that's the same size of jump from both sides, so neither step feels like a leap."
+        },
+        {
+          "title": "Run the hours check",
+          "text": "Write down how many hours of your time one sale at that price can afford. If the answer is close to zero, the offer has to be something they do themselves. If it's a few hours, it can be done with you.",
+          "why": "The price tells you what kind of offer fits, before you build anything."
+        },
+        {
+          "title": "Say it in one sentence and ask 5 buyers",
+          "text": "Have Claude write the missing offer as one sentence: who it's for, what they get, the price. Send that sentence to 5 past buyers and ask, 'Would this have helped you?' Build it only after you hear back.",
+          "copy": "Using my map, write my missing offer as one sentence: who it's for, what they'll have when they finish, and the price. Give me 3 versions. Then write a short, friendly message I can send to 5 past buyers asking if this would have helped them. No hype."
+        }
+      ]
+    }
+  ],
+  "eureka": "Buyers don't say no to me. They say no to the jump, so I build the step in between.",
+  "check": [
+    "Every offer you sell is on one page, with its price, its level and how it's delivered.",
+    "You can point at your missing step: an empty level or the biggest jump.",
+    "You have a price for it, with the math shown, and you ran the hours check.",
+    "You have the missing offer in one sentence, ready to send to 5 past buyers."
+  ],
+  "limits": [
+    "It maps and prices the missing step. It doesn't build the offer, the page or the checkout.",
+    "The price is a starting point from your own numbers. Only real buyers confirm it.",
+    "It doesn't tell you who's buying or what to say to them.",
+    "It's as true as your list. An offer you left off can't be mapped."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "launch",
+      "line": "Jupiter Launchpad, $97, is the plan for your new offer before you spend on ads: who's buying, what to say and your first ads."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Bring your map to a Strategy Call, $750, and use the 60 minutes with me to get clear on your offers and what to make next."
+    },
+    "dfy": {
+      "offer": "web",
+      "line": "If you need that first low-price offer built, the Low-Ticket Product Build, from $4,999, is your offer, page, checkout and portal built for you. It starts with the Discovery Call."
+    }
+  }
+}

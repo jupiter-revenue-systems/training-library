@@ -1,0 +1,124 @@
+{
+  "slug": "5-hour-offer",
+  "n": 26,
+  "promise": "One small offer you can run next to your job: who it's for, what it costs, a page outline and a 5-hour weekly plan.",
+  "time": "30 minutes",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "The 5-Hour Offer zip pack from this page",
+    "Your work contract or employee handbook, to check the rule on side work",
+    "30 quiet minutes"
+  ],
+  "forTech": "The pack is a structured interview prompt (START_HERE.md) plus 4 markdown templates the model fills in from your answers. No code and no connectors.",
+  "intro": [
+    "It's Sunday night. Your job is fine. But you want income that's yours, and every video you watch says the same 2 things: quit, or start an agency. You don't want either.",
+    "I've owned businesses for 17 years. I wouldn't tell you to quit. I'd tell you to build something small that works first, next to the job, and see if people pay for it.",
+    "You already have a skill someone would pay for. You're too close to it to see it. This pack has Claude interview you until it finds that skill, then shapes it into one small offer sized to 5 hours a week."
+  ],
+  "sections": [
+    {
+      "h": "First, keep your job safe",
+      "body": [
+        "Do this before anything else. It takes a few minutes."
+      ],
+      "steps": [
+        {
+          "title": "Read the rule on side work",
+          "text": "Open your contract or handbook and search for \"outside work\", \"moonlighting\" or \"conflict of interest\". If the rule isn't clear, ask HR before you sell anything.",
+          "why": "A side offer should never put your paycheck at risk."
+        },
+        {
+          "title": "Know the 3 lines you don't cross",
+          "text": "Don't work on it during work hours. Don't use your employer's laptop, files or tools. Don't sell to your employer's customers. The pack reminds you of these too."
+        }
+      ]
+    },
+    {
+      "h": "Load the pack",
+      "body": [
+        "The zip has a file called START_HERE.md. It's written to the AI, not to you. It tells Claude or ChatGPT how to run the whole session."
+      ],
+      "steps": [
+        {
+          "title": "Download and unzip",
+          "text": "Get the zip from this page and unzip it. You'll see START_HERE.md and a templates folder with 4 files."
+        },
+        {
+          "title": "Drop it into a new chat",
+          "text": "Open a new chat in Claude or ChatGPT. Attach all the files, then send this.",
+          "copy": "Read START_HERE.md and follow it exactly. Use the 4 files in the templates folder. Interview me one question at a time."
+        }
+      ]
+    },
+    {
+      "h": "Find the skill, shape the offer",
+      "body": [
+        "Now you just answer questions. The AI does the sorting."
+      ],
+      "steps": [
+        {
+          "title": "Answer the interview honestly",
+          "text": "It asks what people already come to you for, at work and outside it. Short answers are fine. Say the boring things too. The boring things are often what sells."
+        },
+        {
+          "title": "Pick 1 of 3 ideas",
+          "text": "It gives you 3 small offer ideas. Pick the one you could deliver this month with no new training.",
+          "why": "The best first offer is the one you can already do."
+        },
+        {
+          "title": "Fill in the one-pager",
+          "text": "One person, one problem, one result, one price. You set the price. The AI won't invent one for you."
+        }
+      ]
+    },
+    {
+      "h": "Your page outline and your 5-hour week",
+      "body": [
+        "You finish with 2 more files: an outline for a simple page, and a weekly plan built around the hours you really have."
+      ],
+      "steps": [
+        {
+          "title": "Tell it your real hours",
+          "text": "Say which 5 hours are truly free each week. Tuesday night and Saturday morning is a real answer. \"Whenever I can\" isn't."
+        },
+        {
+          "title": "Stress test the offer",
+          "text": "Before you show anyone, have the AI play a careful buyer.",
+          "copy": "Here is my offer one-pager:\n\n[paste it]\n\nPlay a careful buyer who has this exact problem. Give me the 5 biggest reasons you wouldn't buy, in plain words. For each one, tell me what I could change in the offer or say on the page to fix it. Don't be nice. Don't invent facts about my market."
+        },
+        {
+          "title": "Save your 4 files",
+          "text": "Save the skill notes, the one-pager, the page outline and the weekly plan in one folder. Name it something you'll find again."
+        }
+      ]
+    }
+  ],
+  "eureka": "I don't need a new skill or a new life. I need one small offer built from what I already know, sized to 5 hours.",
+  "check": [
+    "You checked your employer's rule on side work",
+    "You have one offer on one page: one person, one problem, one result, one price",
+    "You have a page outline you could hand to anyone",
+    "You have a weekly plan with your 5 real hours on it",
+    "You ran the stress test and changed at least one thing"
+  ],
+  "limits": [
+    "It builds the offer. It doesn't find the people who buy it.",
+    "You get a page outline, not a finished page or a checkout.",
+    "It can't tell you if your price is right. Only real buyers can.",
+    "It isn't legal or tax advice. Check your contract and your local rules."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:build-your-freebie",
+      "line": "Build Your Own Freebie is the free pack that builds a freebie and its DM, so the right people find your offer. When you're ready to spend on ads, Jupiter Launchpad ($97) is your plan first."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "A Strategy Call is 60 minutes with me to get clear on your offer before you put more hours into it."
+    },
+    "dfy": {
+      "offer": "web",
+      "line": "The Low-Ticket Product Build gets your offer, page, checkout and portal built for you, from $4,999. Builds start with the Discovery Call."
+    }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "slug": "shared-brain",
+  "n": 29,
+  "promise": "One folder that tells every AI chat who you are, what you sell and how you work, so no chat starts from zero.",
+  "time": "20 minutes",
+  "need": [
+    "Claude (free or paid). ChatGPT works too.",
+    "The Shared Brain pack (the zip on this page)",
+    "20 quiet minutes to answer questions about your own business"
+  ],
+  "forTech": "This is a persistent context folder: plain markdown files loaded as project knowledge in Claude.ai or ChatGPT, or pointed to from a CLAUDE.md file in Claude Code and Cowork. Keep it in a synced or git-tracked folder so every machine reads the same copy.",
+  "intro": [
+    "You open a new chat and type the same paragraph again. Who you are. What you sell. Who buys it. How you like things written. Then the real work starts. Tomorrow you'll type it all again.",
+    "The AI isn't broken. A new chat starts empty. It only knows what's in front of it.",
+    "I run my business solo with AI agents, and October was $90K. None of my chats start from zero. Each one reads the same folder first: the business facts, the offers, the rules, and the note the last chat left behind. I call it the shared brain.",
+    "In the next 20 minutes, Claude will interview you and build yours."
+  ],
+  "sections": [
+    {
+      "h": "What the shared brain is",
+      "body": [
+        "It's one folder with 5 small text files. READ_FIRST tells the AI what to read and in what order. BUSINESS says who you are and who you serve. OFFERS lists what you sell, the price and the one job each offer does. RULES holds how you want work done and what the AI must never do. HANDOFF is where each chat leaves a note for the next one.",
+        "Plain text on purpose. Any AI can read it, and you can read it too."
+      ],
+      "steps": [
+        {
+          "title": "Download the pack and put it somewhere safe",
+          "text": "Download the zip, open it, and move the folder to where you keep your work files. If you use more than one computer, put it in a folder that syncs, like iCloud Drive, Google Drive or Dropbox.",
+          "why": "One copy in one place. Two copies turn into two different stories about your business."
+        }
+      ]
+    },
+    {
+      "h": "Let Claude interview you",
+      "body": [
+        "You don't fill in forms. The pack has a file called START_HERE that's written to the AI. It tells Claude to ask you one question at a time and write your answers into the 5 files."
+      ],
+      "steps": [
+        {
+          "title": "Start the interview",
+          "text": "Open a new chat. In Claude.ai or ChatGPT, drag in START_HERE.md and the files from the templates folder. In Cowork or Claude Code, open the pack folder. Then paste this.",
+          "copy": "Read START_HERE.md and follow it. Interview me one question at a time. Use my own words where you can.",
+          "why": "One question at a time keeps your answers honest and short. A long form makes people guess."
+        },
+        {
+          "title": "Answer like you're talking to a friend",
+          "text": "Short answers are fine. Messy answers are fine. If you don't know something yet, don't make it up. Paste this and keep going.",
+          "copy": "I don't know that one yet. Mark it OPEN and move on.",
+          "why": "An honest blank is better than a guess the AI will repeat in every chat."
+        },
+        {
+          "title": "Have it read your brain back to you",
+          "text": "When the interview ends, check the result before you trust it.",
+          "copy": "Read my brain files back to me in plain words, one file at a time. Tell me anything that's vague, anything that's missing, and any place where two files disagree.",
+          "why": "You'll catch the wrong price or the fuzzy offer now, not in a post that's already live."
+        }
+      ]
+    },
+    {
+      "h": "Make every chat read it first",
+      "body": [
+        "A brain only helps if every chat opens it. Pick the setup that matches how you use AI. You only need one."
+      ],
+      "steps": [
+        {
+          "title": "If you use Claude.ai or ChatGPT: make a Project",
+          "text": "Create a Project named after your business. Add the 5 finished files to the Project's files. Then paste this into the Project's instructions box. Every chat you start inside that Project now reads the brain.",
+          "copy": "Before you answer anything, read READ_FIRST.md and the files it lists. Treat them as the truth about my business. If my request conflicts with RULES.md, tell me before you do it. If a fact is marked OPEN, ask me instead of guessing.",
+          "why": "Project files ride along with every chat in that Project. You never paste your intro again."
+        },
+        {
+          "title": "If you use Cowork or Claude Code: point at the folder",
+          "text": "Open the folder you work in and add a file named CLAUDE.md with the lines below. Change the folder name if yours is different.",
+          "copy": "# Read this first\n\nBefore any work, read brain/READ_FIRST.md and every file it lists.\nTreat those files as the truth about this business.\nIf a request conflicts with brain/RULES.md, stop and tell me first.\nIf a fact is marked OPEN, ask me. Don't guess.\nWhen I say \"close out\", add a dated note to brain/HANDOFF.md.",
+          "why": "For the technical: CLAUDE.md is loaded at the start of every session, so the pointer costs you nothing and never gets skipped."
+        },
+        {
+          "title": "Run the cold test",
+          "text": "Open a brand new chat in your Project or folder. Don't explain anything. Paste this. If the answers are right, your brain works.",
+          "copy": "Without asking me anything: what do I sell, who buys it, what does each offer cost, and what are 3 things you must never do in my business?",
+          "why": "This is the eureka. A chat you've never talked to already knows your business."
+        }
+      ]
+    },
+    {
+      "h": "Keep it fresh",
+      "body": [
+        "A brain goes stale if nobody feeds it. Two small habits keep it true. I do both every day."
+      ],
+      "steps": [
+        {
+          "title": "End every work chat with a handoff note",
+          "text": "Before you close a chat where real work happened, paste this. In Claude.ai or ChatGPT, copy the note it writes into your HANDOFF file in the Project.",
+          "copy": "Close out. Write a handoff note for the next chat: today's date, what we finished, what's still open, what you didn't check, and the first thing the next chat should do. Keep it under 120 words. Add it to the top of HANDOFF.md and keep the older notes.",
+          "why": "The next chat starts where this one stopped, not where you started last week."
+        },
+        {
+          "title": "Change facts in the brain, not in the chat",
+          "text": "New price, new offer, new rule? Change the file, so every chat gets it. Add the new fact with a date and keep the old line marked as old.",
+          "copy": "Update the brain. The change is: [say the change]. Show me the exact lines you'll add and which file they go in before you save. Add a date. Don't delete the old line, mark it OLD.",
+          "why": "You see every change before it lands, and you can always look back at what was true before."
+        }
+      ]
+    }
+  ],
+  "eureka": "My AI doesn't need a better memory. It needs one folder it reads first.",
+  "check": [
+    "You have one folder with 5 filled-in files, and every OPEN item is marked",
+    "A brand new chat passes the cold test without you explaining anything",
+    "Your Project or your CLAUDE.md file points at the brain",
+    "You've written one handoff note and seen the next chat pick it up"
+  ],
+  "limits": [
+    "It doesn't update itself. You or your chat has to write the handoff note and the changes.",
+    "Your chats still work alone. Each one reads the brain, but they don't pass work to each other yet.",
+    "It's a memory, not a worker. It makes every chat smarter about you, but it doesn't do the job for you.",
+    "It covers the basics of one business. It isn't the memory agent inside the HOPS Team, which keeps the notes for you."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:chats-that-talk",
+      "line": "Your chats know your business now, so the next free step is Chats That Talk to Each Other, where they start handing work to each other."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "On a Strategy Call we spend 60 minutes on your business, and you leave with a clear plan for what AI should build and run for you."
+    },
+    "dfy": {
+      "offer": "seven",
+      "line": "If you want the whole system merged and run by agents, that's the Seven Star Build, and builds start with the $150 Discovery Call."
+    }
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "slug": "build-your-freebie",
+  "n": 20,
+  "promise": "Your first freebie, with its comment keyword, its DM and the page that gives it away, drafted by Claude and checked by you.",
+  "time": "30 minutes for the first draft, an afternoon to finish",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "The free zip pack from this page",
+    "5 problems your buyers have told you about, in their own words",
+    "Any page builder you already use, for the giveaway page"
+  ],
+  "forTech": "This is a lead magnet built from one problem statement: a short guide, a comment keyword, a 3-message DM sequence and an opt-in page, all written from the same brief so they match.",
+  "intro": [
+    "You post. People like it. A few even ask, 'Do you have something I can read?' And you don't. So they scroll on, and you never hear from them again.",
+    "A freebie fixes that. It's a small, useful gift you trade for a follow or an email. Most people never finish one because they try to pour in everything they know.",
+    "Every free training in this library is built the same way. One problem. What it solves. What it doesn't. The next step. I plan each one as a single row before a word of the guide gets written, and Claude does the writing.",
+    "This pack is the starter version of that system. You bring one problem your buyers really have. Claude builds the 4 pieces around it."
+  ],
+  "sections": [
+    {
+      "h": "Pick the one problem",
+      "body": [
+        "A good freebie solves one small problem all the way. It doesn't solve the big one halfway.",
+        "The best problems come out of your buyers' mouths. Look in your DMs, your emails and your call notes."
+      ],
+      "steps": [
+        {
+          "title": "Write down 5 real problems",
+          "text": "List 5 things buyers have said to you, in their words, not yours. 'I never know what to post' beats 'content strategy'.",
+          "why": "People comment on a post when it sounds like the voice in their own head."
+        },
+        {
+          "title": "Run the one-problem test",
+          "text": "Paste your 5 problems with this prompt. Claude picks the one that fits a freebie and tells you why.",
+          "copy": "Here are 5 problems my buyers have told me about, in their words:\n1.\n2.\n3.\n4.\n5.\n\nI sell: [what you sell, and to whom].\n\nPick the ONE problem that makes the best freebie. It must pass 4 tests: a person can solve it in under 30 minutes, they can see the result the same day, it leads to what I sell without giving that away, and I can teach it from what I do every week. Show me how each of the 5 scores on the 4 tests, then name the winner in one sentence."
+        }
+      ]
+    },
+    {
+      "h": "Let Claude build the 4 pieces",
+      "body": [
+        "Now the pack does the heavy work. Unzip it, add the folder to a new chat and paste the line below. Claude interviews you, one question at a time, then writes all 4 pieces from the same answers so they match."
+      ],
+      "steps": [
+        {
+          "title": "Start the build",
+          "text": "Paste this with the pack attached. Have your winning problem ready.",
+          "copy": "Read START_HERE.md in this pack and follow it. I want to build my first freebie. My one problem is: [paste the winner]. Ask me one question at a time.",
+          "why": "One interview feeds the guide, the keyword, the DMs and the page. Nothing drifts."
+        },
+        {
+          "title": "The guide",
+          "text": "Claude writes a short guide: their problem as a scene, 3 to 5 steps, one thing to copy or fill in, and a 'you're done when' list. Read it and fix anything that isn't how you'd really do it."
+        },
+        {
+          "title": "The keyword and the DMs",
+          "text": "You get one comment keyword, a single short word that's easy to spell, plus 3 short DMs. The first offers the gift. The second asks for a follow. The third sends the link.",
+          "why": "DMs that sound like a friend texting get opened. Keep each under 25 words and sell what they'll have, not how it works."
+        },
+        {
+          "title": "The giveaway page",
+          "text": "Claude writes the words for one simple page: a headline that names the outcome, 3 lines on what's inside, one signup box and one button. Paste the words into the page builder you already use."
+        }
+      ]
+    },
+    {
+      "h": "Check it before anyone sees it",
+      "body": [
+        "I don't call anything done until it's been checked on the real thing, by someone who didn't write it. You can do a small version of that in 5 minutes."
+      ],
+      "steps": [
+        {
+          "title": "Get a second opinion from a fresh chat",
+          "text": "Open a brand new chat, so it hasn't seen your answers. Paste the guide and this prompt.",
+          "copy": "You're a busy stranger who just got this free guide from an Instagram DM. You've never heard of me. Read it once, the way a real person would on a phone.\n\nTell me:\n1. In one sentence, what problem does this solve?\n2. Could you finish it in 30 minutes? Where would you get stuck?\n3. Which sentence would make you stop reading?\n4. After finishing, what's the next thing you'd want from me?\n\nBe honest and short. Don't rewrite it. Just tell me what you see.",
+          "why": "The chat that wrote it will say it's great. A fresh one reads it the way a stranger will."
+        },
+        {
+          "title": "Look at it on your phone",
+          "text": "Open the page and the guide on your phone. Tap the button. Fill in the box with your own email. Make sure the guide really arrives."
+        }
+      ]
+    },
+    {
+      "h": "Put it out by hand first",
+      "body": [
+        "You don't need automation for your first 10 people. You need proof that anyone wants it."
+      ],
+      "steps": [
+        {
+          "title": "Post once and reply yourself",
+          "text": "Make one post or reel about the problem. End with 'Comment [KEYWORD] and I'll send it.' When someone comments, send them the 3 DMs by hand. You click publish, not the AI.",
+          "why": "Sending the first few by hand shows you what people ask. That's what your next freebie is made of."
+        }
+      ]
+    }
+  ],
+  "eureka": "A freebie solves one small problem all the way, says what it doesn't cover, and points to the next step.",
+  "check": [
+    "You can say your freebie's one problem in one sentence, in your buyer's words.",
+    "You have 4 pieces that match: the guide, the keyword, 3 DMs and the page words.",
+    "A fresh chat read the guide as a stranger, and you fixed where it got stuck.",
+    "You opened it on your phone, signed up yourself, and the guide arrived."
+  ],
+  "limits": [
+    "It builds one freebie. This library runs on a bigger system that isn't in the pack.",
+    "It writes the DMs. It doesn't set up the tool that sends them for you, so you'll send the first ones by hand.",
+    "It writes the page words. It doesn't design or publish the page.",
+    "It doesn't get your freebie seen. That takes a plan for who's buying and what to say."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "launch",
+      "line": "Jupiter Launchpad, $97, gives you the plan to get it seen: who's buying, what to say and your first ads, from one intake."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "If your freebie is done but nobody sees it, a Strategy Call, $750, is 60 minutes with me to work out why and what to change."
+    },
+    "dfy": {
+      "offer": "igsa",
+      "line": "The Instagram Sales Agent, from $1,499, answers the comments and DMs in your voice, qualifies and books, so you don't send them by hand."
+    }
+  }
+}

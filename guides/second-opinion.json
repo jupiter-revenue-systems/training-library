@@ -1,0 +1,116 @@
+{
+  "slug": "second-opinion",
+  "n": 11,
+  "promise": "A fresh agent that never saw the work compares what was asked with what shipped, and hands you a list of every miss before your client finds one.",
+  "time": "15 minutes",
+  "need": [
+    "Claude with skills turned on. No skills on your plan, or you use ChatGPT? The paste-in version in step 2 works in both",
+    "Everything the client asked for, in their words: the email, the notes, the screenshots",
+    "The finished work: a live link, or screenshots from your phone and your computer"
+  ],
+  "forTech": "An independent verification pass. A new context (a fresh chat, or a subagent in Claude Code) gets only the source asks and the shipped result, never the builder's checklist or summary, and returns a miss list with evidence for each row.",
+  "intro": [
+    "It's late. The work is finished, or close enough. You scroll the page once, it looks right, and you hit send. The next morning the client replies with 3 things you missed. All 3 were in their first email.",
+    "You didn't miss them because you're careless. You missed them because you did the work. When you've stared at something for hours, you see what you meant to make, not what's there. AI does the same thing. The chat that built it will tell you it's fine.",
+    "So before client work leaves my business, a fresh agent that never saw the job compares the request with the result. It has no pride in the work and no memory of it. It only knows what was asked and what it sees."
+  ],
+  "sections": [
+    {
+      "h": "Why fresh eyes work",
+      "body": [
+        "The reviewer gets 2 things and nothing else. What the client asked for, in the client's own words. And what shipped.",
+        "It doesn't get your checklist. It doesn't get your summary of what you did. It doesn't get the chat where the work happened. Every one of those would teach it to see what you see.",
+        "That's the whole trick, and it's why a tired owner can't do this alone. You can't unsee your own work. A fresh agent has never seen it."
+      ]
+    },
+    {
+      "h": "Set up your reviewer",
+      "body": [
+        "5 minutes, once."
+      ],
+      "steps": [
+        {
+          "title": "Add the skill to Claude",
+          "text": "Download the zip from this page. INSTALL.md shows the steps for Claude.ai, Claude Cowork and Claude Code.",
+          "why": "For the technical: in Claude Code the skill runs the review as a subagent with a clean context. In Chat and Cowork, a new chat does the same job."
+        },
+        {
+          "title": "No skills? Use the paste-in reviewer",
+          "text": "Open a brand new chat. Never the one that did the work. Paste this first. It works in ChatGPT too.",
+          "copy": "You're a fresh reviewer. You didn't do this work and you haven't seen any notes about it.\n\nI'll give you 2 things: what the client asked for, and what shipped. Compare them.\n\n1. List every ask as its own row, in the client's words. Include asks from pictures and attachments.\n2. Look at what shipped, at phone size and desktop size. For each row say MET, MISSING, WRONG, PARTLY or CAN'T TELL, and what you saw.\n3. Don't take my word for anything. If I tell you something is done, check it anyway.\n4. Don't fix anything. Don't be kind. List every miss.\n5. End with: X of Y met, the miss list, and what you couldn't check.",
+          "why": "A new chat has no memory of the work. That's what makes it useful."
+        }
+      ]
+    },
+    {
+      "h": "Run the review",
+      "body": [
+        "Do this before anything goes to a client. It takes a few minutes, and it's the check a tired owner skips."
+      ],
+      "steps": [
+        {
+          "title": "Hand over only 2 things",
+          "text": "In the new chat, give it the client's request and the finished work. Paste the request as it came. Don't tidy it.",
+          "copy": "Use the second-opinion skill. You didn't do this work and you haven't seen any notes about it.\n\nWHAT THE CLIENT ASKED FOR:\n[paste every email, note and screenshot, as it came]\n\nWHAT SHIPPED:\n[live link, or phone and desktop screenshots]\n\nCompare them and list every miss.",
+          "why": "The client's own words are the standard. Your memory of what they said isn't."
+        },
+        {
+          "title": "Don't help it",
+          "text": "You'll want to explain. Don't. No checklist, no summary, no this part is already fixed. If it asks you a question, answer only with facts about the request.",
+          "why": "Every hint you give pulls the reviewer toward seeing the work the way you do."
+        },
+        {
+          "title": "Read the miss list",
+          "text": "Each miss comes back with a label. MISSING means it isn't there. WRONG means it's there and it's not what was asked. PARTLY means some of it is right. CAN'T TELL means the reviewer couldn't see it and you need to look yourself."
+        },
+        {
+          "title": "Send the misses back to be fixed",
+          "text": "Copy the miss list into the chat that did the work, or fix them yourself.",
+          "copy": "A fresh reviewer compared the client's request with what we shipped and found these misses:\n\n[paste the miss list]\n\nAdd each miss to our list as its own row. Fix them one at a time. After each fix, check it on the live result at phone and desktop size and tell me what you saw.",
+          "why": "The reviewer finds. The builder fixes. Keeping those 2 jobs apart is what keeps the review honest."
+        }
+      ]
+    },
+    {
+      "h": "Make it a habit",
+      "body": [
+        "You don't need this for every small task. You need it at the moments you're most likely to skip it."
+      ],
+      "steps": [
+        {
+          "title": "Use it at these 3 moments",
+          "text": "Before anything goes to a client. Any time you're tired or rushed. And after a big round of changes, when the list was long. If the misses got fixed, run the reviewer one more time in another new chat.",
+          "why": "A second fresh chat hasn't seen the first review either. It stays honest."
+        }
+      ]
+    }
+  ],
+  "eureka": "Whoever did the work is the worst one to check it. Fresh eyes that never saw it will catch what you can't.",
+  "check": [
+    "The review ran in a new chat that never saw the work",
+    "The reviewer got only 2 things: the client's request and what shipped",
+    "You got back X of Y met, a miss list with labels, and what it couldn't check",
+    "Every miss went back as its own row and was fixed and checked",
+    "You know the 3 moments you'll use it"
+  ],
+  "limits": [
+    "It finds misses. It doesn't fix them, and it doesn't judge taste.",
+    "It's only as good as what you hand it. If an ask lives in a call you never wrote down, the reviewer can't check it.",
+    "It reviews one job at a time. It doesn't gather feedback that's spread across emails, PDFs and videos into one list. That's Every Revision, One List.",
+    "It can only review what it can see. Pages behind a login need your screenshots."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:every-revision",
+      "line": "Do it yourself: if revisions still pile up across clients, Every Revision, One List turns feedback from every place into one list. It's free."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "With me: on a $750 Strategy Call we use 60 minutes to set up how work gets built, reviewed and sent in your business, so you're not the last check."
+    },
+    "dfy": {
+      "offer": "disc",
+      "line": "Done for you: if you'd like a site, portal or product built for you with this review built in, start with the $150 Discovery Call."
+    }
+  }
+}

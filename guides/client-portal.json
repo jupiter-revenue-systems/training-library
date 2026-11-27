@@ -1,0 +1,127 @@
+{
+  "slug": "client-portal",
+  "n": 13,
+  "promise": "A live progress page for one client that shows where things are, what's next, what you need from them and their files, plus a quick way to keep it current.",
+  "time": "30 minutes",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "One client project that's running right now",
+    "A doc tool that can share a link (Google Docs, Notion, anything you already use)"
+  ],
+  "forTech": "This is a single source of truth per client: one shared, view-only page with a fixed 5-block layout, rewritten from your raw work log by a prompt. A real portal adds login, per-client data and automatic updates. This starter gives you the layout and the habit first.",
+  "intro": [
+    "It's 4 PM. You're deep in the work. An email lands: 'Hey, just checking in. Where are we at?'",
+    "Nothing is wrong. The project is on time. But the client can't see that, so they ask. You stop, write 3 paragraphs, and lose the thread you were holding. Next week it happens again.",
+    "My clients get a portal. When they want to know where things are, they open it and look. Their progress, their next steps and their files are all on one page, and it changes as the work moves. They don't have to ask, and I don't have to write updates.",
+    "You don't need my portal to get most of that calm. You need one page per client and one habit. That's what you'll set up here."
+  ],
+  "sections": [
+    {
+      "h": "Why clients chase you",
+      "body": [
+        "A client who asks 'where are we at?' isn't being difficult. They paid, and now they can't see anything. Silence feels like nothing is happening.",
+        "A progress page fixes that because it answers before they ask. It only has to answer 4 questions: where are we, what's next, what do you need from me, and where are my files."
+      ],
+      "steps": [
+        {
+          "title": "Pick one client",
+          "text": "Choose one project that's running now. Don't build this for everyone yet. One page, one client, this week.",
+          "why": "You'll learn what your clients really look at before you copy it 10 times."
+        },
+        {
+          "title": "Dump your notes",
+          "text": "In a blank note, write what's done, what you're on now, what's coming, and what you're waiting on from them. Messy is fine. Add links to any files they should have."
+        }
+      ]
+    },
+    {
+      "h": "Build the page",
+      "body": [
+        "The page has 5 blocks, always in the same order. Clients learn where to look, and you never wonder what to write."
+      ],
+      "steps": [
+        {
+          "title": "Make the first version",
+          "text": "Open the download, drag the folder into Claude or ChatGPT, and paste this with your notes under it.",
+          "copy": "Build a client progress page from my notes using templates/progress-page.md. Keep the 5 blocks in this order: Where we are (one sentence and the current stage), Done so far, What's next (with a day if I gave one), What I need from you, Your files. Write it to the client, in plain words they'd use, no tool names or jargon unless they already use them. Short lines. Never promise a date I didn't give you. If my notes don't cover a block, ask me one question at a time until they do. Here are my notes:",
+          "why": "The client reads this on a phone, between other things. Short lines in a fixed order make that possible."
+        },
+        {
+          "title": "Name your stages",
+          "text": "Give the project 4 to 6 stages in plain words, like Kickoff, Draft, Review, Final, Launch. Put them at the top and mark the one you're in.",
+          "copy": "Look at how I deliver this kind of project, from my notes above. Suggest 4 to 6 stage names a client would understand with no explanation. One or 2 words each. Then show them as one line with the current stage marked, like this: Kickoff > Draft > [Review] > Final > Launch.",
+          "why": "A stage answers 'where are we at?' in one glance."
+        },
+        {
+          "title": "Put it where they can open it",
+          "text": "Paste the page into a doc. Share it view-only with the client. Check the link on your phone, signed out, so you see what they see."
+        }
+      ]
+    },
+    {
+      "h": "Keep it alive in a few minutes",
+      "body": [
+        "A progress page that's 2 weeks old is worse than no page. So the update has to be easy enough that you'll really do it.",
+        "My rule: the page changes when the work moves. Not on a schedule. When a stage changes, when something is finished, or when I need something from the client."
+      ],
+      "steps": [
+        {
+          "title": "Update from your work notes",
+          "text": "When something moves, paste the current page and a line or 2 about what changed.",
+          "copy": "Here's my client's current progress page, and below it what changed today. Update the page. Move finished things to Done so far. Rewrite Where we are in one sentence. Refresh What's next and What I need from you. Change the date at the top to today. Keep the same 5 blocks and the same plain voice. Then give me a 2-sentence message I can send the client that says what changed and links them to the page.",
+          "why": "You write 2 rough lines. The AI does the tidy client version."
+        },
+        {
+          "title": "Check before you share",
+          "text": "Read the updated page once. Check every date and every 'done'. Only mark something done if you've looked at the finished thing yourself.",
+          "why": "A page that says done when it isn't costs more trust than no page."
+        }
+      ]
+    },
+    {
+      "h": "Train the client to look first",
+      "body": [
+        "The page only works if the client opens it before they email you. That takes a little gentle repetition."
+      ],
+      "steps": [
+        {
+          "title": "Put the link everywhere",
+          "text": "Add one line under your name in every email to that client: 'Your progress page: [link]'. Say it on your next call too."
+        },
+        {
+          "title": "Answer with the page",
+          "text": "The next time they ask where things are, update the page first, then reply with one line and the link. Don't write the long version in the email.",
+          "why": "Every time the page answers, they learn to check it. That's the habit you're building."
+        }
+      ]
+    }
+  ],
+  "eureka": "Clients don't chase you because they're worried about the work. They chase you because they can't see it.",
+  "check": [
+    "One client has a page with 5 blocks: Where we are, Done so far, What's next, What I need from you, Your files.",
+    "The stages are named in plain words and the current one is marked.",
+    "You opened the link on your phone, signed out, and it worked.",
+    "You updated the page once using the update prompt.",
+    "The link is in your email sign-off for that client."
+  ],
+  "limits": [
+    "This is a shared doc, not a portal. There's no login, no brand, and you make each client's page by hand.",
+    "It doesn't update itself. If you stop pasting in what changed, it goes stale.",
+    "It doesn't handle onboarding, payments, guides or messages. It only answers 'where are we at?'",
+    "Past a handful of clients, updating pages one by one becomes its own job."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:every-revision",
+      "line": "Once clients can see progress, their feedback is the next thing to get in order, so set up the free revision list skill."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Spend 60 minutes with me and we'll map what your clients need to see and what should update on its own."
+    },
+    "dfy": {
+      "offer": "portal",
+      "line": "I build the Jupiter Portal System for your business, a real client portal with progress, next steps and files. Builds start with the Discovery Call."
+    }
+  }
+}

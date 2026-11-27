@@ -1,0 +1,130 @@
+{
+  "slug": "before-ai-touches",
+  "n": 7,
+  "promise": "6 safety rules your AI follows on every change, a restore point habit and one change log, so nothing live gets changed without a way back.",
+  "time": "25 minutes",
+  "need": [
+    "Claude (free or paid). The prompts work in ChatGPT too",
+    "One live thing you'd like AI to help with: your site, your CRM or one automation",
+    "A place to keep one notes file (Google Docs, Notion or a plain text file)"
+  ],
+  "forTech": "This is a pre-change snapshot (version history, duplicate, export or a git commit), an append-only change log, a one-item scope rule and a human approval gate on publish. It ships as a Claude skill (a SKILL.md file) that loads before any write action.",
+  "intro": [
+    "You've got a site that takes orders. A CRM full of real people. Maybe a few automations that took months to get right. Then someone says, let AI run it, and your stomach drops. One wrong move and the thing that pays your bills is gone.",
+    "That fear is smart. It's also solvable. I've owned businesses for 17 years, and today agents work on my live site, my CRM and my automations every day. October was a $90K month with one person in the business. Me.",
+    "It works because every agent follows the same 6 rules before it touches anything. They're boring, and that's the point. In the next 25 minutes you'll have the rules, a change log, and a skill that makes Claude follow them without you asking."
+  ],
+  "sections": [
+    {
+      "h": "The 6 rules my agents never break",
+      "body": [
+        "Rule 1. Restore point first. Before any change, save a copy of the thing exactly as it is right now. If the change goes wrong, you go back to that copy.",
+        "Rule 2. One thing at a time. No bulk deletes, no bulk archives, no bulk turn-offs. The agent changes one named item, checks it, then moves to the next.",
+        "Rule 3. Never an older copy over newer work. If two versions exist, the agent stops and asks which one is newest before it saves anything.",
+        "Rule 4. Every change goes in one log. The date, what changed, and where the restore point is. One file, newest line at the bottom.",
+        "Rule 5. Test in a copy first. Anything bigger than a small edit gets tried on a duplicate, not on the real thing.",
+        "Rule 6. You click publish. The agent gets everything ready. A human makes it live.",
+        "Not one of these needs code. They're habits. The skill is there so the AI never skips one on a busy day."
+      ]
+    },
+    {
+      "h": "Set up your safety net",
+      "body": [
+        "This part takes about 10 minutes, and you only do it once."
+      ],
+      "steps": [
+        {
+          "title": "Start your change log",
+          "text": "Make one file and name it Change Log. Paste this at the top. Every change from now on gets one line, newest at the bottom.",
+          "copy": "CHANGE LOG\nOne line per change. Newest at the bottom. Never erase a line.\n\nDate | What changed | Where (site, CRM, automation) | Restore point (where the saved copy is) | Checked live? | Who clicked publish\n\nRULES WE ADDED\n(Add a new rule here after any scare.)",
+          "why": "When something looks wrong next week, this file tells you what changed and how to go back."
+        },
+        {
+          "title": "Find your restore button",
+          "text": "Every tool has a way to save a copy: version history, duplicate, or export. Find yours before you need it. Ask Claude, and fill in the two blanks.",
+          "copy": "I use [tool name]. I want to change [one thing, like my homepage or one automation].\n\nIn plain steps, tell me:\n1. How do I save a copy of it as it is right now, before any change?\n2. How do I go back to that copy if the change goes wrong?\n\nTell me which buttons to click. If you're not sure how my tool does this, say so and tell me how to check. Don't guess.",
+          "why": "A restore point you've never tested is a hope. One you've found and tried is a plan."
+        },
+        {
+          "title": "Give Claude the rules",
+          "text": "Download the zip from this page and add the safe-changes skill to Claude. INSTALL.md shows how. No skills on your plan, or you use ChatGPT? Paste this at the start of any chat where AI will change something.",
+          "copy": "Follow these 6 rules for everything in this chat. If a rule and my request ever disagree, stop and ask me.\n\n1. Restore point first. Before any change, we save a copy of the thing as it is now. Tell me where it's saved.\n2. One thing at a time. Never delete, archive or turn off things in bulk. One named item, then check, then the next.\n3. Never put an older copy over newer work. If you see two versions, stop and ask me which is newest.\n4. Log every change in my change log: date, what changed, where the restore point is.\n5. Test in a copy first for anything bigger than a small edit.\n6. I click publish. You get it ready and tell me it's ready. You never make it live.\n\nBefore every change, show me your plan and wait for my OK.",
+          "why": "For the technical: the skill's description tells Claude to load it before any write, delete, archive or publish action, so you don't have to remember."
+        }
+      ]
+    },
+    {
+      "h": "Make your first safe change",
+      "body": [
+        "Now use it once, on something small. A typo, one headline, one tag on one contact. Small on purpose. You're practicing the steps, not the change."
+      ],
+      "steps": [
+        {
+          "title": "Ask for the plan before the change",
+          "text": "Tell Claude what you want, then send this. Read the plan. If you don't understand a line, ask before you say OK.",
+          "copy": "Before you change anything, give me a short plan:\n1. Exactly what you'll change, in plain words.\n2. The one item it touches, by name.\n3. How we make the restore point, and where it'll be saved.\n4. How we'll check it worked on the live result.\n5. How we undo it.\n\nThen wait for my OK.",
+          "why": "The changes that hurt are the ones nobody looked at first. The plan takes a minute to read."
+        },
+        {
+          "title": "Make the restore point and log it",
+          "text": "Save the copy the way you found in the last section. Then tell Claude where it is.",
+          "copy": "Restore point is made. It's saved here: [where].\n\nAdd one line to my change log with today's date, what we're changing and where the restore point is. Show me the line. Then make the change. Only that one item.",
+          "why": "Log first, change second. If the chat ends halfway, the log still knows."
+        },
+        {
+          "title": "Check it live, then click publish yourself",
+          "text": "Look at the change in preview, on your phone and on your computer. If it's right, you click publish. Then mark the log line as checked.",
+          "why": "The human click is the last gate. An agent can be wrong and still be harmless if it can't make things live."
+        }
+      ]
+    },
+    {
+      "h": "When something goes wrong",
+      "body": [
+        "It will, one day. With AI or with people. What matters is that the bad day stays small."
+      ],
+      "steps": [
+        {
+          "title": "Stop, then go back",
+          "text": "Don't let anyone, human or AI, try a fast fix on top of a problem. Send this first.",
+          "copy": "Stop. Don't change anything else.\n\nSomething looks wrong: [what you see].\n\nRead my change log. Tell me the last change that was made and where its restore point is. Then give me the steps to go back to it, one at a time.\n\nDon't delete anything. Don't save an older copy over anything newer without showing me both first.",
+          "why": "A fix on top of a fix is how one small mistake turns into a lost week."
+        },
+        {
+          "title": "Turn the scare into a rule",
+          "text": "After you're back to safe, add one line to the bottom of your change log, under Rules We Added.",
+          "copy": "We just had a problem and went back to the restore point. Write one new rule, in plain words, so this exact thing can't happen again. Keep it to one sentence. I'll add it to my change log under Rules We Added.",
+          "why": "This is how my 6 rules got written. Each one is there because of a real day."
+        }
+      ]
+    }
+  ],
+  "eureka": "AI isn't safe because it's smart. It's safe because there's always a way back.",
+  "check": [
+    "You have one change log with at least one real line in it",
+    "You know where the restore button is in your main tool, and you've tried it once",
+    "Claude shows you a plan and waits for your OK before it changes anything",
+    "You made one small change with a restore point first, and you clicked publish yourself",
+    "You know the exact message to send on a bad day"
+  ],
+  "limits": [
+    "This covers one agent making one change at a time while you're there. It doesn't cover agents that work overnight without you.",
+    "It doesn't make backups for you. Restore points here are made by hand, one change at a time. A nightly backup is its own free guide.",
+    "Claude only follows the rules in chats where the skill or the pasted rules are loaded.",
+    "These are the starter rules. My full setup adds a guardian agent, a checker agent and rules written tool by tool. That's part of a Seven Star Build, not this guide."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:nightly-backup",
+      "line": "Do it yourself: add The Backup You'll Never Think About next, so a restore point gets made every night without you."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "With me: on a $750 Strategy Call we spend 60 minutes on which jobs in your business are safe to hand to agents first, and in what order."
+    },
+    "dfy": {
+      "offer": "seven",
+      "line": "Done for you: if you're not ready to hand over the big stuff yourself, a Seven Star Build merges your whole revenue system and I set up the safety rules by hand. It starts with the $150 Discovery Call."
+    }
+  }
+}

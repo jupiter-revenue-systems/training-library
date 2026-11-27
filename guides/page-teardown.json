@@ -1,0 +1,124 @@
+{
+  "slug": "page-teardown",
+  "n": 23,
+  "promise": "A graded teardown of your sales page and your top 5 changes, in order, so you know why visitors leave without buying.",
+  "time": "20 minutes",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "The free zip pack from this page",
+    "Your sales page link",
+    "Phone screenshots of the page, top to bottom, in case your AI can't open links"
+  ],
+  "forTech": "This is a structured conversion review: Claude reads the page in scroll order against a 6-part grading sheet (promise, proof, offer, price placement, call to action, unanswered objections) and ranks fixes by effect and effort.",
+  "intro": [
+    "You check your numbers. People are landing on your page. Some scroll all the way down. Then they leave, and your checkout stays quiet. You read the page again and it looks fine to you.",
+    "That's the trouble. Nobody can read their own page like a stranger. You already know what you sell, so your mind fills in every gap.",
+    "A buying psychologist is someone who studies why people buy and why they walk away. Before I change a page of my own, I have Claude read it like one. Where's the promise? Where's the proof? Where does the price sit? What's missing?",
+    "This pack gives you that same read. You'll get a grade for each part and 5 changes in order."
+  ],
+  "sections": [
+    {
+      "h": "Get your page ready to be read",
+      "body": [
+        "Claude needs to see what a visitor sees, in the order they see it. Most of your visitors are on a phone, so that's the version to grade."
+      ],
+      "steps": [
+        {
+          "title": "Grab the link and phone screenshots",
+          "text": "Copy your page link. Then open the page on your phone and take screenshots from the top to the bottom, in order. If your AI can't open links, the screenshots do the job.",
+          "why": "The order matters. A price that shows up before the proof reads very differently from one that shows up after."
+        },
+        {
+          "title": "Write 2 lines about the page",
+          "text": "Who is this page for? What's the one thing you'd like them to do? Write one line for each. If you can't, that's your first finding."
+        }
+      ]
+    },
+    {
+      "h": "Run the teardown",
+      "body": [
+        "Unzip the pack and add the folder to a new chat, along with your link or screenshots. Claude asks a few short questions, then grades the page part by part."
+      ],
+      "steps": [
+        {
+          "title": "Start with the pack",
+          "text": "Paste this with the pack attached.",
+          "copy": "Read START_HERE.md in this pack and follow it. Here's my sales page: [link, or 'see the screenshots attached, in order']. Tear it down for me. Ask me one question at a time.",
+          "why": "The pack holds the grading sheet, so Claude grades the same 6 parts every time and you can compare later."
+        },
+        {
+          "title": "No pack handy? Use this",
+          "text": "This is a shorter version of the same read.",
+          "copy": "Act as a buying psychologist, someone who studies why people buy and why they leave. Read my sales page as a stranger on a phone who has never heard of me.\n\nPage: [link, or screenshots attached in order]\nWho it's for: ___\nThe one thing I want them to do: ___\n\nGrade these 6 parts from 1 to 5 and give one sentence of proof from the page for each grade:\n1. The promise: do I know in 5 seconds what I'll get and who it's for?\n2. The proof: is there a real reason to believe it, close to the claim?\n3. The offer: is it plain what I get when I pay?\n4. The price: where does it sit, and has the page earned it by then?\n5. The ask: is there one clear button, and is it easy to find again?\n6. What's missing: which doubts does the page never answer?\n\nThen give me my top 5 changes, in order, biggest effect first. For each: what to change, where on the page, and why a buyer cares. Quote my page when you point at something. Don't rewrite the page. Don't invent facts about my business. If you can't see part of the page, say so."
+        }
+      ]
+    },
+    {
+      "h": "Read your grades like a buyer",
+      "body": [
+        "You'll get 6 grades. Don't argue with them yet. Read each one and ask, 'Would a stranger see what I see?'"
+      ],
+      "steps": [
+        {
+          "title": "Start with the first screen",
+          "text": "The promise is graded on what shows before anyone scrolls. A visitor decides to stay or go right there. If the top of your page names your product and not their outcome, that's usually change number 1.",
+          "why": "A fix at the top is seen by everyone. A fix at the bottom is seen by the few who got there."
+        },
+        {
+          "title": "Check where the proof and the price sit",
+          "text": "Look at what a visitor has seen by the time the price shows up. Have they seen a reason to believe you? Do they know what they get? If the price comes first, it feels high no matter what it is."
+        },
+        {
+          "title": "Read the missing list twice",
+          "text": "This is the list of doubts your page never answers, like who it isn't for, what happens after they pay, or how long it takes. Each one is a quiet reason to leave."
+        }
+      ]
+    },
+    {
+      "h": "Fix one thing, then read it again",
+      "body": [
+        "5 changes is the whole list. You don't do them all today. You do the first one and check it."
+      ],
+      "steps": [
+        {
+          "title": "Save the old version first",
+          "text": "Before you change a word, copy the current text of that part into a doc with today's date. That's your restore point. If the new version does worse, you can put the old one back.",
+          "why": "I never change a live page without a restore point. It's the cheapest safety there is."
+        },
+        {
+          "title": "Make change number 1 and get a fresh read",
+          "text": "Make the first change on your page and publish it yourself. Then open a brand new chat, so it hasn't seen the old page, and paste this with new screenshots.",
+          "copy": "You're a stranger on a phone who has never heard of this business. Here's the top of a sales page. In 5 seconds, tell me: what do I get, who is it for, and what am I supposed to do next? If you can't tell, say which part is unclear. Don't be kind. Be accurate.",
+          "why": "The chat that suggested the change will say it worked. A fresh one tells you what a stranger sees."
+        }
+      ]
+    }
+  ],
+  "eureka": "I can't read my own page like a stranger, so I have one read it for me and I fix what they trip on first.",
+  "check": [
+    "You have 6 grades, each with a quote from your own page behind it.",
+    "You have your top 5 changes, in order, each with where it goes and why a buyer cares.",
+    "You saved the old words before you changed anything.",
+    "You made change number 1, and a fresh chat could say what you sell in 5 seconds."
+  ],
+  "limits": [
+    "It reads the page. It can't see your visitor numbers, so it can't tell you if the wrong people are showing up.",
+    "It names the changes. It doesn't rewrite or rebuild the page for you.",
+    "It can't judge how fast the page loads or whether your checkout works.",
+    "A grade is a trained read, not a test with real buyers. Only sales prove a change worked."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "launch",
+      "line": "Jupiter Launchpad, $97, tells you who's buying and what to say, which is what you need to write the changes yourself."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Bring your teardown to a Strategy Call, $750, and we'll spend the 60 minutes on your offer and what the page should say."
+    },
+    "dfy": {
+      "offer": "web",
+      "line": "If you know what's wrong but can't rebuild it, the Low-Ticket Product Build, from $4,999, is your offer, page, checkout and portal built for you. It starts with the Discovery Call."
+    }
+  }
+}

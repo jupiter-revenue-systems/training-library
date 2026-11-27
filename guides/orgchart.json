@@ -1,0 +1,68 @@
+{
+  "types": [
+    {
+      "key": "coach",
+      "label": "Coach or consultant",
+      "jobs": [
+        {"job": "Posting content each week", "agent": "Content agent", "does": "Drafts your posts, reel scripts and captions from your ideas and your past posts.", "you": "You pick the topics, record your face and voice, and approve every post."},
+        {"job": "Writing the blog or newsletter", "agent": "Blog agent", "does": "Turns one idea or one lesson from a call into a full article draft.", "you": "You add your own stories and click publish."},
+        {"job": "Answering comments and DMs", "agent": "DM sales agent", "does": "Replies in your voice, asks a few sorting questions and sends the right link.", "you": "You step in when someone has a real question or is ready to talk."},
+        {"job": "Following up with leads", "agent": "Follow-up agent", "does": "Sends short weekday morning emails to people who asked but didn't buy yet.", "you": "You decide the offer and answer the people who write back."},
+        {"job": "Booking and confirming calls", "agent": "Booking agent", "does": "Sends the call application, confirms the time and reminds people the day before.", "you": "You show up and run the call."},
+        {"job": "Onboarding a new client", "agent": "Onboarding agent", "does": "Sends the welcome, collects the intake answers and tracks what's still missing.", "you": "You hold the first session and set the goal together."},
+        {"job": "Session notes and check-ins", "agent": "Memory agent", "does": "Keeps notes from each session and reminds you what each client said they'd do.", "you": "You do the coaching."},
+        {"job": "Answering support questions", "agent": "Support agent", "does": "Answers common questions from your own past answers and flags the rest to you.", "you": "You handle refunds, upset clients and anything new."},
+        {"job": "Updating your website", "agent": "Site edits agent", "does": "Makes the change in a copy first and shows you before and after.", "you": "You check it on your phone and click publish."},
+        {"job": "Checking the numbers", "agent": "Ads reporting agent", "does": "Puts ad spend, leads and sales into one plain weekly report.", "you": "You decide where the money goes next."}
+      ]
+    },
+    {
+      "key": "agency",
+      "label": "Agency",
+      "jobs": [
+        {"job": "Onboarding a new client", "agent": "Onboarding agent", "does": "Sends the welcome, runs intake and tracks account access as Requested, Received, Verified.", "you": "You run the kickoff and own the relationship."},
+        {"job": "Collecting client revisions", "agent": "Revisions agent", "does": "Pulls every request from every email, doc and call into one list, one row per ask.", "you": "You decide what's in scope and what comes first."},
+        {"job": "Checking work before it ships", "agent": "Checker agent", "does": "A fresh agent checks each row on the live result at phone and desktop size.", "you": "You sign off and send it to the client."},
+        {"job": "Weekly client reports", "agent": "Reporting agent", "does": "Builds each client's report from the numbers and lists what's done, open and not checked.", "you": "You add your judgment and the next recommendation."},
+        {"job": "Answering \"where are we at?\"", "agent": "Portal agent", "does": "Keeps a live progress page for each client so the answer is always there.", "you": "You handle the hard conversations."},
+        {"job": "Backups before any change", "agent": "Guardian agent", "does": "Makes a restore point before changes and backs everything up every night.", "you": "You decide if and when to restore."},
+        {"job": "Site and page edits", "agent": "Site edits agent", "does": "Makes each change in a copy first and logs it in one change log.", "you": "You review it and click publish."},
+        {"job": "Ads reporting", "agent": "Ads reporting agent", "does": "Pulls spend, leads and sales per client into one plain report.", "you": "You make the budget and creative calls."},
+        {"job": "Your own agency's content", "agent": "Content agent", "does": "Drafts posts and case notes from the work you already finished.", "you": "You approve what goes out under your name."},
+        {"job": "Team memory and handoffs", "agent": "Memory agent", "does": "Keeps one folder of client facts, rules and handoff notes that every chat reads first.", "you": "You set the rules it follows."}
+      ]
+    },
+    {
+      "key": "creator",
+      "label": "Creator",
+      "jobs": [
+        {"job": "Planning what to post", "agent": "Content agent", "does": "Turns your ideas and past winners into a simple plan for the week.", "you": "You choose what feels like you and film it."},
+        {"job": "Hooks, captions and scripts", "agent": "Script agent", "does": "Writes hook options, a short script and a caption for each post.", "you": "You say it in your own words on camera."},
+        {"job": "Turning one video into more posts", "agent": "Repurpose agent", "does": "Pulls carousels, stories and an email out of one finished video.", "you": "You pick the best ones and post them."},
+        {"job": "Sending the link when people comment", "agent": "Comment agent", "does": "Replies under the comment and sends the link by DM when someone uses your keyword.", "you": "You choose the keyword and the reward."},
+        {"job": "DM conversations with buyers", "agent": "DM sales agent", "does": "Answers in your voice, finds out what they need and points them to the right offer.", "you": "You take over real questions and anything personal."},
+        {"job": "Following up after the freebie", "agent": "Follow-up agent", "does": "Sends short weekday emails that lead from your freebie to your offer.", "you": "You write the offer and reply to the replies."},
+        {"job": "Brand deal and collab emails", "agent": "Inbox agent", "does": "Sorts the requests and drafts a reply for each one.", "you": "You pick the deals and set your price."},
+        {"job": "Product pages and freebies", "agent": "Site edits agent", "does": "Drafts the page in a copy and shows you before and after.", "you": "You check it on your phone and click publish."},
+        {"job": "Customer questions after they buy", "agent": "Support agent", "does": "Answers the common questions and flags anything new to you.", "you": "You handle refunds and upset buyers."},
+        {"job": "Tracking what made money", "agent": "Reporting agent", "does": "Puts posts, clicks and sales on one page each week.", "you": "You decide what to make more of."}
+      ]
+    },
+    {
+      "key": "job",
+      "label": "Person with a job",
+      "jobs": [
+        {"job": "Sorting your inbox", "agent": "Inbox agent", "does": "Sorts email into reply today, reply this week and just read, then drafts the replies.", "you": "You take out private details first, read each draft and hit send."},
+        {"job": "Meeting notes into tasks", "agent": "Notes agent", "does": "Turns rough notes into decisions and a task list with an owner and a date.", "you": "You confirm who owns what and send it."},
+        {"job": "The Friday report", "agent": "Report agent", "does": "Builds your weekly update from your notes: done, in progress, stuck, next.", "you": "You check the facts and add what your boss cares about."},
+        {"job": "Getting ready for meetings", "agent": "Prep agent", "does": "Reads the material you're allowed to share and gives you a one-page brief and 3 questions to ask.", "you": "You speak up in the room."},
+        {"job": "First drafts of docs and slides", "agent": "Draft agent", "does": "Turns your bullet points into a clean first draft.", "you": "You bring the thinking and make the final edit."},
+        {"job": "Spreadsheet summaries", "agent": "Data agent", "does": "Explains formulas and writes a plain summary of what the numbers say.", "you": "You check every number against the source."},
+        {"job": "Hard emails and messages", "agent": "Writing agent", "does": "Rewrites your message so it's clear, calm and short.", "you": "You decide what to say and whether to send it."},
+        {"job": "Planning your week", "agent": "Planning agent", "does": "Turns your task list and calendar into a week plan with a top 3.", "you": "You choose the priorities."},
+        {"job": "Learning a new skill", "agent": "Tutor agent", "does": "Teaches one thing a day around your goal and quizzes you so it sticks.", "you": "You show up each day and practice."},
+        {"job": "Starting a side offer", "agent": "Offer agent", "does": "Finds a skill you already have and shapes one small offer you can run next to your job.", "you": "You do the work and talk to your first buyers."}
+      ]
+    }
+  ]
+}

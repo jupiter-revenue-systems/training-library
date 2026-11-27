@@ -1,0 +1,129 @@
+{
+  "slug": "ai-org-chart",
+  "n": 21,
+  "promise": "Your own AI team on one page, with the first 3 jobs to hand off picked.",
+  "time": "15 minutes",
+  "need": [
+    "Your free portal login",
+    "An honest guess at how many hours each job takes you in a normal week",
+    "Claude or ChatGPT (free or paid) for the last 2 sections"
+  ],
+  "forTech": "This is a role map: each repeating task gets one single-purpose agent with a narrow prompt and a human approval step. The chart is the spec you write before any agent exists.",
+  "intro": [
+    "You know AI could help. So you open a chat, type something like \"help me with my business\", and get back a long list of ideas. None of them feel like yours. You close the tab.",
+    "The problem isn't you, and it isn't the AI. Nobody showed you the jobs. A business is a list of jobs that repeat every week. Once you can see the list, you can see which jobs an agent can do.",
+    "I run my business solo. September did $83K and October did $90K, with one person. I don't have staff. I have agents, and each agent has one job: content, blog, site edits, support, ads reporting, memory. An agent is just an AI helper with one job and clear rules.",
+    "This tool shows you that same picture for your business. Then this guide helps you pick where to start."
+  ],
+  "sections": [
+    {
+      "h": "Build your chart",
+      "body": [
+        "The tool is on this page. It takes a few minutes."
+      ],
+      "steps": [
+        {
+          "title": "Pick your type",
+          "text": "Choose the one closest to you: coach or consultant, agency, creator, or a person with a job. If you're 2 of them, pick the one that earns the most right now."
+        },
+        {
+          "title": "Type in your own hours",
+          "text": "Next to each job, enter how many hours it takes you in a normal week. Guess honestly. If you don't do a job at all, enter 0. That's useful to know too.",
+          "why": "The chart only means something with your numbers. I won't guess them for you."
+        },
+        {
+          "title": "Save it",
+          "text": "Your chart saves to your portal. Come back and change it when your week changes."
+        }
+      ]
+    },
+    {
+      "h": "How to read it",
+      "body": [
+        "Every row has 4 parts. Read them left to right.",
+        "The job. A plain name for work that repeats, like answering DMs or writing the Friday report.",
+        "The agent. The helper that would own that job. One agent, one job. That rule keeps the whole thing simple.",
+        "What the agent does. This is the part that's the same every time: the draft, the sorting, the reminder, the report.",
+        "What stays with you. Your face, your voice, your judgment and the final click. This column matters most. The agent does the work. You stay the boss.",
+        "Then look at your hours. The big numbers show where your week really goes. Most people find at least one surprise there."
+      ]
+    },
+    {
+      "h": "Pick your first 3 jobs",
+      "body": [
+        "Don't hand off everything at once. Pick 3. Here's how I'd choose."
+      ],
+      "steps": [
+        {
+          "title": "Mark the biggest hours",
+          "text": "Find the 3 or 4 jobs with the most hours next to them."
+        },
+        {
+          "title": "Keep the ones that repeat",
+          "text": "Of those, keep the jobs you do the same way each time. Agents are strong at the same thing again and again. They're weaker at brand new."
+        },
+        {
+          "title": "Drop anything where a bad draft hurts",
+          "text": "If a mistake could cost you a client or money, it isn't job 1. Start where a wrong draft just means you fix it and move on.",
+          "why": "Your first handoff should be safe to get wrong."
+        },
+        {
+          "title": "Let AI score it with you",
+          "text": "Copy your chart, paste it into Claude or ChatGPT with this prompt, and talk it through.",
+          "copy": "Here is my AI org chart. Next to each job is how many hours I spend on it each week.\n\n[paste your chart here]\n\nHelp me pick the first 3 jobs to hand to an AI agent. Score each job on 3 things:\n1. Hours per week (more is better)\n2. How much it repeats the same way each time (more is better)\n3. How bad it is if the first draft is wrong (less is better)\n\nShow the scores in a small table. Name the top 3. For each one, tell me in one line what the agent does and what stays with me. If you need to know more, ask me one question at a time."
+        }
+      ]
+    },
+    {
+      "h": "Hand off job 1 this week",
+      "body": [
+        "Start with one job, in one chat. No new tools and no setup.",
+        "For the technical: the job card below is a system prompt. Saved in a Claude Project or a custom GPT, it becomes a simple single-purpose agent."
+      ],
+      "steps": [
+        {
+          "title": "Write the job card",
+          "text": "A job card is one page that tells the agent what its job is, what good looks like, and where it stops and asks you.",
+          "copy": "I'm handing one job to an AI agent. The job is: [job name from my chart].\n\nInterview me, one question at a time, to write a one-page job card. Cover:\n- What starts the job\n- What the finished result looks like\n- 2 examples of my past work I should paste in\n- The rules it must never break\n- The point where it stops and asks me\n\nThen write the job card so I can paste it at the start of any new chat.",
+          "why": "An agent with a clear job card beats a smart chat with no instructions."
+        },
+        {
+          "title": "Run it on real work",
+          "text": "Open a new chat. Paste the job card, then today's real task.",
+          "copy": "Here is your job card:\n\n[paste job card]\n\nHere is today's real task:\n\n[paste the task]\n\nDo the job. Then list anything you weren't sure about and what I should check before I use it."
+        },
+        {
+          "title": "Write down the new hours",
+          "text": "After a week, open your chart and write down how many hours that job takes you now. That's your proof, in your own numbers."
+        }
+      ]
+    }
+  ],
+  "eureka": "I don't need to learn all of AI. I need to see my jobs, then give each one to an agent, one at a time.",
+  "check": [
+    "Your chart is saved in your portal with your own hours on it",
+    "You can say, for your top jobs, what the agent does and what stays with you",
+    "You picked 3 jobs to hand off, and you know which one is first",
+    "You have a job card for job 1 and you ran it on one real task"
+  ],
+  "limits": [
+    "The chart shows who does what. It doesn't build the agents.",
+    "The job card is a starter for 1 job in 1 chat. It doesn't run on its own, remember last week, or connect to your tools.",
+    "The hours are your own guess. The tool doesn't track your time.",
+    "It doesn't show how to set up a full team that shares one memory. That's the next problem."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "hops",
+      "line": "The HOPS Team is $37 and gives you 6 agents, already built, that do the work: content, blog, site, support, ads and memory."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "A Strategy Call is 60 minutes with me to turn your chart into a strategy for AI to build and run your business."
+    },
+    "dfy": {
+      "offer": "seven",
+      "line": "The Seven Star Build merges your whole revenue system and runs it with agents, built by my own hands. Builds start with the Discovery Call."
+    }
+  }
+}

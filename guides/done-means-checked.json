@@ -1,0 +1,119 @@
+{
+  "slug": "done-means-checked",
+  "n": 10,
+  "promise": "A skill that makes Claude list every request, check each one on the live result at phone and desktop size, and tell you exactly what's done, what's open and what it didn't check.",
+  "time": "15 minutes",
+  "need": [
+    "Claude with skills turned on. No skills on your plan, or you use ChatGPT? The paste-in version in step 2 works in both",
+    "One real job with a result you can look at: a page, an email, a document",
+    "A way for the AI to see the result: a browser tool, a link it can open, or screenshots from your phone and your computer"
+  ],
+  "forTech": "A requirements inventory (one row per ask), evidence taken from the rendered result at 2 viewport widths (about 390 px and 1440 px), and a fixed 3-part completion report. It's a SKILL.md, so it loads whenever a status claim is about to be made.",
+  "intro": [
+    "You ask your AI for 9 changes to a page. It answers, all done. You send the page to your client. An hour later the client writes back: the button still says the old thing, and on my phone the photo covers the headline.",
+    "The AI wasn't lying. It meant it finished typing. You meant it works on the page a customer sees. Those are 2 different things, and the gap between them is where clients lose trust in you.",
+    "I wrote this rule the day an agent told me a job was finished and it wasn't. Every agent I run follows it now. No report reaches me without 3 things: how many are done, what's open, and what wasn't checked."
+  ],
+  "sections": [
+    {
+      "h": "What done really means",
+      "body": [
+        "The rule has 3 parts, and they're simple.",
+        "A list first. Every request gets its own row, before any checking starts. If a request is hiding inside a screenshot or a voice note, it still gets a row.",
+        "Proof from the real thing. A row is done only when someone looked at the live result and saw it, at phone size and at desktop size. Writing the change doesn't count. Remembering doesn't count.",
+        "An honest report. Every report says X of Y done, what's open, and what wasn't checked. When the AI doesn't know, the answer is not checked. It never rounds up."
+      ]
+    },
+    {
+      "h": "Install it",
+      "body": [
+        "5 minutes, once."
+      ],
+      "steps": [
+        {
+          "title": "Add the skill to Claude",
+          "text": "Download the zip from this page. INSTALL.md shows the steps for Claude.ai, Claude Cowork and Claude Code.",
+          "why": "For the technical: the skill's description tells Claude to load it before it says done, finished, fixed or live."
+        },
+        {
+          "title": "No skills? Paste the rule",
+          "text": "This is the short version. Put it in your project instructions, or paste it as the first message of a chat. It works in ChatGPT too.",
+          "copy": "The done rule. Follow it for everything in this chat.\n\n1. Before you check anything, list every request as its own row. One ask per row. Include asks from pictures and attachments.\n2. A row is DONE only if you looked at the live result and saw it, at phone size and at desktop size. Having written or sent the change isn't proof.\n3. If you can't look at the live result, mark the row NOT CHECKED and tell me what you need from me to check it.\n4. Never say done, finished, fixed, live or all set unless every row is DONE.\n5. End every report with 3 parts: X of Y done. What's open. What you didn't check.\n6. When you don't know, say not checked. Never round up.",
+          "why": "The words done and finished are the problem. The rule takes them away until they're earned."
+        }
+      ]
+    },
+    {
+      "h": "Run it on one real job",
+      "body": [
+        "Pick a job you already think is finished. That's where this skill earns its keep."
+      ],
+      "steps": [
+        {
+          "title": "Hand over every ask",
+          "text": "Paste everything that was asked for: the email, the notes, the screenshots. Don't clean it up first.",
+          "copy": "Use the done-means-checked skill. Here's everything that was asked for on this job:\n\n[paste every request, note and screenshot]\n\nList every ask as its own row before you check anything. Number the rows. Show me the list and ask me if anything is missing.",
+          "why": "This is where misses start. An ask that never made the list never gets checked."
+        },
+        {
+          "title": "Check each row on the real thing",
+          "text": "Give it the live link. If it can't open links, send 2 screenshots of each page: one from your phone, one from your computer.",
+          "copy": "Now check each row on the live result: [link, or screenshots attached].\n\nCheck at phone size and at desktop size. For each row tell me DONE, OPEN or NOT CHECKED, and what you saw. If you can't see it, it's NOT CHECKED. Don't guess.",
+          "why": "A page can be right on a computer and broken on a phone. Your customers are on phones."
+        },
+        {
+          "title": "Read the 3-part report",
+          "text": "You'll get a line like: 7 of 9 done. Open: rows 4 and 8. Not checked: row 6, because the checkout page needs a login. That's a report you can act on."
+        },
+        {
+          "title": "Fix the open rows, then check only those",
+          "text": "Send the open rows back to be fixed. Then check those rows again on the live result.",
+          "copy": "Fix rows [numbers], one at a time. After each fix, check that row again on the live result at phone and desktop size, and update the list. Then give me the 3-part report again.",
+          "why": "One list from start to finish. Nothing falls off between rounds."
+        }
+      ]
+    },
+    {
+      "h": "Keep it honest",
+      "body": [
+        "After a week of this, you'll stop asking is it done. You'll ask a better question."
+      ],
+      "steps": [
+        {
+          "title": "Ask for status the right way",
+          "text": "Any time you want to know where a job stands, send this.",
+          "copy": "Status check. Answer from the list, not from memory. How many of how many are done? What's open? What didn't you check?",
+          "why": "Memory rounds up. The list doesn't."
+        }
+      ]
+    }
+  ],
+  "eureka": "Done isn't a feeling. It's a row on a list that somebody checked on the real thing.",
+  "check": [
+    "Claude lists every ask as a numbered row before it checks anything",
+    "Each row is marked DONE, OPEN or NOT CHECKED, with what it saw",
+    "The check covered phone size and desktop size",
+    "Every report ends with X of Y done, what's open, and what wasn't checked",
+    "You ran it on one real job and found out where it really stood"
+  ],
+  "limits": [
+    "The AI that did the work is still the one checking it. A fresh agent that never saw the work catches more. That's the Second Opinion Agent, a separate free skill.",
+    "It can only check what it can see. Pages behind a login, or anything it can't open, need your screenshots.",
+    "It works one job and one chat at a time. In a new chat it won't remember your business or last week's list. That's what The Shared Brain fixes.",
+    "It finds what's open. It doesn't decide if the work is good. Taste is still yours."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:shared-brain",
+      "line": "Do it yourself: checks pass, but your AI still forgets your business in every new chat. The Shared Brain is the free fix. And if you'd like agents that are already built, The HOPS Team is $37."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "With me: on a $750 Strategy Call we use 60 minutes to set up how AI builds, checks and reports in your business."
+    },
+    "dfy": {
+      "offer": "seven",
+      "line": "Done for you: in a Seven Star Build I merge your whole revenue system by hand, and every piece is checked this way before you see it. It starts with the $150 Discovery Call."
+    }
+  }
+}

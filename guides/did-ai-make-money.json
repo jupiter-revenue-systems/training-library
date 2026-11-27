@@ -1,0 +1,132 @@
+{
+  "slug": "did-ai-make-money",
+  "n": 19,
+  "promise": "A one-page Monday report, built from your own exports, that tells you if your AI setup made you money last week.",
+  "time": "25 minutes the first Monday, about 10 after that",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "The free zip pack from this page",
+    "Last week's sales export from your checkout tool",
+    "Last week's new leads from your CRM or signup form",
+    "A rough list of the jobs AI does for you"
+  ],
+  "forTech": "This is a weekly report built from CSV exports: orders grouped by source, leads grouped by source, a hand-kept hours log and your tool costs, rolled into one net number with every line marked as counted or estimated.",
+  "intro": [
+    "A friend asks, 'So is all that AI stuff working?' You say, 'I think so.' You're paying for the tools. You built the agents. But if someone asked for the number, you couldn't give one.",
+    "That's the problem. Without a number, you can't tell a setup that's earning from one that just feels busy.",
+    "I run my business solo. September was $83K and October was $90K, one person, with agents doing most of the daily work. I don't judge that from memory. I have an agent that reports on my ads, and every report it hands me says what it counted and what it couldn't check.",
+    "This guide gives you a starter version of that habit. One page, every Monday, built by Claude from files you already have."
+  ],
+  "sections": [
+    {
+      "h": "Decide what counts as AI work",
+      "body": [
+        "Before any math, you need a short list. Which jobs does AI do for you now, and how long did each one take when you did it by hand?",
+        "Only you know this. Don't look for an average online. Your own number is the only one worth trusting."
+      ],
+      "steps": [
+        {
+          "title": "List your AI jobs",
+          "text": "Open templates/hours-log.md from the pack. Write each job AI does for you in a week, like writing posts, answering DMs or drafting emails. Next to each, write how long it took you by hand and how long it takes you now.",
+          "why": "Hours saved is the first way AI makes you money. It only counts if you write it down."
+        },
+        {
+          "title": "Set 2 numbers of your own",
+          "text": "Write down what an hour of your time is worth to you, and what your AI tools cost you per week. Add up the monthly plans and divide by 4.",
+          "why": "These turn hours into dollars and keep the report honest about cost."
+        }
+      ]
+    },
+    {
+      "h": "Pull 2 exports",
+      "body": [
+        "An export is a file your tool gives you with one row per sale or per lead. Most tools have an Export or Download button on the list screen.",
+        "Before you share a file with any AI, delete the columns with customer names, emails, phone numbers and card details. The report doesn't need them."
+      ],
+      "steps": [
+        {
+          "title": "Export last week's sales",
+          "text": "In your checkout tool, filter to last Monday through Sunday and export the orders. Keep the date, the product, the amount and the source, which is where the buyer came from.",
+          "why": "Sales by source shows which door your buyers walked through."
+        },
+        {
+          "title": "Export last week's leads",
+          "text": "In your CRM or signup form, export the new contacts for the same 7 days. Keep the date and the source or tag.",
+          "why": "Leads come before sales. A source with leads and no sales tells you something too."
+        },
+        {
+          "title": "Mark your AI-run sources",
+          "text": "Look at the list of sources. Put a yes next to each one where AI did the work that brought the person in, like a DM agent or AI-written emails. Put a no next to the rest."
+        }
+      ]
+    },
+    {
+      "h": "Let Claude build the page",
+      "body": [
+        "Unzip the pack and add the folder to a new chat, along with your 2 exports. Claude asks for anything missing, one question at a time, then writes the report."
+      ],
+      "steps": [
+        {
+          "title": "Start the report",
+          "text": "Paste this with the pack and your exports attached.",
+          "copy": "Read START_HERE.md in this pack and follow it. I've attached last week's sales export and leads export. Build my Monday report. Ask me one question at a time for anything you need.",
+          "why": "The pack tells Claude how to group the rows, what to ask you and how to lay out the page."
+        },
+        {
+          "title": "No exports yet? Use this",
+          "text": "If you can't export, read the totals off your screens and paste this instead.",
+          "copy": "Act as my Monday report builder. Plain words, one page.\n\nLast week (Monday to Sunday):\nSales by source (source, number of sales, dollars): ___\nNew leads by source: ___\nSources where AI did the work: ___\nJobs AI did, hours by hand, hours now: ___\nWhat an hour of my time is worth: ___\nWhat my AI tools cost per week: ___\nWhat I changed last week: ___\n\nBuild a one-page report with 4 parts: hours saved, leads by source, sales by source, and what changed. Then give me one number, AI net for the week: dollars from AI-run sources, plus hours saved times my hourly worth, minus AI cost. Mark every line as 'counted' if it came from my tools or 'estimate' if it came from me. Don't invent any number. If something is missing, write 'not counted'."
+        }
+      ]
+    },
+    {
+      "h": "Read it, then make it a Monday habit",
+      "body": [
+        "The page has 4 parts and one number at the top. Read the number first, then read the 2 lines under it that explain it."
+      ],
+      "steps": [
+        {
+          "title": "Read your AI net",
+          "text": "AI net is dollars from AI-run sources, plus the value of your hours saved, minus what the AI cost. Each part is marked 'counted' or 'estimate'. Trust the counted parts. Tighten the estimates over time."
+        },
+        {
+          "title": "Write one change note",
+          "text": "At the bottom, write the one thing you changed last week, like a new DM opener or a new email. Next Monday you'll see what it did.",
+          "why": "A number tells you what happened. The change note tells you why."
+        },
+        {
+          "title": "Save it and compare next week",
+          "text": "Save the report with the date in its name. Next Monday, add last week's report to the chat with your new exports and paste this.",
+          "copy": "Here are this week's exports and last week's Monday report. Build this week's report the same way, then add a short 'What changed' part: what went up, what went down, and which of my change notes might explain it. If you can't tell why, say so."
+        }
+      ]
+    }
+  ],
+  "eureka": "If I can't put it on one page every Monday, I don't know if my AI is making me money. I only feel like it is.",
+  "check": [
+    "You have a list of the jobs AI does for you, with hours by hand and hours now.",
+    "Your report shows leads and sales by source, with AI-run sources marked.",
+    "There's one AI net number at the top, and every line under it says 'counted' or 'estimate'.",
+    "The report is saved with the date, and you wrote one change note for next Monday."
+  ],
+  "limits": [
+    "It reads the files you give it. It doesn't connect to your tools or run by itself on Mondays.",
+    "If your orders don't record where the buyer came from, sales by source will say 'not counted'. The report can't guess.",
+    "It tells you what happened. It doesn't fix a weak offer or a weak page.",
+    "My own reporting agent isn't in this pack. It's one of the 6 agents in The HOPS Team."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:offer-ladder",
+      "line": "If the numbers point at your offers, map them with the free Offer Ladder Map and find the missing step."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Bring 4 weeks of reports to a Strategy Call, $750, and use the 60 minutes with me to get clear on your offers and what AI should run next."
+    },
+    "dfy": {
+      "offer": "disc",
+      "line": "If you'd like the system that produces these numbers built for you, a build starts with the $150 Discovery Call."
+    }
+  }
+}

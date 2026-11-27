@@ -1,0 +1,137 @@
+{
+  "slug": "site-copied",
+  "n": 9,
+  "promise": "A copyright notice, a visible footer line, a hidden fingerprint and a simple alarm on your site, so you find out when it's copied and you can prove it was yours first.",
+  "time": "30 minutes",
+  "need": [
+    "A site where you can edit the footer and add a small piece of custom code",
+    "Claude or ChatGPT, to help you find the right menus in your site builder",
+    "For the alarm: any automation tool that can catch a signal and send you an email (n8n, Zapier, Make). Layers 1 and 2 work without it"
+  ],
+  "forTech": "A footer copyright notice, an HTML comment plus a unique canary phrase as fingerprints, and a hostname check in a small script that calls a webhook URL when the page loads on a domain that isn't on your allow list.",
+  "intro": [
+    "You spend weeks on a page. The words, the layout, the offer. Then one day a friend sends you a link and says, isn't this yours? Same headline. Same sections. Someone else's name on it.",
+    "The worst part isn't the copy. It's that you found out by luck, and you've got nothing ready to prove you were first.",
+    "You can't stop people from copying a public page. Nobody can. What you can do is find out fast and have proof ready. My own site carries the 3 layers in this guide. Yours can too, in about 30 minutes."
+  ],
+  "sections": [
+    {
+      "h": "Layer 1: the notice everyone can see",
+      "body": [
+        "Start with the plain stuff. It tells honest people the work is yours, and it helps you later if you have to ask a host to take a copy down."
+      ],
+      "steps": [
+        {
+          "title": "Add a copyright notice",
+          "text": "Put this in your site footer so it shows on every page. Use the current year and your real business name.",
+          "copy": "© 2026 Your Business Name. All rights reserved.",
+          "why": "Your work is yours the moment you make it. The notice just says so out loud, with a year and a name on it."
+        },
+        {
+          "title": "Add one footer line that names your home",
+          "text": "Right under the notice, add a line that says where the original lives. Use your own domain.",
+          "copy": "This site and its words were made by Your Business Name. The original lives at yourdomain.com.",
+          "why": "Lazy copiers take the whole page, footer and all. Now their copy tells every visitor where the real one is."
+        }
+      ]
+    },
+    {
+      "h": "Layer 2: the fingerprint only you know",
+      "body": [
+        "A fingerprint is a small mark hidden in your page that nobody else would ever write. If it shows up on another site, that page came from yours."
+      ],
+      "steps": [
+        {
+          "title": "Hide a fingerprint comment in the code",
+          "text": "Add this where your site builder lets you put custom code in the page head or footer. Make up your own ID: a few letters and numbers only you know. Visitors never see it.",
+          "copy": "<!-- origin: yourdomain.com | id: YB-7Q4X-K2 | first published: YYYY-MM-DD -->",
+          "why": "For the technical: it's an HTML comment. It rides along when someone saves or clones your page source."
+        },
+        {
+          "title": "Plant one fingerprint sentence",
+          "text": "Write one odd, specific sentence into your real page copy. Something true to you that nobody else would phrase the same way. Then, once a month, search for it with quote marks around it.",
+          "copy": "\"paste your exact fingerprint sentence here\"",
+          "why": "Quote marks tell a search engine to find those exact words in that exact order. Any result that isn't your site is a copy."
+        },
+        {
+          "title": "Save proof today",
+          "text": "Take a full-page screenshot of your site with today's date showing. Then save your page at web.archive.org using Save Page Now. Keep both in one folder named Site Proof.",
+          "why": "The archive is a dated record kept by someone who isn't you. That's what makes it strong proof you were first."
+        }
+      ]
+    },
+    {
+      "h": "Layer 3: the alarm",
+      "body": [
+        "Here's how the alarm works, in plain words. A tiny piece of code on your page asks one question every time the page loads: am I at home? It holds a short list of your own domains. If the page is running on one of them, it does nothing.",
+        "If the page is running somewhere else, it sends a small signal to an address that belongs to you. That signal carries the name of the domain it's on. Your automation tool catches the signal and emails you. So the copy reports itself."
+      ],
+      "steps": [
+        {
+          "title": "Get your alert address",
+          "text": "In your automation tool, you need a catch address that emails you when something arrives. Ask Claude to walk you through it for your tool. Keep that address private.",
+          "copy": "I use [n8n / Zapier / Make]. Walk me through making a simple automation, step by step: it starts with a webhook (a web address that catches a signal), and when a signal arrives it emails me the subject 'Site copy alert' with whatever details came in. Tell me where to copy the webhook address when it's ready.",
+          "why": "For the technical: this is a webhook trigger with an email action. The page sends a GET request with the hostname as a parameter."
+        },
+        {
+          "title": "Add the alarm to your site",
+          "text": "Paste this into your site's custom code, at the end of the page. Change yourdomain.com to your domain, and swap https://YOUR-ALERT-URL for your alert address.",
+          "copy": "<script>\n(function () {\n  // Domains where this page is allowed to live. Add your own.\n  var home = [\"yourdomain.com\", \"www.yourdomain.com\"];\n  var here = location.hostname;\n  if (home.indexOf(here) < 0 && here.indexOf(\"localhost\") < 0) {\n    // Not at home. Send the alert with the domain and page it's on.\n    new Image().src = \"https://YOUR-ALERT-URL\" +\n      \"?copied_on=\" + encodeURIComponent(here) +\n      \"&page=\" + encodeURIComponent(location.pathname);\n  }\n})();\n</script>",
+          "why": "It only sends the domain and the page path. On your own domain it stays silent."
+        },
+        {
+          "title": "Test it once",
+          "text": "Open your site builder's preview link. A preview link isn't on your home list, so the alarm should fire and you should get the email. When it works, add the preview domain to your home list so your own previews stop alerting.",
+          "why": "An alarm you've never heard ring isn't an alarm yet."
+        }
+      ]
+    },
+    {
+      "h": "The day the alarm goes off",
+      "body": [
+        "Stay calm and stay factual. Don't message the copier first. Collect proof, then go to the company that hosts their site. Hosts have a process for copied pages, and it runs on clear proof."
+      ],
+      "steps": [
+        {
+          "title": "Collect proof before anything changes",
+          "text": "Screenshot their page with the date and web address showing. Save their page at web.archive.org too. Put it all in your Site Proof folder next to your own dated proof.",
+          "why": "Copied pages get edited or pulled once the copier knows you've seen them. Save first."
+        },
+        {
+          "title": "Send a takedown request to their host",
+          "text": "The download has a short template. Claude can help you find the host and fill it in.",
+          "copy": "Someone copied my site. Mine: [your page link]. Theirs: [their page link].\n\nHelp me with 3 things:\n1. List the proof I should save right now.\n2. Show me how to find out which company hosts their site, and where that company accepts copyright complaints.\n3. Fill in my takedown request template with the facts. Keep it short, calm and factual.\n\nI'm not asking for legal advice. If something needs a lawyer, tell me.",
+          "why": "For the technical: in the US this is a DMCA takedown notice, sent to the host's abuse or copyright contact."
+        }
+      ]
+    }
+  ],
+  "eureka": "You can't stop a copy. You can make sure the copy tells on itself, and that you have the proof ready.",
+  "check": [
+    "Your footer shows a copyright notice and a line naming your domain on every page",
+    "Your fingerprint comment is in your page code, and your fingerprint sentence is in your copy",
+    "Your Site Proof folder has a dated screenshot and an archive link from today",
+    "You opened a preview link and the alert email arrived",
+    "You know where the takedown template is"
+  ],
+  "limits": [
+    "Nothing here stops someone from copying a public page. It tells you when it happens and gives you proof.",
+    "A careful copier can strip out the code and the comment. That's why there are 3 layers, and why the fingerprint sentence and dated proof matter.",
+    "It doesn't catch a copy that's been rewritten in new words, or one rebuilt from screenshots.",
+    "This isn't legal advice, and it doesn't send takedowns for you. For a serious case, talk to a lawyer."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:page-teardown",
+      "line": "Do it yourself: your site is protected, so now make it sell. Page Teardown gives you your top 5 changes."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "With me: on a $750 Strategy Call we spend 60 minutes on your offers and your page, and what to fix first."
+    },
+    "dfy": {
+      "offer": "web",
+      "line": "Done for you: a Low-Ticket Product Build gives you the offer, page, checkout and portal, built with this protection in from the start. From $4,999, and it starts with the $150 Discovery Call."
+    }
+  }
+}

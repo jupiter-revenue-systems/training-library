@@ -1,0 +1,129 @@
+{
+  "slug": "onboard-in-10",
+  "n": 12,
+  "promise": "An onboarding kit you can send to your next client in 10 minutes: one intake, one access checklist, one welcome email and one tracker.",
+  "time": "25 minutes to set up, 10 minutes per client after that",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "The list of accounts you usually need from a client",
+    "One place to keep a doc per client (Google Docs, Notion, anything you already use)"
+  ],
+  "forTech": "This is a least-privilege access pattern. The client stays the owner of every account and grants you an admin or partner role, and you track each grant in a 3-state table: Requested, Received, Verified. The templates are plain markdown, so any model or doc tool can fill them.",
+  "intro": [
+    "A new client pays you on Monday. By Friday you still can't start. You're waiting on a login. They're waiting on you to tell them which login. You've sent a pile of emails and each one asked for one more thing.",
+    "That week isn't work. It's waiting. And the client is watching it happen in their first days with you, which is when they decide if they made a good choice.",
+    "I've owned businesses for 17 years, and I onboard every client the same way now. One intake. One access checklist. One welcome email. One tracker. The client owns every account and adds me as an admin. I never hold their passwords.",
+    "You'll build your own version of that kit here. The download has my templates. Your AI fills them in for your business."
+  ],
+  "sections": [
+    {
+      "h": "The rule that makes it fast",
+      "body": [
+        "Most onboarding is slow for one reason. You ask for things one at a time, as you find out you need them.",
+        "The fix is to ask for everything once, in one message, with one place to see what's still missing. And to ask for access the safe way, so the client says yes without having to think about it."
+      ],
+      "steps": [
+        {
+          "title": "Write down what you ask every client for",
+          "text": "Open a blank note. List every question you end up asking in the first 2 weeks, and every account you end up needing. Don't tidy it. Just empty your head.",
+          "why": "You can't send one message until you know the whole list."
+        },
+        {
+          "title": "Adopt the owner rule",
+          "text": "Decide it now: the client owns every account. They add you as an admin or team member. If they don't have the account yet, they create it in their name and then add you. You never share one password.",
+          "why": "If you part ways, they keep everything and you lose nothing but a seat. Clients trust that right away."
+        }
+      ]
+    },
+    {
+      "h": "Build your intake and your checklist",
+      "body": [
+        "Now your AI turns that messy note into 2 clean documents. Open the zip, drag the whole folder into Claude or ChatGPT, and paste the prompts below."
+      ],
+      "steps": [
+        {
+          "title": "Build the intake",
+          "text": "Paste this with your messy note under it. Answer its questions one at a time.",
+          "copy": "You're helping me build a client intake form. Use templates/intake-questions.md from the files I shared as the starting point. First ask me, one question at a time: what I sell, who my clients are, and what I must know before I can start work. Then read my rough list below and build one intake with no more than 15 questions. Group them under: The business, The offer, The buyers, The brand, The goal. Every question must be answerable in 1 or 2 sentences. Cut any question I could answer myself by looking at their site. Here is my rough list:",
+          "why": "15 short questions get answered the same day. 40 questions sit in an inbox."
+        },
+        {
+          "title": "Build the access checklist",
+          "text": "Same chat. Paste this with your list of accounts.",
+          "copy": "Now build my account access checklist. Use templates/access-checklist.md as the shape. For each account I list below, write: what it's for in plain words, the role I need (the lowest one that lets me do the work), and short steps the client follows to add me. Start every account with this line: You own this account. You're adding me as a team member, not sharing your password. If you aren't sure of the exact menu names for a tool, say so and tell me to check the tool's own help page. Don't guess. Here are my accounts:",
+          "why": "Telling the AI not to guess menu names keeps you from sending a client wrong steps."
+        },
+        {
+          "title": "Check the steps yourself",
+          "text": "For each account, open the tool and click through the steps once. Fix anything that's off. Tools move their menus.",
+          "why": "You're the one the client will blame if step 3 doesn't exist."
+        }
+      ]
+    },
+    {
+      "h": "Write the welcome and set up the tracker",
+      "body": [
+        "The welcome email does one job. It tells the client exactly what to do today, in order, and what happens after. The tracker tells you both what's still open."
+      ],
+      "steps": [
+        {
+          "title": "Write the welcome email",
+          "text": "Paste this in the same chat.",
+          "copy": "Write my client welcome email using templates/welcome-email.md. Keep it under 150 words. It must say, in this order: you're in and here's what happens next, the 2 things to do today (answer the intake, add me to the accounts), how long each one takes them, when work starts once both are done, and where to send questions. Calm and warm. Contractions. No exclamation marks. Then give me 3 subject lines under 45 characters.",
+          "why": "A client who knows the next 2 steps doesn't need to email you to ask."
+        },
+        {
+          "title": "Set up the tracker",
+          "text": "Copy templates/access-tracker.md into a doc. One row per account. Each row moves through 3 states: Requested, Received, Verified. Verified means you logged in and saw that the role lets you do the work.",
+          "why": "Received isn't done. Half the time the invite went to the wrong email or the role is too low."
+        }
+      ]
+    },
+    {
+      "h": "Run it on your next client",
+      "body": [
+        "This is the 10 minutes. The kit is built once. After that, every new client gets the same 4 moves."
+      ],
+      "steps": [
+        {
+          "title": "Send it all at once",
+          "text": "Copy the tracker for this client. Remove any account they don't need. Send the welcome email with the intake and the checklist attached or linked. Mark every row Requested."
+        },
+        {
+          "title": "Verify the same day access lands",
+          "text": "When an invite arrives, accept it, log in, and try the one thing you need to do there. Then mark it Verified. If it fails, reply that day with the exact role you need.",
+          "copy": "Here's my access tracker for this client. Read it and tell me: what's still Requested, what's Received but not Verified, and write one short, friendly nudge to the client that lists only the open items, each with its 1-line reason. No guilt. Under 80 words.",
+          "why": "One nudge with a short list beats 4 separate reminders."
+        }
+      ]
+    }
+  ],
+  "eureka": "Ask for everything once, let the client own every account, and nothing counts until you've logged in and checked it.",
+  "check": [
+    "You have one intake with 15 questions or fewer.",
+    "You have one access checklist where every account names the role you need and the steps to add you.",
+    "You've clicked through the steps for each account yourself.",
+    "You have one welcome email under 150 words that names the 2 things to do today.",
+    "You have a tracker with one row per account and 3 states: Requested, Received, Verified."
+  ],
+  "limits": [
+    "This kit is documents. It doesn't send itself, chase the client or update the tracker for you.",
+    "It doesn't give the client a place to see progress once work starts. That's the next problem.",
+    "The AI can get a tool's menu names wrong. You still check each set of steps once.",
+    "It covers the first week. It doesn't cover delivery, revisions or check-ins."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:client-portal",
+      "line": "Once clients start fast, they ask where things are at, so build the progress page next with the free portal guide."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Spend 60 minutes with me and we'll shape your onboarding and delivery around how your business really works."
+    },
+    "dfy": {
+      "offer": "portal",
+      "line": "I build you a client portal with onboarding, guides and an access tracker inside it. Builds start with the Discovery Call."
+    }
+  }
+}

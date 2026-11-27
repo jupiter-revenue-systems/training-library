@@ -1,0 +1,143 @@
+{
+  "slug": "ai-team-at-work",
+  "n": 27,
+  "promise": "3 AI helpers set up for your work week: inbox triage, meeting notes into tasks, and a Friday report.",
+  "time": "25 minutes",
+  "need": [
+    "Claude or ChatGPT (free or paid). If your company has an approved AI tool, use that one",
+    "Your company's rule on AI tools, if it has one",
+    "A few real emails and one set of meeting notes to practice on"
+  ],
+  "forTech": "Each helper is a saved system prompt in its own Claude Project or custom GPT, with you as the approval step. No connectors and no inbox access: you paste in, it drafts, you send.",
+  "intro": [
+    "It's Thursday afternoon. Your inbox is full. You just left back to back meetings with a page of notes nobody will read. And your manager wants an update by Friday.",
+    "None of that is your real job. It's the work around the work, and it eats the hours you need for the thing you were hired to do.",
+    "In my business I don't do those chores myself. I have agents, and each one has one job. One answers support questions. One keeps the notes. One reports the numbers. You can borrow the same idea at a 9 to 5 with 3 helpers. A helper here is just a saved chat with one job and clear rules.",
+    "One thing first. At work, the rules matter more than the prompts. So we start with what's safe to share."
+  ],
+  "sections": [
+    {
+      "h": "What's safe to share at work",
+      "body": [
+        "Do this part first. It protects you and your job.",
+        "The never list: customer or patient details, passwords and access codes, pay and HR details, money numbers that aren't public, contracts, anything under an NDA, and private source code. None of that goes into an AI chat unless your company says that tool is approved for it."
+      ],
+      "steps": [
+        {
+          "title": "Find your company's AI rule",
+          "text": "Search your intranet or handbook for \"AI\", \"ChatGPT\" or \"acceptable use\". If your company gives you an approved AI tool, use that one. If there's no rule, ask your manager or IT before you paste any work in.",
+          "why": "Asking first makes you look careful. Getting caught later doesn't."
+        },
+        {
+          "title": "Swap names for labels",
+          "text": "Before you paste, change real names to Client A, Manager B, Project X. Put the real names back yourself at the end."
+        },
+        {
+          "title": "Start every helper with the work rules",
+          "text": "This goes at the top of each helper, before its own prompt.",
+          "copy": "Rules for this chat. I'm using you for my job.\n1. I replace real names with labels like Client A or Project X. Keep the labels as they are.\n2. If I paste something that looks like a password, an ID number, a card number or personal details about a customer, stop and tell me before you do anything else.\n3. You draft. I decide and I send. Never tell me something is sent or done.\n4. If you aren't sure about a fact, say \"not sure\". Don't guess.\nReply \"Rules set\" and wait for my next message."
+        }
+      ]
+    },
+    {
+      "h": "Helper 1: inbox triage",
+      "body": [
+        "Triage means sorting by what needs you first. This helper sorts a batch of email and drafts the replies that can't wait."
+      ],
+      "steps": [
+        {
+          "title": "Set up the inbox helper",
+          "text": "Paste the work rules, then this.",
+          "copy": "You are my inbox helper. I'll paste a batch of emails with names swapped for labels. Sort them into 3 groups:\n1. Reply today: someone is waiting on me, or there's a deadline in the next 2 days\n2. Reply this week\n3. Just read: no reply needed\n\nFor each email, give me one line: who it's from, what they want and by when.\n\nFor every email in group 1, draft a short reply in my voice: plain, friendly, no filler. If a reply needs a fact or a decision from me, put it in [brackets] and ask me.\n\nBefore we start, ask me to paste 2 emails I wrote, so you can match how I write."
+        },
+        {
+          "title": "Run it once a day",
+          "text": "Pick one time, like right after lunch. Paste, read, fix, send. You read every draft before it goes out.",
+          "why": "One set time beats checking email all day."
+        }
+      ]
+    },
+    {
+      "h": "Helper 2: meeting notes into tasks",
+      "body": [
+        "A meeting with no task list is just a conversation. This helper turns rough notes into decisions, tasks and a follow-up message.",
+        "Only paste a transcript if your company allows recording and everyone in the meeting knew about it."
+      ],
+      "steps": [
+        {
+          "title": "Set up the notes helper",
+          "text": "Paste the work rules, then this.",
+          "copy": "You are my meeting notes helper. I'll paste rough notes or a transcript from a meeting, with names swapped for labels. Give me back:\n1. Decisions: what was decided, one line each\n2. Tasks: a table with the task, the owner and the due date. If an owner or a date wasn't said, write \"not said\". Don't guess.\n3. Open questions: anything raised and not answered\n4. A follow-up message I can send to the group, under 120 words\n\nOnly use what's in the notes. If something is unclear, ask me before you write the follow-up."
+        },
+        {
+          "title": "Send the follow-up the same day",
+          "text": "Put the real names back, check the owners and dates, and send it.",
+          "why": "The person who sends the task list is the person who looks organized."
+        }
+      ]
+    },
+    {
+      "h": "Helper 3: the Friday report",
+      "body": [
+        "Most people write their weekly update from memory on Friday afternoon. That's why it's hard. This helper writes it from notes you kept all week."
+      ],
+      "steps": [
+        {
+          "title": "Keep a running note",
+          "text": "During the week, add one line to a note each time you finish something or get stuck. It takes seconds."
+        },
+        {
+          "title": "Set up the Friday helper",
+          "text": "Paste the work rules, then this. On Friday, paste your running note.",
+          "copy": "You are my Friday report helper. I'll paste my rough notes from this week. Write a weekly update for my manager with 4 parts:\n1. Done: what I finished and why it matters\n2. In progress: what's moving and when it lands\n3. Stuck: what's blocked and what I need, from whom\n4. Next week: my top 3\n\nKeep it under 200 words. Plain words, no buzzwords. Only use facts from my notes. If a part is empty, ask me. Don't fill it in yourself. After the report, add one line that says what you couldn't confirm.",
+          "why": "This is how my own agents report to me: what's done, what's open, and what wasn't checked."
+        }
+      ]
+    },
+    {
+      "h": "Make it a team",
+      "body": [
+        "Right now you have 3 prompts. 2 more steps turn them into a team you use every week.",
+        "For the technical: a Claude Project or a custom GPT keeps the prompt as standing instructions, so every new chat inside it already knows its job."
+      ],
+      "steps": [
+        {
+          "title": "Give each helper its own home",
+          "text": "In Claude, make a Project for each helper and paste its prompt into the project instructions. In ChatGPT, make a custom GPT or a project the same way. Name them Inbox, Notes and Friday. Now you don't paste the prompt each time."
+        },
+        {
+          "title": "Write down your before",
+          "text": "Before you start, write down how many hours these 3 chores take you in a normal week. Check again after 2 weeks. That's your proof, in your own numbers."
+        }
+      ]
+    }
+  ],
+  "eureka": "AI doesn't do my job. It does the chores around my job, and I check everything before it leaves my desk.",
+  "check": [
+    "You know your company's rule on AI tools, or you asked",
+    "You have 3 saved helpers named Inbox, Notes and Friday",
+    "Each one has the work rules at the top",
+    "Each one has run on real work once, and you checked the result before you sent it",
+    "You wrote down how many hours these chores take you now"
+  ],
+  "limits": [
+    "These helpers don't read your inbox or calendar on their own. You paste in, they draft.",
+    "They don't remember last week unless you paste it in.",
+    "They can be wrong. You check every fact, owner and date before you send.",
+    "This doesn't cover connecting AI to company systems. That's your IT team's call, not yours."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:5-hour-offer",
+      "line": "You're faster now. The 5-Hour Offer is the free pack that turns a skill you already have into one small side offer, next to your job."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "A Strategy Call is 60 minutes with me, and you can use it for training on advanced AI for the way you work."
+    },
+    "dfy": {
+      "offer": "disc",
+      "line": "If you also run a business and want agents built into it, every build starts with the Discovery Call. It's 30 minutes about the build."
+    }
+  }
+}

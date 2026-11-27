@@ -1,0 +1,105 @@
+{
+  "slug": "ad-click-to-paid",
+  "n": 2,
+  "promise": "A map of your own buyer path, from first click to paid, with the missing pieces marked.",
+  "time": "25 minutes",
+  "need": ["Claude or ChatGPT (free works)", "A list of the tools you use today", "A test email address of your own"],
+  "forTech": "For the technical: every stop on the path fires an event (a webhook) into an automation tool, n8n in my case, which writes a tag on the contact in the CRM. The tags are the map.",
+  "intro": [
+    "Someone comments on your post at 9 PM. You see it the next afternoon and send a link. They click. The page asks for an email. The email tool isn't connected to the checkout, and their name never reaches your CRM. Nobody did anything wrong. The tools just don't talk to each other.",
+    "I've run Meta ads for 14 years. The ad is rarely the problem. The gaps after the click are.",
+    "So here's my full path, stop by stop, with the agent or tool that runs each one. Then you'll draw your own and mark what's missing."
+  ],
+  "sections": [
+    {
+      "h": "The 8 stops on my path",
+      "body": [
+        "1. A reel or an ad. My content agent writes it and I approve it. 2. A comment keyword. The viewer comments one word. 3. A DM. ManyChat sends the link right away, and my Instagram sales agent handles the real conversations. 4. A landing page. My site agent builds it and I click publish.",
+        "5. Checkout or free signup. 6. The portal. The buyer lands inside my client portal with what they came for. 7. Follow-up emails. Short ones, Monday to Friday at 7:30 AM their time. 8. CRM tags. Every stop leaves a tag on that person in my CRM, so I can see where everyone is.",
+        "The stops aren't the clever part. The handoffs are. Each stop tells the next one who this person is and what they just did. That's the job of my automations. Think of them as the wires between the tools."
+      ],
+      "steps": [
+        {
+          "title": "List your tools",
+          "text": "Write down every tool a buyer touches in your business today, in any order. Your social accounts, your DM tool, your site, your checkout, your email tool, your CRM, your calendar. If a stop is done by hand, write your own name."
+        }
+      ]
+    },
+    {
+      "h": "Draw your own map",
+      "body": [
+        "Now put your tools in order. Don't draw the path you wish you had. Draw the one that's running today, even if it's ugly."
+      ],
+      "steps": [
+        {
+          "title": "Let Claude interview you",
+          "text": "Open a new chat and paste this. Answer honestly. Short answers are fine.",
+          "copy": "Help me map the path a buyer takes in my business. Ask me one question at a time.\n\nCover these 8 stops in order:\n1. Where they first see me\n2. How they raise a hand\n3. The first message they get\n4. The page they land on\n5. How they pay or sign up\n6. Where they get what they bought\n7. What follow-up they get\n8. Where their name and status are saved\n\nFor each stop, ask what tool I use and what I do by hand.\n\nWhen we're done, give me a table with 4 columns: the stop, the tool, who or what does it, and what gets passed to the next stop.",
+          "why": "The last column is the one most owners have never looked at."
+        },
+        {
+          "title": "Save the table",
+          "text": "Copy the table into the buyer path map template in the download, or into your notes. This is your map as it stands today."
+        }
+      ]
+    },
+    {
+      "h": "Mark the gaps",
+      "body": [
+        "There are 3 kinds of gap. Missing: there's no stop at all, like no follow-up after signup. By hand: a person carries it, like you copying a name from one tool into another. Silent: the stop works, but the next tool never hears about it."
+      ],
+      "steps": [
+        {
+          "title": "Run the name test",
+          "text": "Walk your own path as a stranger, using your test email. Comment, get the DM, sign up. Then go looking for yourself. Did your name arrive in the email tool? In the CRM? With a tag that says where you came from? Every place you're missing is a gap.",
+          "why": "You find gaps by following one name, not by reading settings pages."
+        },
+        {
+          "title": "Sort the gaps",
+          "text": "Go back to the chat with your table and paste this, with what you found in the name test.",
+          "copy": "Here's what I found when I walked my own path with a test email:\n[paste what arrived and what didn't]\n\nMark every handoff in my table as CONNECTED, BY HAND or MISSING.\n\nThen tell me the one gap closest to the money. That's the place a ready buyer is most likely to drop.\n\nDon't suggest new tools yet."
+        }
+      ]
+    },
+    {
+      "h": "Close one gap this week",
+      "body": [
+        "Don't fix the whole map. Fix one gap, the one closest to the payment, and work outward from there."
+      ],
+      "steps": [
+        {
+          "title": "Ask for the simplest connection",
+          "text": "Paste this into the same chat and fill in the brackets.",
+          "copy": "My [tool A] and my [tool B] don't talk to each other.\n\nWhen [what happens in tool A], I need [what should happen in tool B].\n\nTell me the simplest way to connect them. First check if they connect directly. If not, tell me how to do it with a no-code automation tool.\n\nGive me click by click steps, and a way to test it with my own email before real buyers hit it.",
+          "why": "Most gaps close with a setting the 2 tools already have. Check that before adding anything new."
+        },
+        {
+          "title": "Test it, then walk the path again",
+          "text": "Make the change, then run the name test one more time with a fresh test email. A connection isn't closed until you've seen your own name arrive on the other side."
+        },
+        {
+          "title": "Mark it on the map",
+          "text": "Change that handoff to CONNECTED on your map and write the date next to it. Then circle the next gap."
+        }
+      ]
+    }
+  ],
+  "eureka": "Leads don't fall out of your tools. They fall out of the handoffs between them.",
+  "check": [
+    "You have a table of your 8 stops with the tool that runs each one.",
+    "You've walked your own path with a test email.",
+    "Every handoff is marked CONNECTED, BY HAND or MISSING.",
+    "You know the one gap closest to the money, and you have steps to close it."
+  ],
+  "limits": [
+    "This gives you the map. It doesn't build the path.",
+    "It doesn't write the page that sells your offer. The 1-Person Sales Team does that, and it's free.",
+    "It doesn't check whether your ads are reporting sales correctly.",
+    "Closing every gap yourself can take months. That's what the Low-Ticket Product Build is for."
+  ],
+  "paths": {
+    "diy": { "offer": "next:one-person-sales-team", "line": "Start with The 1-Person Sales Team. It's free, and it writes the page, the order bump and the upsell for one offer." },
+    "dwy": { "offer": "sc25", "line": "The Strategy Call + Action Plan is $2,500 for 90 minutes with me, plus a detailed step by step action plan you can follow to close your gaps." },
+    "dfy": { "offer": "web", "line": "The Low-Ticket Product Build, from $4,999, is your offer, page, checkout and portal built for you. It starts with the $150 Discovery Call." }
+  }
+}

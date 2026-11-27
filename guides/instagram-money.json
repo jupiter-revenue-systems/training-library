@@ -1,0 +1,98 @@
+{
+  "slug": "instagram-money",
+  "n": 25,
+  "tool_url": "https://ekaistone.com/instagram-revenue-calculator",
+  "promise": "One monthly number for what your Instagram should be making, and the gap between that and what it makes now.",
+  "time": "10 minutes",
+  "need": [
+    "Your Instagram account with a professional (creator or business) profile",
+    "Your follower count and your reach for the last 30 days",
+    "What you earned from Instagram last month, even if it's $0"
+  ],
+  "forTech": "The calculator turns audience size and reach into a monthly revenue estimate. The gap between that estimate and your real income is almost always a conversion path problem, not a reach problem.",
+  "intro": [
+    "You post. People like it. Your follower count goes up. Then you look at your bank account and it doesn't match.",
+    "That's the most common thing I hear from creators and coaches: I have followers but little income. It feels personal. It isn't. It's a math problem and a path problem.",
+    "I've run Meta ads for 14 years and I run my own Instagram with a DM agent every day. A following only turns into income when there's a path from the post to the sale. This calculator shows you the size of what's missing."
+  ],
+  "sections": [
+    {
+      "h": "Get your real numbers",
+      "body": [
+        "The calculator needs 2 things from you: your followers and your reach. Reach is how many different people saw your posts."
+      ],
+      "steps": [
+        {
+          "title": "Open your insights",
+          "text": "In the Instagram app, go to your profile and tap Professional dashboard. Set the dates to the last 30 days."
+        },
+        {
+          "title": "Write down 3 numbers",
+          "text": "Your follower count, your reach for the last 30 days, and what you earned from Instagram last month. Use the real numbers, not your best month.",
+          "why": "If you put hopeful numbers in, you get a hopeful number out."
+        }
+      ]
+    },
+    {
+      "h": "Run the calculator",
+      "body": [
+        "It's live and free. Open it with the button on this page."
+      ],
+      "steps": [
+        {
+          "title": "Enter your followers and reach",
+          "text": "Type in your numbers and answer anything else it asks. You'll get a monthly number back."
+        },
+        {
+          "title": "Find your gap",
+          "text": "Take the calculator's monthly number and subtract what you earned last month. Write the result down. That's your gap.",
+          "why": "The number isn't a promise. It shows what a following your size can support when the path from post to sale is in place."
+        }
+      ]
+    },
+    {
+      "h": "Find where the gap comes from",
+      "body": [
+        "A gap almost never means you need more followers. It means people who are interested have nowhere to go.",
+        "Here's the path I run: a reel, a comment keyword, a DM, a page, a checkout, then short follow-up emails. Each step hands the person to the next one. If one step is missing, people fall out there."
+      ],
+      "steps": [
+        {
+          "title": "Check your own path",
+          "text": "Paste this into Claude or ChatGPT and answer its questions.",
+          "copy": "I ran an Instagram revenue calculator.\n\nIt says my Instagram should be making about: [calculator number] a month\nLast month I made: [your real number]\nMy followers: [number]\nMy reach in the last 30 days: [number]\n\nHelp me find where people fall out between seeing a post and buying. Ask me one question at a time about these 6 steps: 1) what my posts tell people to do, 2) what happens when someone comments, 3) what happens in my DMs, 4) where my link sends people, 5) what I sell and for how much, 6) what follow-up I send. Then tell me the first missing step and one thing I can do about it this week. Don't guess numbers for me."
+        },
+        {
+          "title": "Fix the first missing step",
+          "text": "Work on the first step that's missing and leave the rest for later. For most people it's what happens after someone comments."
+        }
+      ]
+    }
+  ],
+  "eureka": "My followers aren't the problem. The path from a comment to a sale is.",
+  "check": [
+    "You have the calculator's monthly number written down",
+    "You have your gap: that number minus what you earned last month",
+    "You know the first missing step between your posts and a sale",
+    "You picked one thing to do about it this week"
+  ],
+  "limits": [
+    "The calculator shows the size of the gap. It doesn't close it.",
+    "The monthly number is an estimate from the numbers you enter. It isn't a promise of income.",
+    "It doesn't answer your comments or DMs for you. That's the next problem."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:comment-to-customer",
+      "line": "Comment to Customer is the free guide that shows the whole flow from a comment to a sale, so you can build the missing step yourself."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "A Strategy Call is 60 minutes with me to get clear on your offers and the path your followers take to buy them."
+    },
+    "dfy": {
+      "offer": "igsa",
+      "line": "The Instagram Sales Agent answers comments and DMs in your voice, qualifies people and books them, from $1,499."
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "slug": "comment-to-customer",
+  "n": 15,
+  "promise": "A filled-in map of your own flow from comment to customer, with the 6 stops, the one job each stop does, and the gap that's costing you sales marked.",
+  "time": "30 minutes",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "An Instagram account you post on",
+    "One thing to give or sell (a free guide or a low-priced offer)",
+    "Pen and paper, or the flow map from the download"
+  ],
+  "forTech": "This is a comment-to-DM automation (ManyChat on the Instagram messaging API) that hands off to a landing page, a free signup or checkout, a client portal, a timed email sequence and CRM tags. The guide maps the stages and the single conversion job of each. It doesn't include a DM agent.",
+  "intro": [
+    "You post a reel. It does well. Lots of comments, lots of hearts, a few 'need this.' You feel good for an afternoon. Then you check your sales, and nothing moved.",
+    "That's not a content problem. Your content worked. People raised their hands. There was just nowhere for them to go next.",
+    "I've run Meta ads for 14 years, and the lesson is the same for free posts as for paid ones. Attention with no next step is worth nothing. So every reel I post has a flow behind it. Reel, comment keyword, DM, page, portal, follow-up emails. Each stop has one job, and each one hands the person to the next.",
+    "I'll walk you through all 6 stops the way I run them. Then you'll map your own and find where yours breaks."
+  ],
+  "sections": [
+    {
+      "h": "The 6 stops",
+      "body": [
+        "Here's the whole flow. Think of it as an orbit with 6 stops. If any stop is missing, people drift off.",
+        "Stop 1, the reel. Its job is to make one person feel one problem and want one thing. It ends with 'Comment a word and I'll send it.'",
+        "Stop 2, the comment keyword. One word. Its job is to turn a watcher into someone who asked. Asking is the first small yes.",
+        "Stop 3, the DM. An automation sees the word and messages them right away. Its job is to deliver what was promised, fast, and sound like me.",
+        "Stop 4, the page. One page, one offer, one button. Its job is to get an email for a free thing, or a payment for a paid thing.",
+        "Stop 5, the portal. They land inside right away, with the thing they asked for open in front of them. Its job is the first win.",
+        "Stop 6, the follow-up. Short emails on weekdays at 7:30 AM their time, and a tag in my CRM that says what they asked for. Its job is to bring them back and show the next step."
+      ],
+      "steps": [
+        {
+          "title": "Draw your 6 boxes",
+          "text": "Open templates/flow-map.md from the download, or draw 6 boxes in a row. Label them Reel, Keyword, DM, Page, Delivery, Follow-up.",
+          "why": "You can't fix a flow you can't see."
+        },
+        {
+          "title": "Fill in what you have today",
+          "text": "Under each box, write what really exists right now. If a box is empty, write 'nothing'. Be honest. Empty boxes are the point of this step."
+        }
+      ]
+    },
+    {
+      "h": "Find where yours breaks",
+      "body": [
+        "Almost every flow that doesn't sell breaks in one of 3 places. There's no keyword, so interest stays in the comments. The DM sends a link with no reason to tap it. Or nothing happens after they get the free thing."
+      ],
+      "steps": [
+        {
+          "title": "Walk it as a stranger",
+          "text": "On a second account or a friend's phone, go through your own flow from the reel to the end. Write down every place you waited, got confused, or hit a dead end.",
+          "why": "You know where everything is. A stranger doesn't. This is the only way to see what they see."
+        },
+        {
+          "title": "Have your AI find the gap",
+          "text": "Paste this with your filled-in map and your notes from the walk.",
+          "copy": "I'm mapping how someone goes from commenting on my Instagram reel to becoming a customer. The 6 stops are: Reel, Keyword, DM, Page, Delivery, Follow-up. Each stop has one job: Reel makes them want one thing. Keyword turns a watcher into someone who asked. DM delivers fast and sounds human. Page gets an email or a payment. Delivery gives a first win right away. Follow-up brings them back and shows the next step. Below is what I have at each stop today, and my notes from walking through it as a stranger. Ask me one question at a time about anything unclear. Then tell me: which stop is weakest, what a person feels at that stop right now, and the smallest fix I can make this week. Don't suggest tools I didn't mention.",
+          "why": "One fix this week beats a full rebuild you never finish."
+        }
+      ]
+    },
+    {
+      "h": "Fix the first 3 stops",
+      "body": [
+        "Start at the front. If the reel, the keyword and the DM don't work, nobody reaches the rest."
+      ],
+      "steps": [
+        {
+          "title": "Pick one keyword and one reward",
+          "text": "Choose one short word, all caps, that matches the thing you're giving. One reel, one word, one reward. Say it out loud at the end of the reel and put it in the last line of the caption.",
+          "why": "Put 2 offers in one reel and people don't choose. They scroll."
+        },
+        {
+          "title": "Write the 3 DMs",
+          "text": "The flow needs 3 short messages: the opener that asks if they want it, a quick ask to follow, and the message with the link. Each under 25 words, each with a button that names the reward.",
+          "copy": "Write 3 Instagram DMs for my comment keyword flow. I'll tell you what I'm giving and who it's for. Message 1: the opener, asks if they want it, sounds like a friend texting. Message 2: asks them to tap follow so I can send it. Message 3: gives the link and says what they'll have when they're finished with it. Each under 25 words. Sell the result, not the steps. Each button is 20 characters or less and names the reward, like 'Send me the guide'. Give me 3 versions of message 1. No exclamation marks. Ask me first: what am I giving, and who is it for?"
+        },
+        {
+          "title": "Build it and test it",
+          "text": "In ManyChat, make an automation that starts when someone comments your keyword on your post. Add your 3 messages in order. Comment the word yourself from another account and watch the whole thing arrive.",
+          "why": "Never trust an automation you haven't triggered yourself."
+        }
+      ]
+    },
+    {
+      "h": "Close the back half",
+      "body": [
+        "The back half is where the money is, and where most people stop building. A page, a delivery, and a reason to come back."
+      ],
+      "steps": [
+        {
+          "title": "One page, one button",
+          "text": "The link in your DM goes to one page with one offer and one button. Take out the menu. Take out the second offer. Check it on your phone.",
+          "why": "They came from a DM on a phone. The page has to work there first."
+        },
+        {
+          "title": "Deliver now, follow up tomorrow",
+          "text": "Make sure they get the thing within a minute, on a page they can come back to. Then write one follow-up email for the next weekday morning that tells them the first step to take. One email is enough to start."
+        }
+      ]
+    }
+  ],
+  "eureka": "Comments aren't sales because a comment has nowhere to go. Give every reel one word, one DM, one page and one next step.",
+  "check": [
+    "Your flow map has all 6 stops filled in, even if some say 'nothing'.",
+    "You walked your own flow as a stranger and wrote down where it broke.",
+    "You know your weakest stop and the one fix you'll make this week.",
+    "One reel has one keyword, 3 DMs, and you've triggered it yourself.",
+    "The DM link goes to one page with one button, and it works on your phone."
+  ],
+  "limits": [
+    "This is the map, not the build. It doesn't set up your page, checkout, portal or emails for you.",
+    "The DM here is a fixed script. When someone replies with a real question, it can't answer.",
+    "It doesn't qualify buyers, book calls or take payment inside the DM.",
+    "I can't promise what a flow will earn you. That depends on your offer and your audience."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:dm-ready-to-buy",
+      "line": "When the flow works, your DMs fill up, so read the free guide on what a DM agent has to do before you buy or build one."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "Spend 60 minutes with me and we'll go through your flow stop by stop and fix the weak one together."
+    },
+    "dfy": {
+      "offer": "igsa",
+      "line": "The Instagram Sales Agent answers your comments and DMs in your voice, qualifies and books, set up for your offers."
+    }
+  }
+}

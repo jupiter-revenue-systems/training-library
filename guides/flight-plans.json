@@ -1,0 +1,124 @@
+{
+  "slug": "flight-plans",
+  "n": 31,
+  "promise": "One process you keep explaining, turned into a step-by-step page with a copy button on every prompt and command, that someone else can follow without you.",
+  "time": "20 minutes",
+  "need": [
+    "Claude (free or paid). The prompts work in ChatGPT too.",
+    "The Flight Plan skill (the download on this page)",
+    "One task you've explained to someone more than twice"
+  ],
+  "forTech": "The skill outputs one self-contained HTML file with inline CSS and a small clipboard script, so it opens in any browser with no install. Each step holds one action, one copy block and one check.",
+  "intro": [
+    "Someone on your team sends a message. How do I send the weekly report again? You stop what you're doing and explain it. Next month they ask again, or the new person does. You're the manual, and the manual is always busy.",
+    "Writing it down sounds like the fix. But most written steps are a wall of text nobody follows, with the one command they need buried in the middle.",
+    "I hand off work with flight plans. A flight plan is one page. The steps are in order. Every prompt and every command has a copy button, and every step ends with a check so the person knows it worked. I use them for my team, for my agents, and for myself 3 months later when I've forgotten how I did it.",
+    "The skill on this page builds one for you from a short interview."
+  ],
+  "sections": [
+    {
+      "h": "What makes a flight plan work",
+      "body": [
+        "3 things. One action per step, so nobody has to hold 4 things in their head. A copy button on anything they'd have to type, so there are no typos. And a check after each step, like 'you should now see the word Sent', so they know before they move on.",
+        "That last one matters most. A step with no check is a guess."
+      ],
+      "steps": [
+        {
+          "title": "Install the Flight Plan skill",
+          "text": "Follow INSTALL.md in the download. It takes a couple of minutes. A skill is a small instruction file Claude loads when it hears the right words. After this, saying 'make a flight plan' starts the interview.",
+          "why": "The skill holds the rules for a good plan, so you don't have to remember them."
+        }
+      ]
+    },
+    {
+      "h": "Turn one process into a flight plan",
+      "body": [
+        "Start small. Pick one task that takes under an hour and that you've explained more than twice. Before you start, write down how long it takes you to explain it today. You'll want that number later."
+      ],
+      "steps": [
+        {
+          "title": "Start the interview",
+          "text": "Open a new chat and paste this with your task filled in.",
+          "copy": "Make a flight plan for: [the task, for example sending the weekly client report]. The person following it is: [who, and what they already know]. Interview me one question at a time until you could do it yourself. Then build the page.",
+          "why": "Saying who it's for changes everything. A plan for a new hire needs steps a plan for you doesn't."
+        },
+        {
+          "title": "Talk it through like you're showing a friend",
+          "text": "Claude will ask what you click, what you type and what you see. Answer in order. If you have the old messages where you explained it, paste them in. When you leave out a step you do without thinking, Claude will usually catch the gap and ask.",
+          "copy": "Here's how I explained it last time. Use it, then ask me about anything that's missing or out of order: [paste your old explanation]",
+          "why": "You already wrote the first draft, in a message, the last time someone asked."
+        },
+        {
+          "title": "Open the page and click every button",
+          "text": "Claude gives you one HTML file. Save it and open it in your browser. Click each copy button and paste into a note to see that it copied the right thing.",
+          "why": "It's your name on the handoff. Look at the real page, not the chat's description of it."
+        }
+      ]
+    },
+    {
+      "h": "Test it on someone who's never done it",
+      "body": [
+        "A flight plan you wrote always makes sense to you. The real test is a person who's never done the task, with you saying nothing."
+      ],
+      "steps": [
+        {
+          "title": "Run the cold test",
+          "text": "Hand the page to a team member and stay quiet. Or open a brand new chat, attach the file, and paste this.",
+          "copy": "You're new here and you've never done this task. Read this flight plan one step at a time. Stop at the first place where you'd have to guess, where a word isn't explained, or where you couldn't tell if the step worked. List every one of those places. Don't fix them yet.",
+          "why": "A fresh reader finds the gaps the writer can't see. I do the same thing with a second agent on my own work."
+        },
+        {
+          "title": "Fix the gaps",
+          "text": "Take the list back to the chat that built the plan.",
+          "copy": "Update the flight plan. Here are the places a new person got stuck: [paste the list]. Fix each one, keep everything else the same, and tell me which steps you changed.",
+          "why": "Small fixes to a plan that exists beat a perfect plan you never finish."
+        }
+      ]
+    },
+    {
+      "h": "Make it the way you answer",
+      "body": [
+        "One flight plan saves you one explanation. The habit is what changes your week."
+      ],
+      "steps": [
+        {
+          "title": "Keep every plan in one folder",
+          "text": "Make a folder called flight-plans where your team can reach it. Put each page there with a plain name, like weekly-client-report.html. Ask Claude for an index page so people can find the one they need.",
+          "copy": "Here are my flight plans so far: [list the file names and what each one is for]. Make an index page in the same style, with one link per plan and one line saying when to use it.",
+          "why": "If people can't find the plan, they'll message you. One folder, one index."
+        },
+        {
+          "title": "Answer with the link",
+          "text": "From now on, when someone asks how to do something, send the flight plan. If there isn't one yet, that question just told you which one to make next. Then look at the number you wrote down at the start."
+        }
+      ]
+    }
+  ],
+  "eureka": "If I've explained it twice, it becomes a flight plan.",
+  "check": [
+    "You have one HTML page for one real task, and it opens in your browser",
+    "Every prompt and command on it has a copy button that works",
+    "Every step ends with a check that says what the person should see",
+    "Someone who's never done the task got through it without messaging you"
+  ],
+  "limits": [
+    "It only knows what you tell it. If you leave a step out of the interview, it's out of the plan until the cold test catches it.",
+    "It builds one process at a time. It doesn't map your whole business or decide which tasks to hand off first.",
+    "It doesn't do the task. A person or an agent still has to follow the plan.",
+    "It won't keep itself current. When the process changes, you update the page."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:shared-brain",
+      "line": "Keep going on your own with the free Shared Brain pack, so every chat knows your business and where your flight plans live."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "If you want your whole business mapped like this, a Strategy Call is 60 minutes with me to work out which processes to map first and what AI should run."
+    },
+    "dfy": {
+      "offer": "disc",
+      "line": "If you'd like it built for you, like a client portal with your guides inside, builds start with the $150 Discovery Call."
+    }
+  }
+}

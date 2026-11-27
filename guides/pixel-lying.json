@@ -1,0 +1,128 @@
+{
+  "slug": "pixel-lying",
+  "n": 18,
+  "promise": "A plain-words report that tells you if your ad numbers can be trusted, and where they break if they can't.",
+  "time": "10 minutes, once you have your numbers",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "The free zip pack from this page",
+    "Your checkout tool's order list for the last 30 days",
+    "A look inside your Meta Ads Manager for the same 30 days"
+  ],
+  "forTech": "This compares your order export (the source of truth) with the Purchase event your Meta pixel reports, on count, attribution and value. It's a check only. It doesn't touch your pixel, your site or any server-side setup.",
+  "intro": [
+    "It's the end of the month. Ads Manager says you made 40 sales. Your checkout says 26. You stare at both screens and wonder which one to believe, and which ad to turn off.",
+    "Here's the plain answer. Your checkout took the money, so it's the truth. Your pixel, the small piece of code that tells Meta when someone buys, is only a witness. Sometimes it sees a sale twice. Sometimes it misses one. Sometimes it writes down the wrong amount.",
+    "I've run Meta ads for 14 years. Before I trust any ad report, I check the witness against the truth with 3 questions. Was each purchase counted once? Was it matched to an ad? Does it carry the right value? This guide is that check, and the pack lets Claude do the math and write your report."
+  ],
+  "sections": [
+    {
+      "h": "Get the truth and the witness side by side",
+      "body": [
+        "You need 2 sets of numbers for the same 30 days. One from the tool that took the money. One from the ad account that says it caused it.",
+        "Use the same dates and the same time zone for both. If the dates don't line up, nothing else will."
+      ],
+      "steps": [
+        {
+          "title": "Pull your real orders",
+          "text": "Open your checkout tool and filter to the last 30 days. Write down how many paid orders you had and the total money in. Leave out refunds and test orders. If you can export the list, do that too.",
+          "why": "This is the truth. Every other number gets measured against it."
+        },
+        {
+          "title": "Pull what your ads say",
+          "text": "Open Ads Manager and set the same 30 days. Add the columns for purchases and purchase value. Write down both totals for the whole account.",
+          "why": "This is the witness. You're about to find out how well it saw."
+        },
+        {
+          "title": "Guess your ad share",
+          "text": "Write down how many of your real orders you believe came from ads. Use whatever you have: a 'how did you hear about us' answer, a coupon, or your honest guess. Mark it as a guess if it is one."
+        }
+      ]
+    },
+    {
+      "h": "Let Claude run the 3 checks",
+      "body": [
+        "Unzip the pack and add the whole folder to a new chat in Claude or ChatGPT. Then paste the line below. Claude will ask you for your numbers one question at a time."
+      ],
+      "steps": [
+        {
+          "title": "Start the check",
+          "text": "Paste this as your first message with the pack attached.",
+          "copy": "Read START_HERE.md in this pack and follow it. I want to check if my ad tracking can be trusted. Ask me one question at a time.",
+          "why": "The pack tells Claude what to ask, what to compare and how to write the report."
+        },
+        {
+          "title": "No pack handy? Use this",
+          "text": "Fill in the blanks and paste it into any chat. You'll get a shorter version of the same check.",
+          "copy": "Act as a calm ad tracking checker. Use plain words. My checkout tool is the truth. My ad account is only a witness.\n\nSame 30 days for all numbers:\nReal paid orders: ___\nReal money in: ___\nOrders I believe came from ads: ___ (guess or known)\nPurchases Ads Manager reports: ___\nPurchase value Ads Manager reports: ___\n\nRun 3 checks and give each one a color, green, yellow or red.\n1. Counted once: are ad purchases higher than my real orders?\n2. Matched to an ad: how far is the ad count from the orders I believe came from ads?\n3. Right value: compare the average sale in Ads Manager to my real average sale.\n\nBefore you pick colors, ask me how far off a number could be before I'd make a different choice about an ad. Use my answer as the line. Then tell me in plain words what looks broken and who should fix it. Don't explain how to build tracking. I only want the check."
+        },
+        {
+          "title": "Read the 3 colors",
+          "text": "Counted once: if your ads claim more purchases than you had real orders, something is counting twice. Matched: if your ads claim far fewer than you believe they brought in, sales are going missing on the way to Meta. Right value: if the average sale in Ads Manager doesn't look like your real average sale, the amount is wrong."
+        }
+      ]
+    },
+    {
+      "h": "Two quick looks numbers can't show",
+      "body": [
+        "Totals tell you something is off. These 2 looks tell you where. Each takes about 2 minutes, and you don't change anything."
+      ],
+      "steps": [
+        {
+          "title": "Look at your thank-you page",
+          "text": "Find the page a buyer lands on after paying. Ask yourself 2 things. Can someone reach it without buying? If a buyer reloads it, would the sale be sent to Meta again? Tell Claude what you find.",
+          "why": "A thank-you page that anyone can open or reload is a common place for a sale to get counted twice."
+        },
+        {
+          "title": "Look at what Meta already flagged",
+          "text": "In Events Manager, open your pixel and find the Purchase event. Read any warning Meta shows next to it, and write down the match quality label it gives the event. Copy the words to Claude as you see them.",
+          "why": "Meta often tells you what's wrong. Most people never open this screen."
+        }
+      ]
+    },
+    {
+      "h": "Get your report and hand it over",
+      "body": [
+        "When Claude has all your answers, it writes one page. Three colors, what each one means for your ad choices, and what to change first."
+      ],
+      "steps": [
+        {
+          "title": "Ask for the one-page report",
+          "text": "If Claude hasn't written it yet, paste this.",
+          "copy": "Write my tracking report now, using templates/tracking-report.md. Plain words. For each of the 3 checks give the color, the numbers you used, and one sentence on what it means for my ad choices. End with what to change first and who should change it. List anything you couldn't check."
+        },
+        {
+          "title": "Decide what you'll trust this week",
+          "text": "Three greens: trust your ad numbers and keep going. Any red: stop judging ads by Ads Manager alone until it's fixed, and use your checkout numbers. Save the report. It's the first thing anyone fixing your tracking will ask for."
+        }
+      ]
+    }
+  ],
+  "eureka": "My checkout is the truth and my pixel is only a witness, so I check the witness before I trust it.",
+  "check": [
+    "You have real orders and ad-reported purchases for the same 30 days, side by side.",
+    "Each of the 3 checks has a color: counted once, matched to an ad, right value.",
+    "You looked at your thank-you page and at Meta's own warnings.",
+    "You have a one-page report that says what to change first and what wasn't checked."
+  ],
+  "limits": [
+    "This is a check. It shows where tracking breaks. It doesn't fix it.",
+    "It doesn't cover the fix on your site, your checkout or your server. That's the Signal Engine, my paid ad tracking system.",
+    "It checks Meta ads only, at the account level. It won't tell you which single ad is over or under counted.",
+    "It's as good as the numbers you type in. A guess stays a guess, and the report says so."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:did-ai-make-money",
+      "line": "Run the free Monday money report next, so you see sales by source every week from your own exports."
+    },
+    "dwy": {
+      "offer": "sc25",
+      "line": "Bring your report to a Strategy Call + Action Plan, $2,500: 90 minutes with me, then a detailed step by step action plan to get your tracking fixed."
+    },
+    "dfy": {
+      "offer": "disc",
+      "line": "My builds include the Signal Engine, my ad tracking system, set up for you. Builds start with the $150 Discovery Call."
+    }
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "slug": "learn-ai-30-days",
+  "n": 28,
+  "promise": "A 30-day plan built around your goal, one short lesson a day, and a quiz that makes it stick.",
+  "time": "15 minutes to set up",
+  "need": [
+    "Claude or ChatGPT (free or paid)",
+    "The Learn AI in 30 Days zip pack from this page",
+    "One goal you care about",
+    "A time of day you can keep, and a note app for your progress log"
+  ],
+  "forTech": "The pack is a tutor prompt plus a plan file and a progress log. The model reads the log at the start of each session and quizzes you on earlier days before it teaches anything new. That's retrieval practice with spaced review.",
+  "intro": [
+    "You've saved the videos. You've read the threads. You still don't know where to start, because every expert starts from a different place and none of them start from yours.",
+    "Watching doesn't teach you. Doing one small thing a day, then being asked about it the next day, does. What I know about AI comes from using it on real work in my own business every day.",
+    "This pack turns Claude or ChatGPT into a patient teacher. It builds a 30-day plan around one goal you pick. It teaches one thing a day, has you try it on something real, and quizzes you so it sticks."
+  ],
+  "sections": [
+    {
+      "h": "Set it up once",
+      "body": [
+        "The zip has a file called START_HERE.md. It's written to the AI, not to you. It tells Claude or ChatGPT how to teach you."
+      ],
+      "steps": [
+        {
+          "title": "Pick one goal",
+          "text": "Not \"learn AI\". Pick something you can see, like \"use AI to write my weekly report\" or \"build a helper for my inbox\". The plan gets built around it.",
+          "why": "A goal you can see keeps you coming back on day 9."
+        },
+        {
+          "title": "Give the pack a home",
+          "text": "Unzip it. In Claude or ChatGPT, make a new project and add all the files. If you don't have projects, open one new chat, attach the files, and keep coming back to that same chat."
+        },
+        {
+          "title": "Start Day 1",
+          "text": "Send this.",
+          "copy": "Read START_HERE.md and follow it exactly. Use the files in the templates folder. I'm starting Day 1."
+        }
+      ]
+    },
+    {
+      "h": "Day 1: your plan",
+      "body": [
+        "Day 1 is an interview. No lesson yet."
+      ],
+      "steps": [
+        {
+          "title": "Answer the questions",
+          "text": "It asks about your goal, your work, what you've tried, and how many minutes a day you really have. Be honest about the minutes. A small number you keep beats a big one you don't."
+        },
+        {
+          "title": "Read the plan and push back",
+          "text": "You get 4 weeks on one page. If a week looks too easy, too hard or not useful for your goal, say so. It'll change it. Then save the plan."
+        }
+      ]
+    },
+    {
+      "h": "The daily loop",
+      "body": [
+        "Every day after that has the same 4 parts: a short quiz on earlier days, one new idea, one thing to try on your own real work, and one line for your log.",
+        "The quiz comes first on purpose. Pulling an answer out of your head is what makes it stay there."
+      ],
+      "steps": [
+        {
+          "title": "Open each day the same way",
+          "text": "Paste your progress log and send this.",
+          "copy": "Day [number]. Here is my progress log:\n\n[paste your log]\n\nQuiz me on earlier days first. Then teach me today's lesson."
+        },
+        {
+          "title": "Do the try-it task",
+          "text": "Every lesson ends with one small thing to do on your own work. Do it before you close the chat. Reading isn't the lesson. The task is."
+        },
+        {
+          "title": "Save your new log",
+          "text": "At the end it gives you an updated log. Copy it into your notes.",
+          "why": "A chat can forget. Your log doesn't."
+        }
+      ]
+    },
+    {
+      "h": "When life gets in the way",
+      "body": [
+        "You'll miss a day. Everyone does. The plan bends."
+      ],
+      "steps": [
+        {
+          "title": "If you missed some days",
+          "text": "Don't start over, and don't try to do 4 lessons in one night.",
+          "copy": "I missed some days. My last finished day was Day [number]. Here is my progress log:\n\n[paste your log]\n\nDon't make me cram. Adjust the plan from here and start with a short review quiz."
+        },
+        {
+          "title": "If a lesson doesn't land",
+          "text": "Ask again. A good teacher has more than one way to say it.",
+          "copy": "I didn't get that. Explain it again like I'm 12, with an example from my job. Then ask me one question to check I got it."
+        },
+        {
+          "title": "Day 30: build one thing",
+          "text": "The last day is a small project for your goal. You build it, the AI reviews it with you, and you keep it."
+        }
+      ]
+    }
+  ],
+  "eureka": "I don't learn AI by watching. I learn it by doing one small thing a day and getting quizzed on it.",
+  "check": [
+    "You have a 30-day plan built around one goal, saved where you'll find it",
+    "You have a time of day set for your lesson",
+    "You did the Day 1 interview and your first try-it task",
+    "Your progress log has at least one line in it"
+  ],
+  "limits": [
+    "It teaches you to use AI well. It doesn't build agents for you.",
+    "It only knows what's in your log. If you don't paste the log, it starts from zero.",
+    "AI tools change often. If a lesson doesn't match your screen, tell it what you see and it'll adjust.",
+    "It doesn't know your company's rules on AI. Check those before you use it on work files."
+  ],
+  "paths": {
+    "diy": {
+      "offer": "next:ai-team-at-work",
+      "line": "Once you know the basics, Your First AI Team at Work is the free guide that gives you 3 helpers to build: inbox, meeting notes and a Friday report."
+    },
+    "dwy": {
+      "offer": "sc",
+      "line": "A Strategy Call is 60 minutes with me, and you can use it for training on advanced AI once the basics are solid."
+    },
+    "dfy": {
+      "offer": "disc",
+      "line": "If you run a business and would sooner have the agents built than learn to build them, every build starts with the Discovery Call."
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "slug": "every-agent",
+  "n": 1,
+  "promise": "A clear picture of an AI-run business, and the first 3 jobs you'd hand off in yours.",
+  "time": "20 minutes",
+  "need": ["Claude or ChatGPT (free works)", "A notes app or a sheet of paper", "20 quiet minutes"],
+  "forTech": "For the technical: each agent is a named Claude chat or a Claude Code session with its own instructions file, a shared notes folder it reads first, and tool connections to the site, the CRM and the automations. An always-on Mac mini runs the ones that work on a schedule.",
+  "intro": [
+    "You keep hearing that AI agents can run a business. Then you open a chat, type a question, get an answer, and think: is that it? Where's the agent?",
+    "I had the same gap, so here's the real thing. In October my business did $90K with one person working in it. Me. In September it was $83K. I've owned businesses for 17 years, and this is the first one where most of the daily work isn't done by my hands.",
+    "This is a tour. Every agent, the one job it does, what it's allowed to touch, and the jobs I keep for myself. At the end you'll pick the first 3 jobs you'd hand off in your own business."
+  ],
+  "sections": [
+    {
+      "h": "What an agent really is",
+      "body": [
+        "An agent is a chat with a job, a set of rules, and permission to touch something. That's all it is.",
+        "A chat answers you. An agent does the work: it reads your rules, opens the tool, does the job, and reports back. Every one of mine has 3 things. One job. A list of what it can touch. A rule for when to stop and ask me."
+      ],
+      "steps": [
+        {
+          "title": "See the difference yourself",
+          "text": "Open a new chat in Claude or ChatGPT. Paste this, then add one real question a customer asked you this month.",
+          "copy": "You're my support agent for today.\nYour one job: draft replies to customer questions.\nWhat you can touch: nothing. You write drafts. I send them.\nRules: short, warm, plain words. No promises about refunds or dates.\nStop rule: if a question is about money or a complaint, don't draft. Stop and ask me what I want to say.\n\nHere's the first question: [paste a real customer question]",
+          "why": "Same chat as before, but now it has a job, a limit and a stop rule. That's the whole idea."
+        }
+      ]
+    },
+    {
+      "h": "The tour: 9 agents, 1 job each",
+      "body": [
+        "Content writes my posts, captions and reel scripts in my voice. Blog writes the articles. Site Edits builds changes to my website, and I click publish. Support answers customer questions from my rules and hands me the ones that need a human. Ads Reporting reads my ad numbers and tells me what happened in plain words. It doesn't spend money. Memory keeps the notes that every other agent reads first, so none of them starts from zero.",
+        "Those 6 are my daily team. Then there are 3 more. ARIA is my Instagram sales agent. It answers comments and DMs, asks the right questions, and books. The guardian backs up everything every night. The checker is a fresh agent that didn't do the work, so it can double check the agent that did.",
+        "For the technical: the notes Memory keeps are a shared folder of business facts, rules and handoff notes, synced across my Macs. The nightly backup goes to GitHub."
+      ],
+      "steps": [
+        {
+          "title": "Match the tour to your week",
+          "text": "Write down every job you did last week that felt like the same thing again. Don't filter. Then paste the list into this prompt.",
+          "copy": "Here are the repeat jobs I did last week:\n[paste your list]\n\nFor each one, tell me:\n1. Could a chat with clear rules do the first draft?\n2. What would it need to read first?\n3. What should it never do without asking me?\n\nPut it in a simple table. Ask me questions one at a time if you need more detail.",
+          "why": "You stop thinking about AI in general and start seeing your own jobs."
+        }
+      ]
+    },
+    {
+      "h": "How a buyer moves through it",
+      "body": [
+        "Here's the path a buyer takes. They see a reel or an ad. They comment a keyword. A DM arrives with a link. They land on a page. They check out or sign up free. They land inside my client portal with what they came for. Short follow-up emails go out Monday to Friday at 7:30 AM their time. Every step leaves a tag in my CRM, so I always know where each person is.",
+        "That whole path runs without me carrying anything from one tool to the next."
+      ],
+      "steps": [
+        {
+          "title": "Trace one real buyer",
+          "text": "Pick your last customer. Write each step they took from first seeing you to paying you. Next to each step, mark it: a person did it, a tool did it, or nothing happened. The steps marked person are your first candidates."
+        }
+      ]
+    },
+    {
+      "h": "The jobs I still do",
+      "body": [
+        "I click publish. Every time. An agent can build the change, but a human sends it live.",
+        "I take the calls. I decide the offers and the prices. I read the reports and choose what happens next.",
+        "And the agents work inside rules they never break: a restore point before any change, no bulk deleting, never an older copy over newer work, one change log, and a backup every night. Those rules are why I can let them work on a live business."
+      ],
+      "steps": [
+        {
+          "title": "Write your keep list",
+          "text": "Write 3 to 5 jobs that stay yours no matter what. Mine are publish, calls and decisions. Yours might be different. An agent team with no keep list is how people get burned."
+        }
+      ]
+    },
+    {
+      "h": "Pick your first 3 jobs",
+      "body": [
+        "You don't need 9 agents. You need 3 jobs handed off well. Start with the ones that are frequent, boring, and safe if the first draft is wrong."
+      ],
+      "steps": [
+        {
+          "title": "Rank your jobs",
+          "text": "Go back to the chat with your repeat jobs table and paste this.",
+          "copy": "From that table, rank my jobs by 3 things: how often I do it, how boring it is, and how safe it is if the first draft is wrong.\n\nPick the 3 best jobs to hand off first. Leave out anything on my keep list: [paste your keep list].\n\nFor each of the 3, write a job card:\n- The job, in one sentence\n- What the agent reads first\n- What it can touch\n- When it must stop and ask me",
+          "why": "Frequent, boring and safe is where a first agent earns your trust."
+        },
+        {
+          "title": "Save your 3 job cards",
+          "text": "Copy the 3 cards into the job card template in the download, or into your notes. This is the picture you came for: your business, with 3 jobs that aren't yours anymore."
+        },
+        {
+          "title": "Run job 1 once today",
+          "text": "Open a new chat, paste job card 1, and give it one real piece of work. Read what comes back. Fix the rules where it went wrong. That's how every agent I run started."
+        }
+      ]
+    }
+  ],
+  "eureka": "An agent is a chat with one job, a list of what it can touch, and a rule for when to stop and ask.",
+  "check": [
+    "You can explain what an agent is in one sentence, without the word AI.",
+    "You have a list of your repeat jobs from last week.",
+    "You have a keep list of 3 to 5 jobs that stay yours.",
+    "You have 3 job cards, and you've run the first one on real work."
+  ],
+  "limits": [
+    "This is a tour, not the agents. You've seen what each one does. You don't have their prompts.",
+    "My 6 daily agents come already built in The HOPS Team for $37. This guide doesn't install them.",
+    "It doesn't tell you which agents fit your kind of business, or what order to add them in. Your AI Org Chart does that next.",
+    "The Instagram sales agent and the nightly backup setup aren't in here."
+  ],
+  "paths": {
+    "diy": { "offer": "next:ai-org-chart", "line": "Build Your AI Org Chart next. It's free, and it shows which of these agents fit your business and where to start." },
+    "dwy": { "offer": "sc", "line": "A Strategy Call is $750 for 60 minutes with me, and we can use it to plan how AI builds and runs your business." },
+    "dfy": { "offer": "seven", "line": "The Seven Star Build, from $15,000, is your whole revenue system merged and run by agents, by my own hands. It starts with the $150 Discovery Call." }
+  }
+}

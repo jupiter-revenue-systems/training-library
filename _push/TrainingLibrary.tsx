@@ -785,7 +785,7 @@ addPropertyControls(TrainingLibrary, {
 const CSS = `
 .tl{--bg:#05080E;--bg2:#0A0F18;--card:#0F141D;--card2:#161C27;--line:rgba(243,238,230,.10);--ink:#F3EEE6;--mute:#AEB6C2;--dim:#7C8494;--orange:#E2732E;--lime:#A4ED07;--cream:#F3EEE6;--c:#A4ED07;
  --serif:"Instrument Serif",Georgia,serif;--sans:Geist,Inter,system-ui,sans-serif;--mono:"Geist Mono",ui-monospace,Menlo,monospace;
- width:100%;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:clip}
+ width:100%;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:clip;padding-top:64px}
 .tl *{box-sizing:border-box}
 .tl a{color:inherit;text-decoration:none}
 .tl h1,.tl h2,.tl h3,.tl h4,.tl p,.tl ul,.tl blockquote,.tl pre{margin:0}
@@ -804,6 +804,9 @@ const CSS = `
 .tl-btn[disabled]{opacity:.45;cursor:not-allowed;transform:none;box-shadow:none}
 .tl-btn.ghost{background:transparent;color:var(--ink);border:1px solid rgba(243,238,230,.25);font-weight:500}
 .tl-btn i{font-style:normal}
+.tl a.tl-btn{color:#05080E}
+.tl a.tl-btn.ghost{color:var(--ink)}
+.tl .tl-form a.tl-btn{color:var(--lime)}
 .tl-chips{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .tl-chips>span{font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--dim);margin-right:2px}
 .tl-chip{all:unset;box-sizing:border-box;cursor:pointer;font-size:14px;padding:8px 14px;border-radius:99px;border:1px solid var(--line);color:var(--mute);background:rgba(255,255,255,.02);transition:.2s}
@@ -977,7 +980,7 @@ const CSS = `
 .tl-read h1{font-size:clamp(36px,5vw,62px)}
 .tl-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
 .tl-meta span{font:500 12px var(--mono);color:var(--mute);border:1px solid var(--line);border-radius:99px;padding:6px 12px}
-.tl-prog{position:sticky;top:0;z-index:5;background:rgba(5,8,14,.92);backdrop-filter:blur(10px);padding:12px 0;display:flex;gap:14px;align-items:center;font:500 12px var(--mono);color:var(--mute)}
+.tl-prog{position:sticky;top:64px;z-index:5;background:rgba(5,8,14,.92);backdrop-filter:blur(10px);padding:12px 0;display:flex;gap:14px;align-items:center;font:500 12px var(--mono);color:var(--mute)}
 .tl-prog div{flex:1;height:6px;border-radius:9px;background:var(--card2);overflow:hidden}
 .tl-prog i{display:block;height:100%;background:linear-gradient(90deg,var(--orange),var(--c));transition:width .4s}
 .tl-body{max-width:780px;display:grid;gap:18px;margin-top:10px}
@@ -1020,6 +1023,7 @@ const CSS = `
 @media (max-width:1199px){
  .tl-cards{grid-template-columns:repeat(2,minmax(0,1fr))}
  .tl-hero-row{grid-template-columns:repeat(4,1fr)}.tl-hero-row a:nth-child(5){display:none}
+ .tl-hero-a .mk-book{width:58%}.tl-hero-a .mk-book em{font-size:clamp(13px,2.3vw,22px)}.tl-hero-a .mk-phone p{font-size:clamp(8px,1.5vw,12px)}
  .tl-paths,.tl-prs{grid-template-columns:1fr}
  .tl-seq{grid-template-columns:repeat(2,minmax(0,1fr))}
  .tl-seq>div:nth-child(2)::after{display:none}

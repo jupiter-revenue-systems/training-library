@@ -21,7 +21,7 @@ Browse and get them at https://ekaistone.com/training
 | 13 | [The Portal That Answers "Where Are We At?"](https://ekaistone.com/training?g=client-portal) | Guide | [free-client-portal](https://github.com/jupiter-revenue-systems/free-client-portal) |
 | 14 | [Every Revision, One List](https://ekaistone.com/training?g=every-revision) | Skill | [free-every-revision](https://github.com/jupiter-revenue-systems/free-every-revision) |
 | 15 | [Comment to Customer](https://ekaistone.com/training?g=comment-to-customer) | Guide | [free-comment-to-customer](https://github.com/jupiter-revenue-systems/free-comment-to-customer) |
-| 16 | [The One DM Ready to Buy](https://ekaistone.com/training?g=dm-ready-to-buy) | Guide | [free-dm-ready-to-buy](https://github.com/jupiter-revenue-systems/free-dm-ready-to-buy) |
+| 16 | [Stop Losing Buyers in Your DMs](https://ekaistone.com/training?g=dm-ready-to-buy) | Guide | [free-dm-ready-to-buy](https://github.com/jupiter-revenue-systems/free-dm-ready-to-buy) |
 | 17 | [DMs That Don't Sound Like a Bot](https://ekaistone.com/training?g=dms-not-a-bot) | Skill | [free-dms-not-a-bot](https://github.com/jupiter-revenue-systems/free-dms-not-a-bot) |
 | 18 | [Is Your Pixel Lying to You?](https://ekaistone.com/training?g=pixel-lying) | Zip pack | [free-pixel-lying](https://github.com/jupiter-revenue-systems/free-pixel-lying) |
 | 19 | [Did AI Make You Money This Month?](https://ekaistone.com/training?g=did-ai-make-money) | Zip pack | [free-did-ai-make-money](https://github.com/jupiter-revenue-systems/free-did-ai-make-money) |

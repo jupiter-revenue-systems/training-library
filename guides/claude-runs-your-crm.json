@@ -107,7 +107,7 @@
     "It doesn't include a call application or after-call follow-up. That's the Booked Call System."
   ],
   "paths": {
-    "diy": { "offer": "next:dm-ready-to-buy", "line": "Read The One DM Ready to Buy next. It's free, and it shows you which conversation to answer first when there are too many." },
+    "diy": { "offer": "next:dm-ready-to-buy", "line": "Read Stop Losing Buyers in Your DMs next. It's free, and it shows you which conversation to answer first when there are too many." },
     "dwy": { "offer": "sc", "line": "A Strategy Session is $750 for 60 minutes with me, and we can use it to plan how AI runs your follow-up from first hello to paid." },
     "dfy": { "offer": "igsa", "line": "The Instagram Sales Agent, from $1,499, is an agent that answers comments and DMs in your voice, qualifies, and books." }
   }

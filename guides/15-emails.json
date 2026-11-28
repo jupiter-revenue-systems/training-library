@@ -96,7 +96,7 @@
   ],
   "paths": {
     "diy": { "offer": "bcs", "line": "The Booked Call System, $67, adds the call application, confirm-or-cancel and after-call follow-up, so emails turn into booked calls." },
-    "dwy": { "offer": "sc", "line": "A Strategy Call is $750 for 60 minutes with me, and we can use it to get clear on the offer these emails are selling." },
+    "dwy": { "offer": "sc", "line": "A Strategy Session is $750 for 60 minutes with me, and we can use it to get clear on the offer these emails are selling." },
     "dfy": { "offer": "web", "line": "The Low-Ticket Product Build, from $4,999, is your offer, page, checkout and portal built for you. It starts with the $150 Discovery Call." }
   }
 }

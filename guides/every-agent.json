@@ -107,7 +107,7 @@
   ],
   "paths": {
     "diy": { "offer": "next:ai-org-chart", "line": "Build Your AI Org Chart next. It's free, and it shows which of these agents fit your business and where to start." },
-    "dwy": { "offer": "sc", "line": "A Strategy Call is $750 for 60 minutes with me, and we can use it to plan how AI builds and runs your business." },
+    "dwy": { "offer": "sc", "line": "A Strategy Session is $750 for 60 minutes with me, and we can use it to plan how AI builds and runs your business." },
     "dfy": { "offer": "seven", "line": "The Seven Star Build, from $15,000, is your whole revenue system merged and run by agents, by my own hands. It starts with the $150 Discovery Call." }
   }
 }

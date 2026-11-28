@@ -107,7 +107,7 @@
   ],
   "paths": {
     "diy": { "offer": "next:before-ai-touches", "line": "Read Before You Let AI Touch Your Business next. It's free, and it gives you the safety rules for the nights when something breaks." },
-    "dwy": { "offer": "sc", "line": "A Strategy Call is $750 for 60 minutes with me, and you can use it for training on advanced AI like running overnight builds in your own business." },
+    "dwy": { "offer": "sc", "line": "A Strategy Session is $750 for 60 minutes with me, and you can use it for training on advanced AI like running overnight builds in your own business." },
     "dfy": { "offer": "seven", "line": "The Seven Star Build, from $15,000, is your whole revenue system merged and run by agents, by my own hands. It starts with the $150 Discovery Call." }
   }
 }

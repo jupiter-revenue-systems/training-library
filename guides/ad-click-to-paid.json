@@ -99,7 +99,7 @@
   ],
   "paths": {
     "diy": { "offer": "next:one-person-sales-team", "line": "Start with The 1-Person Sales Team. It's free, and it writes the page, the order bump and the upsell for one offer." },
-    "dwy": { "offer": "sc25", "line": "The Strategy Call + Action Plan is $2,500 for 90 minutes with me, plus a detailed step by step action plan you can follow to close your gaps." },
+    "dwy": { "offer": "sc25", "line": "The Strategy Session + Playbook is $2,500 for 90 minutes with me, plus a detailed step by step action plan you can follow to close your gaps." },
     "dfy": { "offer": "web", "line": "The Low-Ticket Product Build, from $4,999, is your offer, page, checkout and portal built for you. It starts with the $150 Discovery Call." }
   }
 }
